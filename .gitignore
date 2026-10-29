@@ -60,3 +60,17 @@ kaggle/
 .DS_Store
 Thumbs.db
 *.swp
+
+# Everything else under these two artifact trees is local/generated data.
+# Files already tracked remain tracked; use git add -f for a deliberately
+# selected new checkpoint or source snapshot.
+external/**
+!external/
+!external/new_public/
+!external/new_public/rustad_r10_src/
+!external/new_public/rustad_r10_src/**
+runs/**
+!runs/
+!runs/dqi_profile/
+!runs/dqi_profile/source/
+!runs/dqi_profile/source/**

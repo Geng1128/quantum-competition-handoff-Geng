@@ -27,8 +27,8 @@
     },
     {
       "path": ".gitignore",
-      "bytes": 1278,
-      "sha256": "a5e5d9eaef3c03888758e680451e0c7967eda6fae42abb91703d9af9ae7baa87"
+      "bytes": 1682,
+      "sha256": "d076b5d916d0fc49c62ee3a9f15b09ebe0af83250a1617dedbf25575d8198f64"
     },
     {
       "path": "kernels.json",
