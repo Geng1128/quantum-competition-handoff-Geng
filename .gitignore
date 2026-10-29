@@ -69,6 +69,7 @@ external/**
 !external/new_public/
 !external/new_public/rustad_r10_src/
 !external/new_public/rustad_r10_src/**
+external/new_public/rustad_r10_src/fact/
 runs/**
 !runs/
 !runs/dqi_profile/
