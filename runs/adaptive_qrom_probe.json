@@ -1,0 +1,88 @@
+{
+  "scope": "Static official-resource model screening on local Windows; no candidate full verifier has run",
+  "source": "https://www.kaggle.com/code/kozykappa/adaptive-exact-gauge-cost-aware-qrom",
+  "formal_verification": "NOT_RUN",
+  "baseline_TQ": 20900160.0,
+  "trials": [
+    {
+      "J": 3,
+      "bank_bits": 2,
+      "scratch_count": 6,
+      "status": "MODEL_ONLY",
+      "family_count": 25,
+      "cost_ratio": 1.0,
+      "total_score_multiplier": 1.0,
+      "qubits": 656,
+      "toffoli": 31860,
+      "max_angle_qubits": 128
+    },
+    {
+      "J": 5,
+      "bank_bits": 1,
+      "scratch_count": 6,
+      "status": "MODEL_ONLY",
+      "family_count": 15,
+      "cost_ratio": 1.070918117373264,
+      "total_score_multiplier": 0.9774200526294988,
+      "qubits": 676,
+      "toffoli": 33110,
+      "max_angle_qubits": 112
+    },
+    {
+      "J": 5,
+      "bank_bits": 1,
+      "scratch_count": 7,
+      "status": "MODEL_ONLY",
+      "family_count": 15,
+      "cost_ratio": 1.069947789873379,
+      "total_score_multiplier": 0.977715434954108,
+      "qubits": 676,
+      "toffoli": 33080,
+      "max_angle_qubits": 113
+    },
+    {
+      "J": 4,
+      "bank_bits": 1,
+      "scratch_count": 7,
+      "status": "MODEL_ONLY",
+      "family_count": 19,
+      "cost_ratio": 1.2736754168389142,
+      "total_score_multiplier": 0.9225298154864684,
+      "qubits": 666,
+      "toffoli": 39970,
+      "max_angle_qubits": 94
+    },
+    {
+      "J": 2,
+      "bank_bits": 2,
+      "scratch_count": 6,
+      "status": "MODEL_ONLY",
+      "family_count": 38,
+      "cost_ratio": 1.337611578093182,
+      "total_score_multiplier": 0.907590609125728,
+      "qubits": 646,
+      "toffoli": 43276,
+      "max_angle_qubits": 91
+    },
+    {
+      "J": 1,
+      "bank_bits": 3,
+      "scratch_count": 5,
+      "status": "MODEL_ONLY",
+      "family_count": 75,
+      "cost_ratio": 1.482264250608608,
+      "total_score_multiplier": 0.8770508797822946,
+      "qubits": 636,
+      "toffoli": 48710,
+      "max_angle_qubits": 89
+    },
+    {
+      "J": 6,
+      "bank_bits": 1,
+      "scratch_count": 3,
+      "status": "COMPILATION_FAILED",
+      "error": "ValueError: Insufficient scratch for high row compiler"
+    }
+  ],
+  "seconds": 21.89940419999766
+}

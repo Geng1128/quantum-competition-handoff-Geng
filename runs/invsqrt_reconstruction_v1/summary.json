@@ -1,0 +1,105 @@
+{
+  "baseline_public_score": 10.53111,
+  "baseline_cost": 140719.08607029635,
+  "searched_configurations": 12,
+  "full_domain_model_pass": 8,
+  "all_model_inputs": 3133452,
+  "native_check_seeds": [
+    0,
+    1,
+    17
+  ],
+  "native_shots_per_candidate": 768,
+  "best_candidate_by_cost_lower_bound": {
+    "config": {
+      "address_bits": 8,
+      "fraction_bits": 28,
+      "slope_bits": 22,
+      "curvature_bits": 12
+    },
+    "coefficient_register_widths": [
+      29,
+      20,
+      9
+    ],
+    "num_qubits": 140,
+    "static_toffoli_like": 2386,
+    "polynomial_toffoli_like": 2191,
+    "num_ops": 35349,
+    "cost_lower_bound": 306740,
+    "assembly_sha256": "c7c87e2f23380920c0a6fc7c3192a878e49753754957b9687c44b12bf73a279a",
+    "normalization_source_sha256": "1d0e6d52eb79b8be4216bb276c22988c514f61e8dd06b3fb3edf8d9439ac4828",
+    "formal_verification": false,
+    "numerical_screen": {
+      "status": "MODEL_PASS",
+      "inputs": 3133452,
+      "worst_error_over_tolerance": 0.9141402474931908,
+      "worst_x": 827322,
+      "min_margin_turns": 5.626423907134877e-12,
+      "formal_verification": false,
+      "scope": "Float64 numerical screen of an exact integer pipeline; no HMR or synthesis verification."
+    },
+    "native_samples": [
+      {
+        "seed": 0,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2373.98046875,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      },
+      {
+        "seed": 1,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2373.8046875,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      },
+      {
+        "seed": 17,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2373.74609375,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      }
+    ],
+    "coefficient_table_sha256": "0cc633c89ebf94d7a4bcde1b76f96a9a864d2ac50150fbcc22a9a960d7e2f315",
+    "coefficient_table_file": "runs\\invsqrt_reconstruction_v1\\search\\8_28_22_12.npy",
+    "status": "REJECTED_COST_LOWER_BOUND",
+    "final_source_native_recheck": {
+      "seed": 23,
+      "shots": 256,
+      "x_restored": true,
+      "scratch_clean": true,
+      "max_model_difference_turns": 0.0,
+      "mean_toffoli_like": 2373.41796875,
+      "formal_verification": false,
+      "scope": "Local native sample check, not the full official verifier."
+    }
+  },
+  "improvement_found": false,
+  "formal_verification_performed": false,
+  "competition_submission_performed": false,
+  "next_bottleneck": "Workspace-efficient multiplication / carry-save accumulation and matching measurement uncomputation; coefficient fitting alone is insufficient.",
+  "source_sha256": {
+    "experiments\\invsqrt\\reconstruct.py": "a9b7f19d2a710fdcecd7d2466f6ceec0469326227cd4d9f001836b06d1c0df12",
+    "experiments\\invsqrt\\quadratic_circuit.py": "748d25c5389f528df880d0bb7f55b7167ab17ad0b94233014557f30912bf962e"
+  },
+  "final_source_full_domain_recheck": true,
+  "validation": {
+    "full_regression_tests_passed": 158,
+    "new_tests_passed_after_formatting": 21,
+    "code_review": "APPROVED_NO_BLOCKING_FINDINGS",
+    "python_review": "APPROVED_NO_BLOCKING_FINDINGS",
+    "black_format_api": "PASS",
+    "official_verification": "NOT_RUN_REJECTED_BY_COST_LOWER_BOUND"
+  }
+}

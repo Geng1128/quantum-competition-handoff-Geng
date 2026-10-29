@@ -1,0 +1,107 @@
+{
+  "schema_version": 2,
+  "stage": "STOPPED_AFTER_FIVE_SUBMISSION_ATTEMPTS",
+  "updated_utc": "2026-10-27T18:55:00+00:00",
+  "user_instruction": "Use all five submission attempts, then shut down. Do not submit again.",
+  "further_submission_authorized": false,
+  "observed_kaggle_score": 16.67077,
+  "current_best_submitted": {
+    "submission_ref": 57665992,
+    "status": "COMPLETE",
+    "public_score": 16.67077,
+    "description": "invsqrt 63Q + dqi 870Q (mrmeows 15.75, credited) + own R10 chemistry recompile & lambda polish (4.2287e8)",
+    "archive": "runs/blend_v6/submission.zip",
+    "archive_sha256": "ae74cbd8a4ad25a1c2c40555833a9beed75a6e8bd716eb48010b5fc306b582d4",
+    "manifest": "runs/blend_v6/manifest.json",
+    "score_evidence": "runs/public_refresh_v1/submissions_snapshot.csv"
+  },
+  "latest_verified_candidate": {
+    "status": "IMPROVEMENT_VERIFIED_FRESH_FULL",
+    "archive": "runs/public_refresh_v1/submission.zip",
+    "archive_sha256": "cf7517ee9985352279fc43b8805fb5a0696732f7f70107579c604344ee2deb60",
+    "local_score": 18.370972924603098,
+    "public_score": null,
+    "verification_mode": "all_three_fresh_full",
+    "report": "runs/public_refresh_v1/public_refresh_result.json",
+    "reconciliation": "runs/public_refresh_v1/reconciliation.json",
+    "kernel_url": "https://www.kaggle.com/code/gengsr/quantum-public-refresh-fresh-full-verification",
+    "components_are_public_reuse": true
+  },
+  "last_submission_attempt": {
+    "status": "REJECTED_HTTP_400_NO_NEW_SUBMISSION",
+    "http_status": 400,
+    "new_submission_ref": null,
+    "quota_day_utc": "2026-10-26",
+    "submissions_used": 5,
+    "max_daily_submissions": 5,
+    "server_error_body_captured": false,
+    "note": "CLI returned HTTP 400; independent account/API check confirms 5 of 5 daily submissions already used. User then revoked further submission attempts."
+  },
+  "local_checks": {
+    "tests_passed": 172,
+    "evidence": "runs/public_refresh_v1/local_pytest.txt",
+    "code_review": "APPROVED",
+    "python_review": "APPROVED"
+  },
+  "next_research_hint": "If user later resumes, investigate combining the freshly checked 883Q Schur DQI with the existing improved R10 chemistry; verify before submitting and preserve upstream credits.",
+  "historical_state_backup": "runs\\public_refresh_v1\\job_state_before_20261027.json",
+  "latest_autonomous_candidate": {
+    "status": "SUBMITTED_SCORE_OBSERVED",
+    "directory": "runs/independent_candidate_v1",
+    "chemistry_directory": "runs/chem_v2/rustad_feasible_polish_v2",
+    "chemistry_lambda_eff": 47.8553117802873,
+    "chemistry_error_1": 0.019778663633220638,
+    "chemistry_error_2": 0.019696045421008,
+    "chemistry_gap_in_domain": true,
+    "chemistry_math_report": "runs/chem_v2/rustad_feasible_polish_v2/official_math_report.json",
+    "manifest": "runs/independent_candidate_v1/candidate_manifest.json",
+    "public_score": 13.16727,
+    "submission_authorized": false,
+    "note": "same R10 angle circuits; only H2_I/Woff independently polished with feasible backtracking",
+    "submission_ref": 57707246
+  },
+  "submissions_20261028": [
+    {
+      "submission_ref": 57732578,
+      "status": "PENDING",
+      "candidate": "external/new_public/somejoint_2244/submission.zip",
+      "archive_sha256": "5b2b5023af2dc126a6ec8bd03d91b9f3c34a32150819208f0bd80a5b9bdd6d5e",
+      "evidence": "external/new_public/somejoint_2244/summary.json (Kaggle run, all three official verifiers PASS, local GM 22.43778)",
+      "components_are_public_reuse": true,
+      "user_instruction": "2026-10-28: user approved submitting the strongest public bundle first"
+    }
+  ],
+  "submission_day_attempts": 5,
+  "submissions_today": [
+    {
+      "submission_ref": 57707246,
+      "status": "COMPLETE",
+      "public_score": 13.16727,
+      "candidate": "candidate_alex_dft_v1"
+    },
+    {
+      "submission_ref": 57707799,
+      "status": "PENDING",
+      "public_score": null,
+      "candidate": "anglolodorf_frontier_v10"
+    },
+    {
+      "submission_ref": null,
+      "status": "HTTP_400_CREATE_SUBMISSION",
+      "public_score": null,
+      "candidate": "zongaobian_signed_digits"
+    },
+    {
+      "submission_ref": null,
+      "status": "HTTP_400_CREATE_SUBMISSION",
+      "public_score": null,
+      "candidate": "lightning_bezout"
+    },
+    {
+      "submission_ref": null,
+      "status": "HTTP_400_CREATE_SUBMISSION_OR_PRIOR_FAILED_ATTEMPT",
+      "public_score": null,
+      "candidate": "candidate_alex_dft_retry"
+    }
+  ]
+}

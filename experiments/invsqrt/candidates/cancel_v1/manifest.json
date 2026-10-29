@@ -1,0 +1,697 @@
+{
+  "cancelled_pairs": [
+    {
+      "input_lines": [
+        7025,
+        7043
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        7046,
+        7048
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        7051,
+        7067
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        7075,
+        7077
+      ],
+      "operation": "X",
+      "wires": [
+        "q18"
+      ]
+    },
+    {
+      "input_lines": [
+        7084,
+        7095
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        7098,
+        7100
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        7107,
+        7120
+      ],
+      "operation": "X",
+      "wires": [
+        "q16"
+      ]
+    },
+    {
+      "input_lines": [
+        7123,
+        7125
+      ],
+      "operation": "X",
+      "wires": [
+        "q16"
+      ]
+    },
+    {
+      "input_lines": [
+        7185,
+        7187
+      ],
+      "operation": "X",
+      "wires": [
+        "q19"
+      ]
+    },
+    {
+      "input_lines": [
+        7202,
+        7216
+      ],
+      "operation": "X",
+      "wires": [
+        "q16"
+      ]
+    },
+    {
+      "input_lines": [
+        7229,
+        7231
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        7238,
+        7250
+      ],
+      "operation": "X",
+      "wires": [
+        "q16"
+      ]
+    },
+    {
+      "input_lines": [
+        7268,
+        7270
+      ],
+      "operation": "X",
+      "wires": [
+        "q18"
+      ]
+    },
+    {
+      "input_lines": [
+        7284,
+        7295
+      ],
+      "operation": "X",
+      "wires": [
+        "q16"
+      ]
+    },
+    {
+      "input_lines": [
+        7303,
+        7305
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        7312,
+        7322
+      ],
+      "operation": "X",
+      "wires": [
+        "q16"
+      ]
+    },
+    {
+      "input_lines": [
+        7325,
+        7327
+      ],
+      "operation": "X",
+      "wires": [
+        "q16"
+      ]
+    },
+    {
+      "input_lines": [
+        7338,
+        7347
+      ],
+      "operation": "X",
+      "wires": [
+        "q15"
+      ]
+    },
+    {
+      "input_lines": [
+        7375,
+        7377
+      ],
+      "operation": "X",
+      "wires": [
+        "q20"
+      ]
+    },
+    {
+      "input_lines": [
+        7392,
+        7409
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        7412,
+        7414
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        7417,
+        7434
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        7442,
+        7444
+      ],
+      "operation": "X",
+      "wires": [
+        "q18"
+      ]
+    },
+    {
+      "input_lines": [
+        7451,
+        7467
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        7470,
+        7472
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        7475,
+        7486
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        7499,
+        7501
+      ],
+      "operation": "X",
+      "wires": [
+        "q19"
+      ]
+    },
+    {
+      "input_lines": [
+        7512,
+        7525
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        7528,
+        7530
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        7533,
+        7545
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        7553,
+        7555
+      ],
+      "operation": "X",
+      "wires": [
+        "q18"
+      ]
+    },
+    {
+      "input_lines": [
+        7562,
+        7574
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        7577,
+        7579
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        7582,
+        7593
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        13866,
+        13884
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        13887,
+        13889
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        13892,
+        13908
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        13916,
+        13918
+      ],
+      "operation": "X",
+      "wires": [
+        "q18"
+      ]
+    },
+    {
+      "input_lines": [
+        13925,
+        13936
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        13939,
+        13941
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        13948,
+        13961
+      ],
+      "operation": "X",
+      "wires": [
+        "q16"
+      ]
+    },
+    {
+      "input_lines": [
+        13964,
+        13966
+      ],
+      "operation": "X",
+      "wires": [
+        "q16"
+      ]
+    },
+    {
+      "input_lines": [
+        14026,
+        14028
+      ],
+      "operation": "X",
+      "wires": [
+        "q19"
+      ]
+    },
+    {
+      "input_lines": [
+        14043,
+        14057
+      ],
+      "operation": "X",
+      "wires": [
+        "q16"
+      ]
+    },
+    {
+      "input_lines": [
+        14070,
+        14072
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        14079,
+        14091
+      ],
+      "operation": "X",
+      "wires": [
+        "q16"
+      ]
+    },
+    {
+      "input_lines": [
+        14109,
+        14111
+      ],
+      "operation": "X",
+      "wires": [
+        "q18"
+      ]
+    },
+    {
+      "input_lines": [
+        14125,
+        14136
+      ],
+      "operation": "X",
+      "wires": [
+        "q16"
+      ]
+    },
+    {
+      "input_lines": [
+        14144,
+        14146
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        14153,
+        14163
+      ],
+      "operation": "X",
+      "wires": [
+        "q16"
+      ]
+    },
+    {
+      "input_lines": [
+        14166,
+        14168
+      ],
+      "operation": "X",
+      "wires": [
+        "q16"
+      ]
+    },
+    {
+      "input_lines": [
+        14179,
+        14188
+      ],
+      "operation": "X",
+      "wires": [
+        "q15"
+      ]
+    },
+    {
+      "input_lines": [
+        14216,
+        14218
+      ],
+      "operation": "X",
+      "wires": [
+        "q20"
+      ]
+    },
+    {
+      "input_lines": [
+        14233,
+        14250
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        14253,
+        14255
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        14258,
+        14275
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        14283,
+        14285
+      ],
+      "operation": "X",
+      "wires": [
+        "q18"
+      ]
+    },
+    {
+      "input_lines": [
+        14292,
+        14308
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        14311,
+        14313
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        14316,
+        14327
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        14340,
+        14342
+      ],
+      "operation": "X",
+      "wires": [
+        "q19"
+      ]
+    },
+    {
+      "input_lines": [
+        14353,
+        14366
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        14369,
+        14371
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        14374,
+        14386
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        14394,
+        14396
+      ],
+      "operation": "X",
+      "wires": [
+        "q18"
+      ]
+    },
+    {
+      "input_lines": [
+        14403,
+        14415
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        14418,
+        14420
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    },
+    {
+      "input_lines": [
+        14423,
+        14434
+      ],
+      "operation": "X",
+      "wires": [
+        "q17"
+      ]
+    }
+  ],
+  "candidate_lines": 37449,
+  "candidate_sha256": "e22170c9f233bfdd4772005a88ca8114c4d0e4d0f618ed1da8a562d5322ddfe8",
+  "count_scope": "Static counts of removed instructions, including conditional regions; not executed Toffoli counts, verifier resource cost, or a Kaggle score.",
+  "input_lines": 37585,
+  "input_sha256": "1d0e6d52eb79b8be4216bb276c22988c514f61e8dd06b3fb3edf8d9439ac4828",
+  "official_verification_status": "NOT_RUN",
+  "removed_static_gate_count": 136,
+  "removed_static_gate_counts": {
+    "X": 136
+  },
+  "removed_static_toffoli_like": 0,
+  "rule": "Cancel identical self-inverse gates only when every remaining intervening operation acts on a disjoint set of qubits. Conditions, measurements, resets, classical bit operations, register declarations, metadata and unknown instructions are barriers.",
+  "schema_version": 1
+}

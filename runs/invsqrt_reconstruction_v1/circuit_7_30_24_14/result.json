@@ -1,0 +1,66 @@
+{
+  "config": {
+    "address_bits": 7,
+    "fraction_bits": 30,
+    "slope_bits": 24,
+    "curvature_bits": 14
+  },
+  "coefficient_register_widths": [
+    31,
+    22,
+    11
+  ],
+  "num_qubits": 150,
+  "static_toffoli_like": 2719,
+  "polynomial_toffoli_like": 2524,
+  "num_ops": 31226,
+  "cost_lower_bound": 378600,
+  "assembly_sha256": "abe29c08c4577eb2232e00b0ec550a2a14b75238096b19a4447e24ec5cd275f4",
+  "normalization_source_sha256": "1d0e6d52eb79b8be4216bb276c22988c514f61e8dd06b3fb3edf8d9439ac4828",
+  "formal_verification": false,
+  "numerical_screen": {
+    "status": "MODEL_PASS",
+    "inputs": 3133452,
+    "worst_error_over_tolerance": 0.7600972020822686,
+    "worst_x": 1052654,
+    "min_margin_turns": 1.0495706103892533e-11,
+    "formal_verification": false,
+    "scope": "Float64 numerical screen of an exact integer pipeline; no HMR or synthesis verification."
+  },
+  "native_samples": [
+    {
+      "seed": 0,
+      "shots": 256,
+      "x_restored": true,
+      "scratch_clean": true,
+      "max_model_difference_turns": 0.0,
+      "mean_toffoli_like": 2706.87109375,
+      "formal_verification": false,
+      "scope": "Local native sample check, not the full official verifier."
+    },
+    {
+      "seed": 1,
+      "shots": 256,
+      "x_restored": true,
+      "scratch_clean": true,
+      "max_model_difference_turns": 0.0,
+      "mean_toffoli_like": 2706.94921875,
+      "formal_verification": false,
+      "scope": "Local native sample check, not the full official verifier."
+    },
+    {
+      "seed": 17,
+      "shots": 256,
+      "x_restored": true,
+      "scratch_clean": true,
+      "max_model_difference_turns": 0.0,
+      "mean_toffoli_like": 2706.77734375,
+      "formal_verification": false,
+      "scope": "Local native sample check, not the full official verifier."
+    }
+  ],
+  "kickmix_path": "D:\\\u803f\u4e16\u8363\\Documents\\Quantum\\.venv\\Lib\\site-packages\\kickmix.cp313-win_amd64.pyd",
+  "baseline_cost": 140719.08607029635,
+  "selection": "REJECTED_COST_LOWER_BOUND",
+  "circuit_sha256": "b3cde531919716c5031ed9d8d63bab9ca25d1093214c663b462e35e76f879f12"
+}

@@ -1,0 +1,159 @@
+{
+  "date": "2026-10-29",
+  "dqi": {
+    "source": "external/new_public/somejoint_2244/source/quantum-circuits-22-44-local-gm-our-chemistry.ipynb",
+    "source_extracted_to": "runs/dqi_profile/source",
+    "source_files_extracted": 68,
+    "build_source": "blocks/dqi/pro-q2-897/source/build_897.py",
+    "official_record": "external/new_public/somejoint_2244/summary.json",
+    "Q": 897,
+    "mean_toffoli": 440632.99798828125,
+    "max_toffoli": 454477,
+    "repetition_factor": 1.1912604648115832,
+    "value_errors": 0,
+    "phase_errors": 0,
+    "empirical_error_rate": 0.0,
+    "stages": [
+      {
+        "stage": "linear_maps_and_mask_projection",
+        "toffoli": 0,
+        "peak_qubits": 840,
+        "notes": "CNOT/phase projection; no Toffoli in recorded build",
+        "share_percent": 0.0
+      },
+      {
+        "stage": "extract",
+        "toffoli": 65881,
+        "peak_qubits": 897,
+        "notes": "continued-fraction extraction and jet/external chains",
+        "share_percent": 14.951444921460949
+      },
+      {
+        "stage": "synthesis",
+        "toffoli": 33317,
+        "peak_qubits": 889,
+        "notes": "error locator/numerator folds",
+        "share_percent": 7.561167718284701
+      },
+      {
+        "stage": "convert",
+        "toffoli": 68352,
+        "peak_qubits": 897,
+        "notes": "A / B prime modulo B",
+        "share_percent": 15.512229068649516
+      },
+      {
+        "stage": "scan",
+        "toffoli": 44275,
+        "peak_qubits": 870,
+        "notes": "4025 points x 11 Toffolis",
+        "share_percent": 10.048044563647842
+      },
+      {
+        "stage": "unconvert",
+        "toffoli": 69455,
+        "peak_qubits": 897,
+        "notes": "inverse conversion",
+        "share_percent": 15.762550766079297
+      },
+      {
+        "stage": "unsynthesis",
+        "toffoli": 41931,
+        "peak_qubits": 897,
+        "notes": "inverse synthesis",
+        "share_percent": 9.516082588330157
+      },
+      {
+        "stage": "unextract",
+        "toffoli": 117422,
+        "peak_qubits": 897,
+        "notes": "inverse extraction; largest stage",
+        "share_percent": 26.648480830099537
+      }
+    ],
+    "decision": "No single GF multiplier dominates the recorded T; unextract is 26.65%, convert+unconvert 31.27%, extract+unextract 41.60%. Prioritize module-level instrumentation only if a candidate can reduce these stages without raising Q.",
+    "platform_limit": "Windows cannot import the pinned Linux kickmix.so, so this is source extraction plus the official recorded stage profile; no local rebuild was attempted.",
+    "final_decoder_static": {
+      "source": "runs/dqi_profile/source/blocks/dqi/pro-q2-897/source/final_decoder/decode.py",
+      "ordinary_external_groups": 8,
+      "homogeneous_external_groups": 9,
+      "external_groups_per_direction": 17,
+      "ordinary_jet_calls_per_direction": 56,
+      "ordinary_jet_calls_total_both_directions": 112,
+      "inverse24_forward_calls_per_direction": 17,
+      "inverse24_reverse_calls_per_direction": 17,
+      "scan_points": 4025,
+      "scan_toffoli_per_point": 11,
+      "scan_toffoli_total": 44275,
+      "notes": [
+        "The build_897 entry point uses final_decoder/decode.py, not the baseline decode.py plan with 289 confluent jets.",
+        "The 56 ordinary jet calls per direction are exact from sum(2*gi for gi=0..7).",
+        "Per-call 658T is a source annotation; official stage totals include surrounding arithmetic and should be used for cost decisions."
+      ]
+    },
+    "multiplier_ranks": {
+      "GF2^12": 42,
+      "GF2^24_default": 105,
+      "GF2^24_jet": 99,
+      "decision": "The public source already uses rank-42 GF12 and rank-99 GF24 constructions; a schoolbook-to-Karatsuba swap is not the current opportunity."
+    }
+  },
+  "invsqrt": {
+    "source": "external/new_public/somejoint_2244/summary.json and official verifier",
+    "Q": 63,
+    "toffoli_like_mean": 1334.500280511318,
+    "T_count": 1.0,
+    "rotation_count": 41,
+    "rotation_eps": 2.434041480874084e-13,
+    "rotation_t_per": 28.764958428184976,
+    "rotation_synthesis_T_equiv": 1179.363295555584,
+    "toffoli_equivalent": 1629.591104400214,
+    "score": 102664.23957721348,
+    "worst_error_over_tolerance": 0.9993237694056958,
+    "worst_x": 161,
+    "lookup_and": "172 (public source attribution; KMB lacks portable region metadata)",
+    "cost_share_from_verifier": {
+      "toffoli_like_percent": 81.89172590031369,
+      "rotation_synthesis_percent": 18.092932827920347
+    },
+    "decision": "Q and arithmetic/lookup changes require a Linux/Kickmix rebuild; the measured rotation budget has almost no numerical slack."
+  },
+  "chemistry": {
+    "continuous_start": "runs/chem_v2/r7/r8_b143_c62_cont.npz",
+    "shape": [
+      8,
+      143,
+      62
+    ],
+    "brot": 8,
+    "gauge_scan": "runs/chem_v2/r7/gauge_scan.json",
+    "base_nearest_error_2": 0.11918739974498749,
+    "best_simple_gauge_error_2": 0.11918739974498749,
+    "best_simple_gauge_kind": "source tree/no sign change",
+    "random_tree_best_error_2": 0.1363106071949005,
+    "dsearch_result": "runs/chem_v2/r7/r8_tail_dsearch.npz",
+    "dsearch_error_2": 0.03581192344427109,
+    "decision": "Simple sign gauges do not change the nearest-rounding projector; random valid trees tested here are worse. Do not launch overnight quantization from this scan alone.",
+    "pairsearch": {
+      "script": "experiments/chemistry_v2/pairsearch.py",
+      "start": "runs/chem_v2/r7/r8_tail_dsearch.npz",
+      "round1_error_2": 0.03546203300356865,
+      "round2_error_2": 0.035192646,
+      "accepted_moves_total": 2276,
+      "decision": "Adjacent two-angle moves improve the tail only slightly; stop expanding this beam."
+    },
+    "math_followup": {
+      "internal_gauge_dp_error_2": 0.11918739974498749,
+      "internal_gauge_sample_error_2": 0.11918739974498749,
+      "pairsearch_round2_error_2": 0.035192646,
+      "global_w_lbfgs_error_2": 0.034254465252161026,
+      "alternating_dsearch_error_2": 0.033584,
+      "decision": "Internal sign gauges are exact projector symmetries and do not change nearest error here. Joint w optimization plus angle search improves the tail modestly but remains above threshold."
+    }
+  },
+  "score_context": {
+    "local_public_geometric_mean": 22.43777534520302,
+    "gold_line": 23.15,
+    "target_25_relative_gain": 0.11419245515107446
+  }
+}

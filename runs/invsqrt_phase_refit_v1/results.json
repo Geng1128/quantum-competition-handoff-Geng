@@ -1,0 +1,526 @@
+{
+  "source_sha256": "1d0e6d52eb79b8be4216bb276c22988c514f61e8dd06b3fb3edf8d9439ac4828",
+  "sites": [
+    {
+      "line": 6925,
+      "wire": 64,
+      "exponent": "0.000007629395503466773233169906376360813737846910953521728515625",
+      "phase_units": 70368753144781,
+      "classification": "rotation"
+    },
+    {
+      "line": 6926,
+      "wire": 65,
+      "exponent": "0.000015258786603852890310928369643761470797471702098846435546875",
+      "phase_units": 140737465678311,
+      "classification": "rotation"
+    },
+    {
+      "line": 6927,
+      "wire": 66,
+      "exponent": "0.000030517577928654347589609852064995720866136252880096435546875",
+      "phase_units": 281474974899687,
+      "classification": "rotation"
+    },
+    {
+      "line": 6928,
+      "wire": 67,
+      "exponent": "0.000061035158007112359258850009524621782475151121616363525390625",
+      "phase_units": 562949969627813,
+      "classification": "rotation"
+    },
+    {
+      "line": 6929,
+      "wire": 68,
+      "exponent": "0.0001220703075199901059544327353023618343286216259002685546875",
+      "phase_units": 1125899860910140,
+      "classification": "rotation"
+    },
+    {
+      "line": 6930,
+      "wire": 69,
+      "exponent": "0.000244140621162312562199281362751435153768397867679595947265625",
+      "phase_units": 2251799778288829,
+      "classification": "rotation"
+    },
+    {
+      "line": 6931,
+      "wire": 70,
+      "exponent": "0.000488281243491727888657305545194731166702695190906524658203125",
+      "phase_units": 4503599567342281,
+      "classification": "rotation"
+    },
+    {
+      "line": 6932,
+      "wire": 71,
+      "exponent": "0.00097656249867518799510912597128253764822147786617279052734375",
+      "phase_units": 9007199242521758,
+      "classification": "rotation"
+    },
+    {
+      "line": 6933,
+      "wire": 72,
+      "exponent": "0.001953124998294235130369411734818640979938209056854248046875",
+      "phase_units": 18014398493749080,
+      "classification": "rotation"
+    },
+    {
+      "line": 6934,
+      "wire": 73,
+      "exponent": "0.003906249988066976745575142881961028251680545508861541748046875",
+      "phase_units": 36028796908901255,
+      "classification": "rotation"
+    },
+    {
+      "line": 6935,
+      "wire": 74,
+      "exponent": "0.007812499954767747269331057413666030697640962898731231689453125",
+      "phase_units": 72057593620734041,
+      "classification": "rotation"
+    },
+    {
+      "line": 6936,
+      "wire": 75,
+      "exponent": "0.0156249998238037900340213770533637216431088745594024658203125",
+      "phase_units": 144115186450732676,
+      "classification": "rotation"
+    },
+    {
+      "line": 6937,
+      "wire": 76,
+      "exponent": "0.031249999455194540681941817172884157116641290485858917236328125",
+      "phase_units": 288230371126768305,
+      "classification": "rotation"
+    },
+    {
+      "line": 6938,
+      "wire": 77,
+      "exponent": "0.062500000201582495379208637142909310568938963115215301513671875",
+      "phase_units": 576460754162693839,
+      "classification": "rotation"
+    },
+    {
+      "line": 6939,
+      "wire": 78,
+      "exponent": "0.1249999974869483985485951738070298233651556074619293212890625",
+      "phase_units": 1152921481428037108,
+      "classification": "rotation"
+    },
+    {
+      "line": 6940,
+      "wire": 79,
+      "exponent": "0.25",
+      "phase_units": 2305843009213693952,
+      "classification": "t"
+    },
+    {
+      "line": 6941,
+      "wire": 80,
+      "exponent": "0.5",
+      "phase_units": 4611686018427387904,
+      "classification": "clifford"
+    },
+    {
+      "line": 6942,
+      "wire": 81,
+      "exponent": "1.0",
+      "phase_units": 9223372036854775808,
+      "classification": "clifford"
+    },
+    {
+      "line": 10977,
+      "wire": 45,
+      "exponent": "0.000000000029178990278676264491508618448278866708278656005859375",
+      "phase_units": 269128683,
+      "classification": "rotation"
+    },
+    {
+      "line": 10978,
+      "wire": 46,
+      "exponent": "0.00000000005817836989073510434167246785364113748073577880859375",
+      "phase_units": 536600750,
+      "classification": "rotation"
+    },
+    {
+      "line": 10979,
+      "wire": 47,
+      "exponent": "0.0000000001166809379150868242192018442437984049320220947265625",
+      "phase_units": 1076191700,
+      "classification": "rotation"
+    },
+    {
+      "line": 10980,
+      "wire": 48,
+      "exponent": "0.0000000002325718979380442252846705741831101477146148681640625",
+      "phase_units": 2145097140,
+      "classification": "rotation"
+    },
+    {
+      "line": 10981,
+      "wire": 49,
+      "exponent": "0.00000000046454861420304471852915639829006977379322052001953125",
+      "phase_units": 4284704698,
+      "classification": "rotation"
+    },
+    {
+      "line": 10982,
+      "wire": 50,
+      "exponent": "0.00000000093111256183574242495382122797309421002864837646484375",
+      "phase_units": 8587997566,
+      "classification": "rotation"
+    },
+    {
+      "line": 10983,
+      "wire": 51,
+      "exponent": "0.00000000186325721149814549360002047251327894628047943115234375",
+      "phase_units": 17185514462,
+      "classification": "rotation"
+    },
+    {
+      "line": 10984,
+      "wire": 52,
+      "exponent": "0.000000003725531695641937091068029985763132572174072265625",
+      "phase_units": 34361964864,
+      "classification": "rotation"
+    },
+    {
+      "line": 10985,
+      "wire": 53,
+      "exponent": "0.00000000745154361456688840714690513777895830571651458740234375",
+      "phase_units": 68728359006,
+      "classification": "rotation"
+    },
+    {
+      "line": 10986,
+      "wire": 54,
+      "exponent": "0.000000014900552029761295058651882072808803059160709381103515625",
+      "phase_units": 137433334925,
+      "classification": "rotation"
+    },
+    {
+      "line": 10987,
+      "wire": 55,
+      "exponent": "0.00000002980318834018731710688854263935354538261890411376953125",
+      "phase_units": 274885893946,
+      "classification": "rotation"
+    },
+    {
+      "line": 10988,
+      "wire": 56,
+      "exponent": "0.00000005960442893003688180630916804148000665009021759033203125",
+      "phase_units": 549753823066,
+      "classification": "rotation"
+    },
+    {
+      "line": 10989,
+      "wire": 57,
+      "exponent": "0.000000119209364297739005278398138898410252295434474945068359375",
+      "phase_units": 1099512317195,
+      "classification": "rotation"
+    },
+    {
+      "line": 10990,
+      "wire": 58,
+      "exponent": "0.000000238419418212352900166006719473443808965384960174560546875",
+      "phase_units": 2199030994983,
+      "classification": "rotation"
+    },
+    {
+      "line": 10991,
+      "wire": 59,
+      "exponent": "0.00000047683668342600633860417502773998421616852283477783203125",
+      "phase_units": 4398042132058,
+      "classification": "rotation"
+    },
+    {
+      "line": 10992,
+      "wire": 60,
+      "exponent": "0.000000953674767051521966865212931452333577908575534820556640625",
+      "phase_units": 8796097178677,
+      "classification": "rotation"
+    },
+    {
+      "line": 10993,
+      "wire": 61,
+      "exponent": "0.000001907350334926318814743328999838922754861414432525634765625",
+      "phase_units": 17592201743645,
+      "classification": "rotation"
+    },
+    {
+      "line": 10994,
+      "wire": 62,
+      "exponent": "0.000003814698393690848197967735444535719580017030239105224609375",
+      "phase_units": 35184382493403,
+      "classification": "rotation"
+    },
+    {
+      "line": 10995,
+      "wire": 63,
+      "exponent": "0.000007629399884569350309693192002669093199074268341064453125",
+      "phase_units": 70368793553320,
+      "classification": "rotation"
+    },
+    {
+      "line": 10996,
+      "wire": 64,
+      "exponent": "0.000015258796048645711408708880441054134280420839786529541015625",
+      "phase_units": 140737552791149,
+      "classification": "rotation"
+    },
+    {
+      "line": 10997,
+      "wire": 78,
+      "exponent": "0.00003051759300910458251598900147882886813022196292877197265625",
+      "phase_units": 281475113992290,
+      "classification": "rotation"
+    },
+    {
+      "line": 10998,
+      "wire": 65,
+      "exponent": "0.000061035216452087997889008885721295882831327617168426513671875",
+      "phase_units": 562950508687567,
+      "classification": "rotation"
+    },
+    {
+      "line": 10999,
+      "wire": 69,
+      "exponent": "0.000122070522636301913819989461984505396685563027858734130859375",
+      "phase_units": 1125901845007915,
+      "classification": "rotation"
+    },
+    {
+      "line": 11000,
+      "wire": 70,
+      "exponent": "0.000244141346032787187429746733613455944578163325786590576171875",
+      "phase_units": 2251806464038895,
+      "classification": "rotation"
+    },
+    {
+      "line": 11001,
+      "wire": 71,
+      "exponent": "0.00048828045289801662309780994064567494206130504608154296875",
+      "phase_units": 4503592275402352,
+      "classification": "rotation"
+    },
+    {
+      "line": 11002,
+      "wire": 76,
+      "exponent": "0.000976563623333087139910535512399292201735079288482666015625",
+      "phase_units": 9007209615659976,
+      "classification": "rotation"
+    },
+    {
+      "line": 11003,
+      "wire": 77,
+      "exponent": "0.001953118776800059929778241585296427729190327227115631103515625",
+      "phase_units": 18014341110593677,
+      "classification": "rotation"
+    },
+    {
+      "line": 11004,
+      "wire": 66,
+      "exponent": "0.003906242549419403076171875",
+      "phase_units": 36028728299487232,
+      "classification": "rotation"
+    },
+    {
+      "line": 11005,
+      "wire": 72,
+      "exponent": "0.007812492549419403076171875",
+      "phase_units": 72057525318451200,
+      "classification": "rotation"
+    }
+  ],
+  "candidates": [
+    {
+      "status": "MODEL_FULL_DOMAIN_PASS",
+      "coefficients_units": [
+        70368753144781,
+        140737465678311,
+        281474974899687,
+        562949969627813,
+        1125899860910140,
+        2251799778288829,
+        4503599567342281,
+        9007199242521758,
+        18014398493749080,
+        36028796908901255,
+        72057593620734041,
+        144115186450732676,
+        288230371126768305,
+        576460736083014890,
+        1152921511500987465,
+        2305843009213693952,
+        4611686018427387904,
+        9223372036854775808,
+        269128683,
+        536600750,
+        1076191700,
+        2145097140,
+        4284704698,
+        8587997566,
+        17185514462,
+        34361964864,
+        68728359006,
+        137433334925,
+        274885893946,
+        549753823066,
+        1099512317195,
+        2199030994983,
+        4398042132058,
+        8796097178677,
+        17592201743645,
+        35184382493403,
+        70368793553320,
+        140737552791149,
+        281475113992290,
+        562950485500946,
+        1125901845007915,
+        2251809685315768,
+        4503610378267922,
+        9007176321432745,
+        18014375470332045,
+        36028762659225600,
+        72057490958712832
+      ],
+      "min_margin_units": 47884702,
+      "worst_error_over_tolerance": 0.9994474012470809,
+      "dropped": [],
+      "history": [
+        {
+          "iteration": 0,
+          "constraints_inputs": 2559,
+          "lp_margin_units": 235.65693902919136,
+          "full_margin_units": -45396.10031712867
+        },
+        {
+          "iteration": 1,
+          "constraints_inputs": 3071,
+          "lp_margin_units": 235.65693902919134,
+          "full_margin_units": -97097.15588209528
+        },
+        {
+          "iteration": 2,
+          "constraints_inputs": 3583,
+          "lp_margin_units": 235.65693902919125,
+          "full_margin_units": -5179.086995564014
+        },
+        {
+          "iteration": 3,
+          "constraints_inputs": 4095,
+          "lp_margin_units": 235.65693902919136,
+          "full_margin_units": -8536.903227209274
+        },
+        {
+          "iteration": 4,
+          "constraints_inputs": 4607,
+          "lp_margin_units": 235.65693902919156,
+          "full_margin_units": -6426.490569283327
+        },
+        {
+          "iteration": 5,
+          "constraints_inputs": 5119,
+          "lp_margin_units": 97.32779710118453,
+          "full_margin_units": -511.7098599599017
+        },
+        {
+          "iteration": 6,
+          "constraints_inputs": 5631,
+          "lp_margin_units": 53.57418606572757,
+          "full_margin_units": -29.263087743812548
+        },
+        {
+          "iteration": 7,
+          "constraints_inputs": 5679,
+          "lp_margin_units": 45.998556020660736,
+          "full_margin_units": 24.252062985068733
+        },
+        {
+          "iteration": 8,
+          "constraints_inputs": 5683,
+          "lp_margin_units": 45.66641205763348,
+          "full_margin_units": 45.66641205763153
+        }
+      ],
+      "inputs": 3133452,
+      "formal_verification": false,
+      "projected_cost": 140719.08675560285,
+      "num_rotations": 44,
+      "num_t_gates": 1,
+      "projected_rotation_eps": 1.8534217822524296e-13,
+      "nominal_mean_toffoli": 1397,
+      "scope": "Deterministic all-input phase model plus nominal Toffoli expectation; not official verification.",
+      "candidate": "runs\\invsqrt_phase_refit_v1\\drop_0.kmx",
+      "assembly_sha256": "2b365bdbe2b52d09e6fbba1f187913810c7c80aef77d386d2d84ba824cab0b67"
+    },
+    {
+      "status": "INFEASIBLE",
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "dropped": [
+        18
+      ],
+      "history": [
+        {
+          "iteration": 0,
+          "constraints_inputs": 2559,
+          "lp_margin_units": 164.80489308111964,
+          "full_margin_units": -45532.91254701314
+        },
+        {
+          "iteration": 1,
+          "constraints_inputs": 3071,
+          "lp_margin_units": 164.80489308111964,
+          "full_margin_units": -87689.86565977588
+        },
+        {
+          "iteration": 2,
+          "constraints_inputs": 3583,
+          "lp_margin_units": 164.80489308111962,
+          "full_margin_units": -33665.27378302434
+        },
+        {
+          "iteration": 3,
+          "constraints_inputs": 4095,
+          "lp_margin_units": 164.80489308111962,
+          "full_margin_units": -5771.827613241421
+        },
+        {
+          "iteration": 4,
+          "constraints_inputs": 4607,
+          "lp_margin_units": 164.80489308111964,
+          "full_margin_units": -1358.843458786605
+        },
+        {
+          "iteration": 5,
+          "constraints_inputs": 5119,
+          "lp_margin_units": 96.87763038170135,
+          "full_margin_units": -316.9475878309422
+        }
+      ],
+      "formal_verification": false
+    },
+    {
+      "status": "INFEASIBLE",
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "dropped": [
+        18,
+        19
+      ],
+      "history": [],
+      "formal_verification": false
+    },
+    {
+      "status": "INFEASIBLE",
+      "message": "The problem is infeasible. (HiGHS Status 8: model_status is Infeasible; primal_status is None)",
+      "dropped": [
+        18,
+        19,
+        20
+      ],
+      "history": [],
+      "formal_verification": false
+    }
+  ],
+  "official_verification": "NOT_RUN",
+  "seed_search_performed": false
+}

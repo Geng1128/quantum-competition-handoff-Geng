@@ -1,0 +1,230 @@
+[
+  {
+    "config": {
+      "address_bits": 8,
+      "fraction_bits": 29,
+      "slope_bits": 23,
+      "curvature_bits": 13
+    },
+    "screen": {
+      "status": "MODEL_PASS",
+      "inputs": 3133452,
+      "worst_error_over_tolerance": 0.45088583001510985,
+      "worst_x": 232434,
+      "min_margin_turns": 2.233127258186294e-11,
+      "formal_verification": false,
+      "scope": "Float64 numerical screen of an exact integer pipeline; no HMR or synthesis verification."
+    },
+    "table": "runs\\invsqrt_reconstruction_v1\\search\\8_29_23_13.npy",
+    "seconds": 2.2918195000092965
+  },
+  {
+    "config": {
+      "address_bits": 8,
+      "fraction_bits": 28,
+      "slope_bits": 23,
+      "curvature_bits": 13
+    },
+    "screen": {
+      "status": "MODEL_PASS",
+      "inputs": 3133452,
+      "worst_error_over_tolerance": 0.9599253129360793,
+      "worst_x": 254970,
+      "min_margin_turns": 2.3652426747600547e-12,
+      "formal_verification": false,
+      "scope": "Float64 numerical screen of an exact integer pipeline; no HMR or synthesis verification."
+    },
+    "table": "runs\\invsqrt_reconstruction_v1\\search\\8_28_23_13.npy",
+    "seconds": 2.281365700007882
+  },
+  {
+    "config": {
+      "address_bits": 8,
+      "fraction_bits": 28,
+      "slope_bits": 22,
+      "curvature_bits": 12
+    },
+    "screen": {
+      "status": "MODEL_PASS",
+      "inputs": 3133452,
+      "worst_error_over_tolerance": 0.9141402474931908,
+      "worst_x": 827322,
+      "min_margin_turns": 5.626423907134877e-12,
+      "formal_verification": false,
+      "scope": "Float64 numerical screen of an exact integer pipeline; no HMR or synthesis verification."
+    },
+    "table": "runs\\invsqrt_reconstruction_v1\\search\\8_28_22_12.npy",
+    "seconds": 2.2609652999963146
+  },
+  {
+    "config": {
+      "address_bits": 8,
+      "fraction_bits": 27,
+      "slope_bits": 22,
+      "curvature_bits": 12
+    },
+    "screen": {
+      "status": "MODEL_FAIL",
+      "inputs": 3133452,
+      "worst_error_over_tolerance": 1.7755318647823501,
+      "worst_x": 64483,
+      "min_margin_turns": -6.585449932572604e-10,
+      "formal_verification": false,
+      "scope": "Float64 numerical screen of an exact integer pipeline; no HMR or synthesis verification."
+    },
+    "table": "runs\\invsqrt_reconstruction_v1\\search\\8_27_22_12.npy",
+    "seconds": 2.4801565000088885
+  },
+  {
+    "config": {
+      "address_bits": 8,
+      "fraction_bits": 28,
+      "slope_bits": 22,
+      "curvature_bits": 11
+    },
+    "screen": {
+      "status": "MODEL_FAIL",
+      "inputs": 3133452,
+      "worst_error_over_tolerance": 1.104871356896923,
+      "worst_x": 222195,
+      "min_margin_turns": -1.795452445009402e-11,
+      "formal_verification": false,
+      "scope": "Float64 numerical screen of an exact integer pipeline; no HMR or synthesis verification."
+    },
+    "table": "runs\\invsqrt_reconstruction_v1\\search\\8_28_22_11.npy",
+    "seconds": 2.618808600003831
+  },
+  {
+    "config": {
+      "address_bits": 8,
+      "fraction_bits": 29,
+      "slope_bits": 22,
+      "curvature_bits": 12
+    },
+    "screen": {
+      "status": "MODEL_PASS",
+      "inputs": 3133452,
+      "worst_error_over_tolerance": 0.5059772369636064,
+      "worst_x": 2899779,
+      "min_margin_turns": 1.729197560570113e-11,
+      "formal_verification": false,
+      "scope": "Float64 numerical screen of an exact integer pipeline; no HMR or synthesis verification."
+    },
+    "table": "runs\\invsqrt_reconstruction_v1\\search\\8_29_22_12.npy",
+    "seconds": 2.5067672999866772
+  },
+  {
+    "config": {
+      "address_bits": 7,
+      "fraction_bits": 30,
+      "slope_bits": 24,
+      "curvature_bits": 14
+    },
+    "screen": {
+      "status": "MODEL_PASS",
+      "inputs": 3133452,
+      "worst_error_over_tolerance": 0.7600972020822686,
+      "worst_x": 1052654,
+      "min_margin_turns": 1.0495706103892533e-11,
+      "formal_verification": false,
+      "scope": "Float64 numerical screen of an exact integer pipeline; no HMR or synthesis verification."
+    },
+    "table": "runs\\invsqrt_reconstruction_v1\\search\\7_30_24_14.npy",
+    "seconds": 2.452583999984199
+  },
+  {
+    "config": {
+      "address_bits": 7,
+      "fraction_bits": 29,
+      "slope_bits": 23,
+      "curvature_bits": 13
+    },
+    "screen": {
+      "status": "MODEL_FAIL",
+      "inputs": 3133452,
+      "worst_error_over_tolerance": 1.1063232132480305,
+      "worst_x": 2162642,
+      "min_margin_turns": -1.1854280110547638e-10,
+      "formal_verification": false,
+      "scope": "Float64 numerical screen of an exact integer pipeline; no HMR or synthesis verification."
+    },
+    "table": "runs\\invsqrt_reconstruction_v1\\search\\7_29_23_13.npy",
+    "seconds": 1.977388700004667
+  },
+  {
+    "config": {
+      "address_bits": 9,
+      "fraction_bits": 28,
+      "slope_bits": 21,
+      "curvature_bits": 11
+    },
+    "screen": {
+      "status": "MODEL_PASS",
+      "inputs": 3133452,
+      "worst_error_over_tolerance": 0.9579691212964737,
+      "worst_x": 252403,
+      "min_margin_turns": 2.493281540531805e-12,
+      "formal_verification": false,
+      "scope": "Float64 numerical screen of an exact integer pipeline; no HMR or synthesis verification."
+    },
+    "table": "runs\\invsqrt_reconstruction_v1\\search\\9_28_21_11.npy",
+    "seconds": 3.3444559999916237
+  },
+  {
+    "config": {
+      "address_bits": 9,
+      "fraction_bits": 27,
+      "slope_bits": 21,
+      "curvature_bits": 11
+    },
+    "screen": {
+      "status": "MODEL_FAIL",
+      "inputs": 3133452,
+      "worst_error_over_tolerance": 1.7598919219478422,
+      "worst_x": 56818,
+      "min_margin_turns": -6.517441711980733e-10,
+      "formal_verification": false,
+      "scope": "Float64 numerical screen of an exact integer pipeline; no HMR or synthesis verification."
+    },
+    "table": "runs\\invsqrt_reconstruction_v1\\search\\9_27_21_11.npy",
+    "seconds": 3.125005699985195
+  },
+  {
+    "config": {
+      "address_bits": 9,
+      "fraction_bits": 28,
+      "slope_bits": 22,
+      "curvature_bits": 12
+    },
+    "screen": {
+      "status": "MODEL_PASS",
+      "inputs": 3133452,
+      "worst_error_over_tolerance": 0.9323380130609357,
+      "worst_x": 63350,
+      "min_margin_turns": 4.005821102907684e-12,
+      "formal_verification": false,
+      "scope": "Float64 numerical screen of an exact integer pipeline; no HMR or synthesis verification."
+    },
+    "table": "runs\\invsqrt_reconstruction_v1\\search\\9_28_22_12.npy",
+    "seconds": 3.1402898999804165
+  },
+  {
+    "config": {
+      "address_bits": 8,
+      "fraction_bits": 30,
+      "slope_bits": 24,
+      "curvature_bits": 14
+    },
+    "screen": {
+      "status": "MODEL_PASS",
+      "inputs": 3133452,
+      "worst_error_over_tolerance": 0.2262220434073345,
+      "worst_x": 2160063,
+      "min_margin_turns": 2.8263076135709345e-11,
+      "formal_verification": false,
+      "scope": "Float64 numerical screen of an exact integer pipeline; no HMR or synthesis verification."
+    },
+    "table": "runs\\invsqrt_reconstruction_v1\\search\\8_30_24_14.npy",
+    "seconds": 3.0432867000054102
+  }
+]

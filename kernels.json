@@ -1,0 +1,703 @@
+Warning: Looks like you're using an outdated `kaggle` version (installed: 2.2.3), please consider upgrading to the latest version (2.2.5)
+[
+  {
+    "ref": "kawh1111/qcomp-harvest-210",
+    "title": "Qcomp harvest 210",
+    "author": "kawh1111",
+    "lastRunTime": "2026-10-28T03:31:37.273000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "dungluongtuan/22-34-lb-reproducible-best-of-public-portfolio",
+    "title": "22.34 LB Reproducible Best-of-Public Portfolio",
+    "author": "Chi\u1ebfc l\u00e1",
+    "lastRunTime": "2026-10-28T03:10:31.740000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "manwithacat/dqi-salt-check-public-frontier",
+    "title": "DQI Salt Check: Public Frontier",
+    "author": "manwithacat",
+    "lastRunTime": "2026-10-28T04:48:57.483000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "manwithacat/prove-angle-k-for-every-measurement-outcome",
+    "title": "Prove ANGLE_k for every measurement outcome",
+    "author": "manwithacat",
+    "lastRunTime": "2026-10-28T00:43:38.907000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "manwithacat/kickmix-tools",
+    "title": "kickmix_tools",
+    "author": "manwithacat",
+    "lastRunTime": "2026-10-27T20:26:43.317000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "manwithacat/kickmix-fork-on-kaggle-same-results-less-memory",
+    "title": "kickmix fork on Kaggle: same results, less memory",
+    "author": "manwithacat",
+    "lastRunTime": "2026-10-27T21:10:49.980000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "anglolodorf/quantum-ai-frontier-v10",
+    "title": "Quantum AI Frontier v10",
+    "author": "ANGOUAH",
+    "lastRunTime": "2026-10-27T15:30:45.767000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "nilanjansaha123/21-87-fused-dqi-c46-chemistry-gold",
+    "title": "\ud83d\ude80 21.87+ Fused DQI & C46 Chemistry [Gold]",
+    "author": "Nilanjan_Saha123",
+    "lastRunTime": "2026-10-28T05:27:48.727000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "chaitanyajamble/google-quantum-ai-6",
+    "title": "Google Quantum AI 6 ",
+    "author": "Chaitanya Jamble",
+    "lastRunTime": "2026-10-27T16:14:40.483000",
+    "totalVotes": 3
+  },
+  {
+    "ref": "dennis6886/quantum-circuits-21-37712-fused-dqi-reproduction",
+    "title": "Quantum Circuits 21.37712 | Fused DQI Reproduction",
+    "author": "\u5976\u9f99",
+    "lastRunTime": "2026-10-27T14:20:46.117000",
+    "totalVotes": 2
+  },
+  {
+    "ref": "username1357/qcc-verified-21-34-portfolio",
+    "title": "QCC verified 21 34 portfolio",
+    "author": "username1357",
+    "lastRunTime": "2026-10-27T12:51:26.690000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "username1357/qcc-portfolio-21-34",
+    "title": "QCC portfolio 21 34",
+    "author": "username1357",
+    "lastRunTime": "2026-10-27T11:42:39.767000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "saurabhkumar234/quantum-v2-assembled-frontier-portfolio",
+    "title": "Quantum V2 Assembled Frontier Portfolio",
+    "author": "100rabh",
+    "lastRunTime": "2026-10-27T10:06:13.397000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "username1357/qcc-portfolio-manifest",
+    "title": "QCC portfolio manifest",
+    "author": "username1357",
+    "lastRunTime": "2026-10-27T09:45:03.397000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "saddamaditya/narrowed-877q-dqi-and-progressive-r10-chemistry",
+    "title": "Narrowed 877Q DQI and Progressive R10 Chemistry",
+    "author": "Maman Salto",
+    "lastRunTime": "2026-10-27T15:54:14.130000",
+    "totalVotes": 16
+  },
+  {
+    "ref": "chaitanyajamble/google-quantum-ai-verifiable-quantum-circuit-4",
+    "title": "Google Quantum AI - Verifiable Quantum Circuit  4",
+    "author": "Chaitanya Jamble",
+    "lastRunTime": "2026-10-27T08:40:32.397000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "saddamaditya/apex-portfolio-fused-dqi-c46-chemistry",
+    "title": "Apex Portfolio: Fused DQI & C46 Chemistry",
+    "author": "Maman Salto",
+    "lastRunTime": "2026-10-27T07:50:22",
+    "totalVotes": 0
+  },
+  {
+    "ref": "xhsmsuper/qcc-mix-submit",
+    "title": "QCC Mix Submit",
+    "author": "xhsmsuper",
+    "lastRunTime": "2026-10-27T07:51:35.693000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "saurabhkumar234/quantum-baseline-milestone-entry",
+    "title": "Quantum Baseline Milestone Entry",
+    "author": "100rabh",
+    "lastRunTime": "2026-10-27T07:00:01.937000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "saddamaditya/quantum-circuit-profiler-flame-charts-anatomy",
+    "title": "Quantum Circuit Profiler: Flame Charts & Anatomy",
+    "author": "Maman Salto",
+    "lastRunTime": "2026-10-27T06:59:14.060000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "saddamaditya/fused-decoder-c59-architecture-qcc-sota",
+    "title": "Fused Decoder & C59 Architecture \u2014 QCC SOTA",
+    "author": "Maman Salto",
+    "lastRunTime": "2026-10-27T06:42:11.317000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "username1357/qcc-portfolio-20-42",
+    "title": "QCC portfolio 20 42",
+    "author": "username1357",
+    "lastRunTime": "2026-10-27T05:14:56.413000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "chaitanyajamble/google-quantum-ai-verifiable-quantum-circuit-2",
+    "title": "Google Quantum AI - Verifiable Quantum Circuit  2",
+    "author": "Chaitanya Jamble",
+    "lastRunTime": "2026-10-27T05:50:51.113000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "saddamaditya/quantum-compiler-lab-taylor-dqi-j5-chemistry",
+    "title": "Quantum Compiler Lab: Taylor DQI & J5 Chemistry",
+    "author": "Maman Salto",
+    "lastRunTime": "2026-10-27T04:11:27.710000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "cosmorin/quantum-mrmeows-v7-reproduction",
+    "title": "Quantum mrmeows V7 reproduction",
+    "author": "cosmorin",
+    "lastRunTime": "2026-10-27T03:49:05.633000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "chaitanyajamble/google-quantum-ai-1",
+    "title": "GOOGLE Quantum AI 1",
+    "author": "Chaitanya Jamble",
+    "lastRunTime": "2026-10-27T03:50:36.370000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "michaelrustad/vqcc-r10-c46-four-word-chemistry-21-41-lb",
+    "title": "VQCC R10 C46 Four-Word Chemistry 21.41 LB",
+    "author": "Michael Rustad",
+    "lastRunTime": "2026-10-27T03:57:32.647000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "zikuanqi/submit-helper",
+    "title": "submit-helper",
+    "author": "Zikuan Qi",
+    "lastRunTime": "2026-10-27T08:32:18.460000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "chaitanyajamble/google-quantum-ai-verifiable-quantum-circuit-1",
+    "title": "Google Quantum AI - Verifiable Quantum Circuit 1",
+    "author": "Chaitanya Jamble",
+    "lastRunTime": "2026-10-27T03:17:50.667000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "cosmorin/muse-guard-quantum-20261027-mrmeows-v7",
+    "title": "Muse Guard Quantum 20261027 Mrmeows V7",
+    "author": "cosmorin",
+    "lastRunTime": "2026-10-27T07:02:43.953000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "manwithacat/composite-v3-mrmeows-somejoint",
+    "title": "Composite v3 MrMeows SomeJoint",
+    "author": "manwithacat",
+    "lastRunTime": "2026-10-27T01:24:48.657000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "michaelrustad/vqcc-r10-c46-chemistry-20-05-lb",
+    "title": "VQCC R10 C46 Chemistry 20.05 LB",
+    "author": "Michael Rustad",
+    "lastRunTime": "2026-10-27T00:53:12.227000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "manwithacat/is-the-63-qubit-inverse-square-root-optimal",
+    "title": "Is the 63-Qubit Inverse Square Root Optimal?",
+    "author": "manwithacat",
+    "lastRunTime": "2026-10-27T00:40:15.063000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "manwithacat/composite-v2-somejoint-heliosli-limbo",
+    "title": "Composite v2 SomeJoint Heliosli Limbo",
+    "author": "manwithacat",
+    "lastRunTime": "2026-10-27T00:22:53.293000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "manwithacat/composite-somejoint-dqi-limbo-c120",
+    "title": "Composite SomeJoint DQI Limbo C120",
+    "author": "manwithacat",
+    "lastRunTime": "2026-10-27T00:15:19.550000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "heliosli/the-dataset-is-now-public-now-enjoy",
+    "title": "The dataset is now public now. Enjoy!\u2b50\u2b50\u2b50",
+    "author": "Heliosli",
+    "lastRunTime": "2026-10-28T04:28:44.123000",
+    "totalVotes": 20
+  },
+  {
+    "ref": "manwithacat/limbo-ii-c120-portfolio",
+    "title": "Limbo II C120 Portfolio",
+    "author": "manwithacat",
+    "lastRunTime": "2026-10-26T22:30:37.167000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "clarelaurent/quantum-observatory-verified-metric",
+    "title": "Quantum Observatory Verified Metric",
+    "author": "Clare Laurent",
+    "lastRunTime": "2026-10-27T12:47:47.087000",
+    "totalVotes": 2
+  },
+  {
+    "ref": "clarelaurent/molecular-lookup-verified-metric",
+    "title": "Molecular Lookup Verified Metric",
+    "author": "Clare Laurent",
+    "lastRunTime": "2026-10-27T12:47:44.913000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "clarelaurent/syndrome-forge-verified-metric",
+    "title": "Syndrome Forge Verified Metric",
+    "author": "Clare Laurent",
+    "lastRunTime": "2026-10-27T12:47:42.303000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "clarelaurent/reciprocal-root-precision-proof-and-price",
+    "title": "Reciprocal Root: Precision, Proof and Price",
+    "author": "Clare Laurent",
+    "lastRunTime": "2026-10-26T21:02:21.243000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "manwithacat/cunning-circuits-ahmed-v8-explained",
+    "title": "Cunning Circuits: Ahmed v8 Explained",
+    "author": "manwithacat",
+    "lastRunTime": "2026-10-26T20:20:03.567000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "manwithacat/how-the-public-19-3-portfolio-works",
+    "title": "How the Public 19.3 Portfolio Works",
+    "author": "manwithacat",
+    "lastRunTime": "2026-10-26T20:01:47.817000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "nilanjansaha123/auto-updating-verified-quantum-portfolio-picker",
+    "title": "Auto-Updating Verified Quantum Portfolio Picker",
+    "author": "Nilanjan_Saha123",
+    "lastRunTime": "2026-10-27T11:28:20.067000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "manwithacat/chemistry-negative-results-what-fails-and-why",
+    "title": "Chemistry negative results: what fails and why",
+    "author": "manwithacat",
+    "lastRunTime": "2026-10-26T18:59:00.267000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "prvsiyan/quantum-circuit-compilation-visual-guide",
+    "title": "Quantum Circuit Compilation: Visual Guide",
+    "author": "prvsiyan",
+    "lastRunTime": "2026-10-26T18:07:20.643000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "manwithacat/how-public-15-75-circuits-gain",
+    "title": "How Public 15.75 Circuits Gain",
+    "author": "manwithacat",
+    "lastRunTime": "2026-10-26T17:35:35.493000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "tamzidullah/quantura-quantum-compilation-audited-baseline",
+    "title": "Quantura quantum compilation: audited baseline",
+    "author": "Tamzid Ullah",
+    "lastRunTime": "2026-10-27T00:53:39.997000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "adityaravi2/qcc-source-rebuild-full-verification",
+    "title": "QCC Source Rebuild Full Verification",
+    "author": "ADITYA RAVI",
+    "lastRunTime": "2026-10-27T16:27:59.520000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "kawh1111/qcomp-salt-test",
+    "title": "Qcomp salt test",
+    "author": "kawh1111",
+    "lastRunTime": "2026-10-26T13:12:52.327000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "kawh1111/qcomp-pitfalls-check",
+    "title": "Qcomp pitfalls check",
+    "author": "kawh1111",
+    "lastRunTime": "2026-10-26T13:10:47.107000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "username1357/qcc-verified-15-05-portfolio",
+    "title": "QCC verified 15.05 portfolio",
+    "author": "username1357",
+    "lastRunTime": "2026-10-26T11:22:05.583000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "knowautumnlarch/quantum-circuit-compilation-from-source",
+    "title": "Quantum Circuit Compilation from Source",
+    "author": "AutumnKnowLarch",
+    "lastRunTime": "2026-10-26T11:19:36.443000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "knowautumnlarch/notebook0896aec6d8",
+    "title": "notebook0896aec6d8",
+    "author": "AutumnKnowLarch",
+    "lastRunTime": "2026-10-26T09:16:56.067000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "nicholashuihk/vqcc-milestone-portfolio-v1",
+    "title": "VQCC Milestone portfolio-v1",
+    "author": "Nicholas Hui",
+    "lastRunTime": "2026-10-26T09:53:11.650000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "cosmorin/quantum-mrmeows-combined-lb-13-92043",
+    "title": "Quantum Mrmeows Combined LB 13 92043",
+    "author": "cosmorin",
+    "lastRunTime": "2026-10-26T07:05:17.493000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "mrmeows/qcc-14-50-everything-i-learned-open-circuits",
+    "title": "QCC 14.50 | Everything I learned + open circuits",
+    "author": "mrmeows",
+    "lastRunTime": "2026-10-26T06:53:17.023000",
+    "totalVotes": 6
+  },
+  {
+    "ref": "magmacot/qcc-76q-881q-dqi-verified-blend",
+    "title": "QCC 76Q | 881Q DQI | Verified Blend",
+    "author": "Magmucot",
+    "lastRunTime": "2026-10-26T04:50:52.267000",
+    "totalVotes": 4
+  },
+  {
+    "ref": "magmacot/qcc-12-12890-verified-blend-and-offset-polish",
+    "title": "QCC 12.12890 | Verified Blend and Offset Polish",
+    "author": "Magmucot",
+    "lastRunTime": "2026-10-26T04:34:16.797000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "cosmorin/quantum-combined-portfolio-lb-12-12851",
+    "title": "Quantum Combined Portfolio LB 12 12851",
+    "author": "cosmorin",
+    "lastRunTime": "2026-10-26T03:50:18.063000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "mrmeows/21-0-circuits-let-s-all-reach-the-plateau",
+    "title": "21.0 circuits, let's all reach the plateau!",
+    "author": "mrmeows",
+    "lastRunTime": "2026-10-27T02:15:06.830000",
+    "totalVotes": 47
+  },
+  {
+    "ref": "cosmorin/quantum-rudrabhaskar-r113-reproduction-lb-11-66988",
+    "title": "Quantum Rudrabhaskar R113 Reproduction LB 11 66988",
+    "author": "cosmorin",
+    "lastRunTime": "2026-10-26T01:44:31.127000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "michaelrustad/vqcc-r10-merged-group-chemistry-12-87-lb",
+    "title": "VQCC | R10 Merged-Group Chemistry | 12.87 LB",
+    "author": "Michael Rustad",
+    "lastRunTime": "2026-10-26T01:27:25.393000",
+    "totalVotes": 5
+  },
+  {
+    "ref": "cosmorin/quantum-seshuraju-reproduction-lb-11-38438",
+    "title": "Quantum SeshuRaju Reproduction LB 11 38438",
+    "author": "cosmorin",
+    "lastRunTime": "2026-10-26T00:39:45.827000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "busyaprime/lb-22-33981-22x-cheaper-than-google-s-circuits",
+    "title": "LB 22.33981 | 22x Cheaper Than Google's Circuits",
+    "author": "Akmal Xodarev (Busya PRIME)",
+    "lastRunTime": "2026-10-28T02:55:20.567000",
+    "totalVotes": 21
+  },
+  {
+    "ref": "rudrabhaskar/quantum-compilation-r113-verified-portfolio",
+    "title": "Quantum Compilation | R113 Verified Portfolio",
+    "author": "Rudra",
+    "lastRunTime": "2026-10-26T03:42:56.350000",
+    "totalVotes": 3
+  },
+  {
+    "ref": "clarelaurent/reciprocal-root-artifact-metric",
+    "title": "Reciprocal Root Artifact Metric",
+    "author": "Clare Laurent",
+    "lastRunTime": "2026-10-26T20:25:07.550000",
+    "totalVotes": 3
+  },
+  {
+    "ref": "devyanshchaudhary/quantum-circuit-compilation-from-source",
+    "title": "Quantum Circuit Compilation from Source",
+    "author": "Devyansh Chaudhary",
+    "lastRunTime": "2026-10-25T18:33:12.807000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "orecord/quantum-circuit-compilation-pipeline",
+    "title": "Quantum circuit compilation pipeline ",
+    "author": "Or4k2!",
+    "lastRunTime": "2026-10-27T18:41:41.873000",
+    "totalVotes": 4
+  },
+  {
+    "ref": "marculera/df-thc-merge-groups-before-dropping-them",
+    "title": "DF-THC: Merge Groups Before Dropping Them",
+    "author": "Lera",
+    "lastRunTime": "2026-10-27T09:57:53.653000",
+    "totalVotes": 5
+  },
+  {
+    "ref": "davidrolandpalsson/invsqrt-verifiable-quantum-circuit-compilation",
+    "title": "invsqrt \u2014 Verifiable Quantum Circuit Compilation",
+    "author": "David Roland Palsson ",
+    "lastRunTime": "2026-10-27T18:41:50.543000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "cosmorin/1-1-quantum-circuits-japanese",
+    "title": "\u306a\u305c1\u4f4d\u306f1\u4f4d\u306a\u306e\u304b \u2015 \u91cf\u5b50\u56de\u8def\uff08Quantum Circuits\uff09\u70b9\u5dee\u5206\u6790\uff08Japanese\uff09",
+    "author": "cosmorin",
+    "lastRunTime": "2026-10-25T14:15:16.983000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "cosmorin/why-1-is-1-quantum-circuits-gap-analysis",
+    "title": "Why #1 Is #1 \u2014 Quantum Circuits Gap Analysis",
+    "author": "cosmorin",
+    "lastRunTime": "2026-10-25T14:02:50.903000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "cosmorin/why-1-is-1-gap-analysis-across-6-competitions",
+    "title": "Why #1 Is #1: Gap Analysis Across 6 Competitions",
+    "author": "cosmorin",
+    "lastRunTime": "2026-10-25T14:02:13.750000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "manwithacat/ahmed-v3-10-55-a-credited-replication",
+    "title": "Ahmed v3 10.55: A Credited Replication",
+    "author": "manwithacat",
+    "lastRunTime": "2026-10-25T13:06:57.783000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "seshurajup/quantum-circuits-3-tasks-lb-19-2629",
+    "title": "Quantum Circuits | 3 Tasks | [LB 19.2629]",
+    "author": "SeshuRaju \ud83e\uddd8\u200d\u2642\ufe0f",
+    "lastRunTime": "2026-10-27T19:18:42.960000",
+    "totalVotes": 4
+  },
+  {
+    "ref": "rushikeshpundkar/qcc-verified-portfolio-df-thc-retraining-study",
+    "title": "QCC | Verified Portfolio + DF-THC Retraining Study",
+    "author": "Rushikesh Pundkar",
+    "lastRunTime": "2026-10-25T10:36:34.047000",
+    "totalVotes": 2
+  },
+  {
+    "ref": "avazaku/quantum-circuits-7-bit-bounds",
+    "title": "Quantum Circuits | 7-Bit Bounds",
+    "author": "avazaku",
+    "lastRunTime": "2026-10-27T08:57:21.967000",
+    "totalVotes": 5
+  },
+  {
+    "ref": "haideptry/qcc-verified-portfolio-modern-dqi-study",
+    "title": "QCC | Verified Portfolio + Modern DQI Study",
+    "author": "haideptry",
+    "lastRunTime": "2026-10-25T09:59:56.747000",
+    "totalVotes": 2
+  },
+  {
+    "ref": "karthikyaddanapudix/quantum-dqi-matched-holdout-audit",
+    "title": "Quantum DQI Matched Holdout Audit",
+    "author": "Karthik Yaddanapudix ",
+    "lastRunTime": "2026-10-25T07:58:37.207000",
+    "totalVotes": 2
+  },
+  {
+    "ref": "manwithacat/one-chemistry-copy-a-verified-dfthc-perturbation",
+    "title": "One Chemistry Copy: A Verified DFTHC Perturbation",
+    "author": "manwithacat",
+    "lastRunTime": "2026-10-25T06:18:33.713000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "mizeroluckygall/quantum-circuits-branch-aware-calibration",
+    "title": "Quantum Circuits | Branch-Aware Calibration",
+    "author": "Mizero Lucky Gall",
+    "lastRunTime": "2026-10-25T05:48:57.067000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "manwithacat/the-real-150k-was-the-friends-we-made",
+    "title": "The Real $150K Was the Friends We Made",
+    "author": "manwithacat",
+    "lastRunTime": "2026-10-27T22:55:33.533000",
+    "totalVotes": 14
+  },
+  {
+    "ref": "manwithacat/9-12718-a-credited-circuit-portfolio",
+    "title": "9.12718: A Credited Circuit Portfolio",
+    "author": "manwithacat",
+    "lastRunTime": "2026-10-25T04:19:23.780000",
+    "totalVotes": 4
+  },
+  {
+    "ref": "cosmorin/quantum-some-joint-reproduction-lb-8-95302",
+    "title": "Quantum Some Joint Reproduction \u2014 LB 8.95302",
+    "author": "cosmorin",
+    "lastRunTime": "2026-10-25T04:17:08.750000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "obstacledeveloper/qcc-9-12718-verified-three-task-walkthrough",
+    "title": "QCC 9.12718 | Verified Three-Task Walkthrough",
+    "author": "OBSTACLE DEVELOPER",
+    "lastRunTime": "2026-10-25T06:34:35.930000",
+    "totalVotes": 2
+  },
+  {
+    "ref": "kawh1111/qcomp-build-fact",
+    "title": "Qcomp build fact",
+    "author": "kawh1111",
+    "lastRunTime": "2026-10-25T03:42:21.630000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "kawh1111/qcomp-sweep-fact",
+    "title": "Qcomp sweep fact",
+    "author": "kawh1111",
+    "lastRunTime": "2026-10-25T03:34:09.877000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "kawh1111/qcomp-sweep-brot",
+    "title": "Qcomp sweep brot",
+    "author": "kawh1111",
+    "lastRunTime": "2026-10-25T03:24:27.867000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "kawh1111/qcomp-explore-kit",
+    "title": "Qcomp explore kit",
+    "author": "kawh1111",
+    "lastRunTime": "2026-10-25T03:23:15.283000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "palav17/verifiable-quantum-compilation-beating-the-refere",
+    "title": "Verifiable Quantum Compilation: Beating the Refere",
+    "author": "venkatesh pala",
+    "lastRunTime": "2026-10-25T03:14:01.190000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "cosmorin/quantum-kozykappa-reproduction-lb-8-04343",
+    "title": "Quantum Kozykappa Reproduction \u2014 LB 8.04343",
+    "author": "cosmorin",
+    "lastRunTime": "2026-10-25T01:51:51.673000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "kchuang/vqc-reproducible-build-invsqrt-dqi-dfthcsos",
+    "title": "VQC Reproducible Build: invsqrt / dqi / dfthcsos",
+    "author": "Kuan-Chieh Huang",
+    "lastRunTime": "2026-10-26T22:56:26.167000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "michaelrustad/qcc-dft-build",
+    "title": "qcc dft build",
+    "author": "Michael Rustad",
+    "lastRunTime": "2026-10-25T03:52:16.790000",
+    "totalVotes": 0
+  },
+  {
+    "ref": "somejoint/quantum-circuits-22-44-local-gm-our-chemistry",
+    "title": "Quantum Circuits | 22.44 Local GM: Our Chemistry",
+    "author": "Agniv Banerjee",
+    "lastRunTime": "2026-10-28T04:30:48.440000",
+    "totalVotes": 67
+  },
+  {
+    "ref": "manwithacat/one-bit-less-first-invsqrt-improvement",
+    "title": "One Bit Less: First Invsqrt Improvement",
+    "author": "manwithacat",
+    "lastRunTime": "2026-10-24T23:06:31.107000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "manwithacat/hello-world-quantum-circuit-compilation",
+    "title": "Hello World: Quantum Circuit Compilation",
+    "author": "manwithacat",
+    "lastRunTime": "2026-10-24T23:03:25.603000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "gleecf/vqcc-baseline-reference-submission",
+    "title": "VQCC Baseline Reference Submission",
+    "author": "GLee",
+    "lastRunTime": "2026-10-24T21:10:38.817000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "armineshaboyan/vqcc-signed-digit-invsqrt-submission",
+    "title": "VQCC signed-digit invsqrt submission",
+    "author": "Armine Shaboyan",
+    "lastRunTime": "2026-10-24T20:01:19.590000",
+    "totalVotes": 1
+  },
+  {
+    "ref": "rushikeshpundkar/the-unbearable-lightness-of-quantum-circuits",
+    "title": "\ud83e\udeb6  The Unbearable Lightness of Quantum Circuits",
+    "author": "Rushikesh Pundkar",
+    "lastRunTime": "2026-10-25T03:37:20.017000",
+    "totalVotes": 1
+  }
+]

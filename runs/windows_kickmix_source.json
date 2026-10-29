@@ -1,0 +1,15 @@
+{
+  "repository": "quantumlib/Qualtran",
+  "commit": "638777fac4379bc62e2a1e4a52cf1a1753895d48",
+  "workflow_run": 39863270051,
+  "artifact_id": 12462598075,
+  "artifact_sha256": "58054f09b35685428e38ff46e2bbe6a831aee7c8731b4d867e1f457d4f9312e9",
+  "wheel_sha256": "287ff6bc92c3dcb875d27a2393d9e41162f79f11ee8ce198788f7cc76a7a645d",
+  "venv": ".venv",
+  "scope": "Local compilation/model screening; formal scoring remains on pinned Kaggle Linux backend.",
+  "unicode_path_io": "Use BytesIO; native path opening failed for the workspace Chinese path.",
+  "canonical_parity": {
+    "invsqrt_binary_and_text": true,
+    "all_25_public_chemistry_circuits": true
+  }
+}

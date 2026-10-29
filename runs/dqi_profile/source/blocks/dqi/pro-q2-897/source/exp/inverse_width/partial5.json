@@ -1,0 +1,46 @@
+{
+  "prefix_AND": 9,
+  "final_AND": 5,
+  "outputs": [
+    1630906,
+    1131460,
+    458752
+  ],
+  "gates": [
+    [
+      16,
+      8192
+    ],
+    [
+      32,
+      16384
+    ],
+    [
+      80,
+      40960
+    ],
+    [
+      11240,
+      24088
+    ],
+    [
+      13088,
+      50928
+    ]
+  ],
+  "classes": [
+    64,
+    4032,
+    512,
+    1664,
+    3072
+  ],
+  "input_basis": "tower6 GF8 pair",
+  "output_bits": [
+    3,
+    4,
+    5
+  ],
+  "truth_table_values": 64,
+  "truth_table_errors": 0
+}

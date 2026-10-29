@@ -1,0 +1,40 @@
+{
+  "scope": "Mathematical gauge projection; official candidate verification NOT_RUN",
+  "source": "https://www.kaggle.com/code/kozykappa/adaptive-exact-gauge-cost-aware-qrom",
+  "source_body_sha256": "51578243c92a01c2e3c4577c52e76dae95232bf8286939b0d59ead4b002c211c",
+  "certificate": {
+    "method": "piecewise-quadratic interior rotation polish",
+    "source": "Independent extension of exact-column-gauge sweep",
+    "initial_l1_square": 1114.414600817991,
+    "final_l1_square": 1114.4096606785147,
+    "improvement_pct": 0.0004432945757036253,
+    "augmented_Gram_max_drift": 4.440892098500626e-15,
+    "history": [
+      {
+        "sweep": 0,
+        "accepted": 4086,
+        "l1_square": 1114.4123250358416
+      },
+      {
+        "sweep": 1,
+        "accepted": 4215,
+        "l1_square": 1114.4113881706892
+      },
+      {
+        "sweep": 2,
+        "accepted": 3911,
+        "l1_square": 1114.4096606785147
+      }
+    ],
+    "changed_body_words": false,
+    "verification_status": "NATIVE_GATE_PENDING",
+    "wall_seconds": 5.03401920000033
+  },
+  "before_Lambda": 291.57969284301197,
+  "projected_after_Lambda": 291.5784578081429,
+  "projected_after_lambda_eff": 47.62099777968072,
+  "projected_chemistry_cost_ratio": 0.9999978678493611,
+  "projected_total_score_multiplier": 1.0000007107178899,
+  "seconds": 5.036469300001045,
+  "formal_verification": "NOT_RUN"
+}

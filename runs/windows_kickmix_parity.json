@@ -1,0 +1,20 @@
+{
+  "status": "CANONICAL_SERIALIZATION_PARITY_PASS",
+  "kickmix_path": "D:\\\u803f\u4e16\u8363\\Documents\\Quantum\\.venv\\Lib\\site-packages\\kickmix.cp313-win_amd64.pyd",
+  "checks": {
+    "binary_roundtrip": {
+      "sha256": "58c7ccb60f61088c9c3d14a562f6c1d795bcb8ac12b364cb16941b54b74f5cf1",
+      "matches_kaggle_circuit": true,
+      "qubits": 82,
+      "num_ops": 37562
+    },
+    "text_compile": {
+      "sha256": "58c7ccb60f61088c9c3d14a562f6c1d795bcb8ac12b364cb16941b54b74f5cf1",
+      "matches_kaggle_circuit": true,
+      "qubits": 82,
+      "num_ops": 37562
+    }
+  },
+  "formal_kaggle_verification": false,
+  "scope": "Local Windows compiler only; formal verification uses pinned Kaggle Linux backend."
+}

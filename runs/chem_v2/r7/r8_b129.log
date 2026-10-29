@@ -1,0 +1,38 @@
+start R8 B143 C62: error_2 0.013445
+B141: after drop 0.029623 retrained 0.013797
+B139: after drop 0.049918 retrained 0.014566
+B137: after drop 0.053591 retrained 0.015502
+B135: after drop 0.058158 retrained 0.016261
+B133: after drop 0.069459 retrained 0.017499
+B131: after drop 0.070785 retrained 0.018703
+B129: after drop 0.071646 retrained 0.019820
+round 1: adam 0.019675 refit 0.019614 (13s)
+round 2: adam 0.019401 refit 0.019364 (28s)
+round 3: adam 0.019215 refit 0.019184 (41s)
+round 4: adam 0.019068 refit 0.019050 (55s)
+round 5: adam 0.018950 refit 0.018932 (69s)
+round 6: adam 0.018836 refit 0.018824 (82s)
+round 7: adam 0.018743 refit 0.018737 (96s)
+round 8: adam 0.018665 refit 0.018664 (109s)
+round 9: adam 0.018602 refit 0.018596 (122s)
+round 10: adam 0.018543 refit 0.018539 (136s)
+round 11: adam 0.018490 refit 0.018492 (149s)
+round 12: adam 0.018447 refit 0.018449 (163s)
+round 13: adam 0.018408 refit 0.018401 (177s)
+round 14: adam 0.018364 refit 0.018364 (192s)
+round 15: adam 0.018329 refit 0.018330 (207s)
+round 16: adam 0.018298 refit 0.018299 (222s)
+round 17: adam 0.018269 refit 0.018272 (236s)
+round 18: adam 0.018245 refit 0.018244 (250s)
+round 19: adam 0.018219 refit 0.018220 (264s)
+round 20: adam 0.018195 refit 0.018197 (277s)
+round 21: adam 0.018174 refit 0.018176 (291s)
+round 22: adam 0.018154 refit 0.018155 (305s)
+round 23: adam 0.018135 refit 0.018136 (318s)
+round 24: adam 0.018117 refit 0.018118 (331s)
+round 25: adam 0.018099 refit 0.018102 (344s)
+round 26: adam 0.018084 refit 0.018084 (358s)
+round 27: adam 0.018067 refit 0.018068 (371s)
+round 28: adam 0.018051 refit 0.018053 (385s)
+round 29: adam 0.018036 refit 0.018038 (398s)
+round 30: adam 0.018021 refit 0.018023 (411s)

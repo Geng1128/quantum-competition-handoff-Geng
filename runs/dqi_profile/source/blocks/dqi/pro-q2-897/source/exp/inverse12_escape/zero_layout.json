@@ -1,0 +1,30 @@
+{
+  "norm_coordinate": 3,
+  "raw_keep_coeff": 14,
+  "input_form": 58,
+  "left_w": 1,
+  "right_w": 4,
+  "pair_forms": [
+    2,
+    5
+  ],
+  "linear_correction": 3,
+  "cache_rows": [
+    14,
+    1,
+    2,
+    4
+  ],
+  "cache_columns": [
+    2,
+    5,
+    9,
+    1
+  ],
+  "raw_cache_rows": [
+    27,
+    41,
+    5,
+    14
+  ]
+}

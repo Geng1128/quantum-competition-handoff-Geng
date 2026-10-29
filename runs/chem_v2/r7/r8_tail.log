@@ -1,0 +1,8 @@
+resuming after stage 32
+start R8 B143 C62 error_2 0.014895 direction nearest
+stage 36: frozen 58344/85800 after-freeze 0.014837 retrained 0.014358 (124s)
+stage 40: frozen 65208/85800 after-freeze 0.016251 retrained 0.015093 (234s)
+stage 44: frozen 72072/85800 after-freeze 0.018675 retrained 0.016764 (344s)
+stage 48: frozen 78936/85800 after-freeze 0.027080 retrained 0.022487 (457s)
+stage 52: frozen 85800/85800 after-freeze 0.095576 retrained 0.093903 (541s)
+final w: error_2 0.085978

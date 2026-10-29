@@ -1,0 +1,41 @@
+{
+  "body_bytes": 514599,
+  "body_lines": 37585,
+  "body_sha256": "1d0e6d52eb79b8be4216bb276c22988c514f61e8dd06b3fb3edf8d9439ac4828",
+  "cell_index": 15,
+  "cell_source_sha256": "3562f6986fa613c102afd45dc0aaaa2d726446d47b16162be64834e00070b6d5",
+  "count_scope": "Static text operation counts, including every conditional branch. These are not executed gate counts, verifier resource costs, or a Kaggle score.",
+  "magic": "%%writefile src/phuc_exp222/invsqrt.kmx",
+  "notebook_filename": "quantum-circuits-joint-norm-and-compact-dqi.ipynb",
+  "notebook_sha256": "0ee01c1a037c4a1f340d243768a7059b5a7414ad375a8a1384cb41501b61b10e",
+  "num_qubits_from_max_wire": 82,
+  "phase_counts": {
+    "clifford": 2,
+    "synthesis": 44,
+    "t": 1
+  },
+  "phase_sites_sha256": "2bf92ed7215775afd88315be6b5ea94bc34d233faeb6c9793f401a71cdce90dd",
+  "schema_version": 1,
+  "script_version_id": 362074479,
+  "source_url": "https://www.kaggle.com/code/anazemcev/quantum-circuits-joint-norm-and-compact-dqi?scriptVersionId=362074479",
+  "static_directive_counts": {
+    "APPEND_TO_REGISTER": 22,
+    "REGISTER": 1
+  },
+  "static_operation_count": 37562,
+  "static_operation_counts": {
+    "BIT_INVERT": 2,
+    "CCX": 1053,
+    "CSWAP": 356,
+    "CX": 10319,
+    "CZ": 7305,
+    "HMR": 1084,
+    "INFO_TAG": 4,
+    "POP_CONDITION": 7197,
+    "PUSH_CONDITION": 7197,
+    "R": 1004,
+    "X": 1093,
+    "Z": 901,
+    "Z_POW": 47
+  }
+}

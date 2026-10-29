@@ -1,0 +1,481 @@
+{
+  "angle_unit": "half_turns",
+  "body_sha256": "1d0e6d52eb79b8be4216bb276c22988c514f61e8dd06b3fb3edf8d9439ac4828",
+  "phase_sites": [
+    {
+      "angle_text": "0.000007629395503466773233169906376360813737846910953521728515625",
+      "angle_unit": "half_turns",
+      "assembly_line": 6925,
+      "cell_line": 6926,
+      "classification": "synthesis",
+      "half_turns_exact": "70368753144781/9223372036854775808",
+      "source_line": "Z_POW q64 0.000007629395503466773233169906376360813737846910953521728515625",
+      "target_wire": "q64"
+    },
+    {
+      "angle_text": "0.000015258786603852890310928369643761470797471702098846435546875",
+      "angle_unit": "half_turns",
+      "assembly_line": 6926,
+      "cell_line": 6927,
+      "classification": "synthesis",
+      "half_turns_exact": "140737465678311/9223372036854775808",
+      "source_line": "Z_POW q65 0.000015258786603852890310928369643761470797471702098846435546875",
+      "target_wire": "q65"
+    },
+    {
+      "angle_text": "0.000030517577928654347589609852064995720866136252880096435546875",
+      "angle_unit": "half_turns",
+      "assembly_line": 6927,
+      "cell_line": 6928,
+      "classification": "synthesis",
+      "half_turns_exact": "281474974899687/9223372036854775808",
+      "source_line": "Z_POW q66 0.000030517577928654347589609852064995720866136252880096435546875",
+      "target_wire": "q66"
+    },
+    {
+      "angle_text": "0.000061035158007112359258850009524621782475151121616363525390625",
+      "angle_unit": "half_turns",
+      "assembly_line": 6928,
+      "cell_line": 6929,
+      "classification": "synthesis",
+      "half_turns_exact": "562949969627813/9223372036854775808",
+      "source_line": "Z_POW q67 0.000061035158007112359258850009524621782475151121616363525390625",
+      "target_wire": "q67"
+    },
+    {
+      "angle_text": "0.0001220703075199901059544327353023618343286216259002685546875",
+      "angle_unit": "half_turns",
+      "assembly_line": 6929,
+      "cell_line": 6930,
+      "classification": "synthesis",
+      "half_turns_exact": "281474965227535/2305843009213693952",
+      "source_line": "Z_POW q68 0.0001220703075199901059544327353023618343286216259002685546875",
+      "target_wire": "q68"
+    },
+    {
+      "angle_text": "0.000244140621162312562199281362751435153768397867679595947265625",
+      "angle_unit": "half_turns",
+      "assembly_line": 6930,
+      "cell_line": 6931,
+      "classification": "synthesis",
+      "half_turns_exact": "2251799778288829/9223372036854775808",
+      "source_line": "Z_POW q69 0.000244140621162312562199281362751435153768397867679595947265625",
+      "target_wire": "q69"
+    },
+    {
+      "angle_text": "0.000488281243491727888657305545194731166702695190906524658203125",
+      "angle_unit": "half_turns",
+      "assembly_line": 6931,
+      "cell_line": 6932,
+      "classification": "synthesis",
+      "half_turns_exact": "4503599567342281/9223372036854775808",
+      "source_line": "Z_POW q70 0.000488281243491727888657305545194731166702695190906524658203125",
+      "target_wire": "q70"
+    },
+    {
+      "angle_text": "0.00097656249867518799510912597128253764822147786617279052734375",
+      "angle_unit": "half_turns",
+      "assembly_line": 6932,
+      "cell_line": 6933,
+      "classification": "synthesis",
+      "half_turns_exact": "4503599621260879/4611686018427387904",
+      "source_line": "Z_POW q71 0.00097656249867518799510912597128253764822147786617279052734375",
+      "target_wire": "q71"
+    },
+    {
+      "angle_text": "0.001953124998294235130369411734818640979938209056854248046875",
+      "angle_unit": "half_turns",
+      "assembly_line": 6933,
+      "cell_line": 6934,
+      "classification": "synthesis",
+      "half_turns_exact": "2251799811718635/1152921504606846976",
+      "source_line": "Z_POW q72 0.001953124998294235130369411734818640979938209056854248046875",
+      "target_wire": "q72"
+    },
+    {
+      "angle_text": "0.003906249988066976745575142881961028251680545508861541748046875",
+      "angle_unit": "half_turns",
+      "assembly_line": 6934,
+      "cell_line": 6935,
+      "classification": "synthesis",
+      "half_turns_exact": "36028796908901255/9223372036854775808",
+      "source_line": "Z_POW q73 0.003906249988066976745575142881961028251680545508861541748046875",
+      "target_wire": "q73"
+    },
+    {
+      "angle_text": "0.007812499954767747269331057413666030697640962898731231689453125",
+      "angle_unit": "half_turns",
+      "assembly_line": 6935,
+      "cell_line": 6936,
+      "classification": "synthesis",
+      "half_turns_exact": "72057593620734041/9223372036854775808",
+      "source_line": "Z_POW q74 0.007812499954767747269331057413666030697640962898731231689453125",
+      "target_wire": "q74"
+    },
+    {
+      "angle_text": "0.0156249998238037900340213770533637216431088745594024658203125",
+      "angle_unit": "half_turns",
+      "assembly_line": 6936,
+      "cell_line": 6937,
+      "classification": "synthesis",
+      "half_turns_exact": "36028796612683169/2305843009213693952",
+      "source_line": "Z_POW q75 0.0156249998238037900340213770533637216431088745594024658203125",
+      "target_wire": "q75"
+    },
+    {
+      "angle_text": "0.031249999455194540681941817172884157116641290485858917236328125",
+      "angle_unit": "half_turns",
+      "assembly_line": 6937,
+      "cell_line": 6938,
+      "classification": "synthesis",
+      "half_turns_exact": "288230371126768305/9223372036854775808",
+      "source_line": "Z_POW q76 0.031249999455194540681941817172884157116641290485858917236328125",
+      "target_wire": "q76"
+    },
+    {
+      "angle_text": "0.062500000201582495379208637142909310568938963115215301513671875",
+      "angle_unit": "half_turns",
+      "assembly_line": 6938,
+      "cell_line": 6939,
+      "classification": "synthesis",
+      "half_turns_exact": "576460754162693839/9223372036854775808",
+      "source_line": "Z_POW q77 0.062500000201582495379208637142909310568938963115215301513671875",
+      "target_wire": "q77"
+    },
+    {
+      "angle_text": "0.1249999974869483985485951738070298233651556074619293212890625",
+      "angle_unit": "half_turns",
+      "assembly_line": 6939,
+      "cell_line": 6940,
+      "classification": "synthesis",
+      "half_turns_exact": "288230370357009277/2305843009213693952",
+      "source_line": "Z_POW q78 0.1249999974869483985485951738070298233651556074619293212890625",
+      "target_wire": "q78"
+    },
+    {
+      "angle_text": "0.25",
+      "angle_unit": "half_turns",
+      "assembly_line": 6940,
+      "cell_line": 6941,
+      "classification": "t",
+      "half_turns_exact": "1/4",
+      "source_line": "Z_POW q79 0.25",
+      "target_wire": "q79"
+    },
+    {
+      "angle_text": "0.5",
+      "angle_unit": "half_turns",
+      "assembly_line": 6941,
+      "cell_line": 6942,
+      "classification": "clifford",
+      "half_turns_exact": "1/2",
+      "source_line": "Z_POW q80 0.5",
+      "target_wire": "q80"
+    },
+    {
+      "angle_text": "1.0",
+      "angle_unit": "half_turns",
+      "assembly_line": 6942,
+      "cell_line": 6943,
+      "classification": "clifford",
+      "half_turns_exact": "1",
+      "source_line": "Z_POW q81 1.0",
+      "target_wire": "q81"
+    },
+    {
+      "angle_text": "0.000000000029178990278676264491508618448278866708278656005859375",
+      "angle_unit": "half_turns",
+      "assembly_line": 10977,
+      "cell_line": 10978,
+      "classification": "synthesis",
+      "half_turns_exact": "269128683/9223372036854775808",
+      "source_line": "Z_POW q45 0.000000000029178990278676264491508618448278866708278656005859375",
+      "target_wire": "q45"
+    },
+    {
+      "angle_text": "0.00000000005817836989073510434167246785364113748073577880859375",
+      "angle_unit": "half_turns",
+      "assembly_line": 10978,
+      "cell_line": 10979,
+      "classification": "synthesis",
+      "half_turns_exact": "268300375/4611686018427387904",
+      "source_line": "Z_POW q46 0.00000000005817836989073510434167246785364113748073577880859375",
+      "target_wire": "q46"
+    },
+    {
+      "angle_text": "0.0000000001166809379150868242192018442437984049320220947265625",
+      "angle_unit": "half_turns",
+      "assembly_line": 10979,
+      "cell_line": 10980,
+      "classification": "synthesis",
+      "half_turns_exact": "269047925/2305843009213693952",
+      "source_line": "Z_POW q47 0.0000000001166809379150868242192018442437984049320220947265625",
+      "target_wire": "q47"
+    },
+    {
+      "angle_text": "0.0000000002325718979380442252846705741831101477146148681640625",
+      "angle_unit": "half_turns",
+      "assembly_line": 10980,
+      "cell_line": 10981,
+      "classification": "synthesis",
+      "half_turns_exact": "536274285/2305843009213693952",
+      "source_line": "Z_POW q48 0.0000000002325718979380442252846705741831101477146148681640625",
+      "target_wire": "q48"
+    },
+    {
+      "angle_text": "0.00000000046454861420304471852915639829006977379322052001953125",
+      "angle_unit": "half_turns",
+      "assembly_line": 10981,
+      "cell_line": 10982,
+      "classification": "synthesis",
+      "half_turns_exact": "2142352349/4611686018427387904",
+      "source_line": "Z_POW q49 0.00000000046454861420304471852915639829006977379322052001953125",
+      "target_wire": "q49"
+    },
+    {
+      "angle_text": "0.00000000093111256183574242495382122797309421002864837646484375",
+      "angle_unit": "half_turns",
+      "assembly_line": 10982,
+      "cell_line": 10983,
+      "classification": "synthesis",
+      "half_turns_exact": "4293998783/4611686018427387904",
+      "source_line": "Z_POW q50 0.00000000093111256183574242495382122797309421002864837646484375",
+      "target_wire": "q50"
+    },
+    {
+      "angle_text": "0.00000000186325721149814549360002047251327894628047943115234375",
+      "angle_unit": "half_turns",
+      "assembly_line": 10983,
+      "cell_line": 10984,
+      "classification": "synthesis",
+      "half_turns_exact": "8592757231/4611686018427387904",
+      "source_line": "Z_POW q51 0.00000000186325721149814549360002047251327894628047943115234375",
+      "target_wire": "q51"
+    },
+    {
+      "angle_text": "0.000000003725531695641937091068029985763132572174072265625",
+      "angle_unit": "half_turns",
+      "assembly_line": 10984,
+      "cell_line": 10985,
+      "classification": "synthesis",
+      "half_turns_exact": "536905701/144115188075855872",
+      "source_line": "Z_POW q52 0.000000003725531695641937091068029985763132572174072265625",
+      "target_wire": "q52"
+    },
+    {
+      "angle_text": "0.00000000745154361456688840714690513777895830571651458740234375",
+      "angle_unit": "half_turns",
+      "assembly_line": 10985,
+      "cell_line": 10986,
+      "classification": "synthesis",
+      "half_turns_exact": "34364179503/4611686018427387904",
+      "source_line": "Z_POW q53 0.00000000745154361456688840714690513777895830571651458740234375",
+      "target_wire": "q53"
+    },
+    {
+      "angle_text": "0.000000014900552029761295058651882072808803059160709381103515625",
+      "angle_unit": "half_turns",
+      "assembly_line": 10986,
+      "cell_line": 10987,
+      "classification": "synthesis",
+      "half_turns_exact": "137433334925/9223372036854775808",
+      "source_line": "Z_POW q54 0.000000014900552029761295058651882072808803059160709381103515625",
+      "target_wire": "q54"
+    },
+    {
+      "angle_text": "0.00000002980318834018731710688854263935354538261890411376953125",
+      "angle_unit": "half_turns",
+      "assembly_line": 10987,
+      "cell_line": 10988,
+      "classification": "synthesis",
+      "half_turns_exact": "137442946973/4611686018427387904",
+      "source_line": "Z_POW q55 0.00000002980318834018731710688854263935354538261890411376953125",
+      "target_wire": "q55"
+    },
+    {
+      "angle_text": "0.00000005960442893003688180630916804148000665009021759033203125",
+      "angle_unit": "half_turns",
+      "assembly_line": 10988,
+      "cell_line": 10989,
+      "classification": "synthesis",
+      "half_turns_exact": "274876911533/4611686018427387904",
+      "source_line": "Z_POW q56 0.00000005960442893003688180630916804148000665009021759033203125",
+      "target_wire": "q56"
+    },
+    {
+      "angle_text": "0.000000119209364297739005278398138898410252295434474945068359375",
+      "angle_unit": "half_turns",
+      "assembly_line": 10989,
+      "cell_line": 10990,
+      "classification": "synthesis",
+      "half_turns_exact": "1099512317195/9223372036854775808",
+      "source_line": "Z_POW q57 0.000000119209364297739005278398138898410252295434474945068359375",
+      "target_wire": "q57"
+    },
+    {
+      "angle_text": "0.000000238419418212352900166006719473443808965384960174560546875",
+      "angle_unit": "half_turns",
+      "assembly_line": 10990,
+      "cell_line": 10991,
+      "classification": "synthesis",
+      "half_turns_exact": "2199030994983/9223372036854775808",
+      "source_line": "Z_POW q58 0.000000238419418212352900166006719473443808965384960174560546875",
+      "target_wire": "q58"
+    },
+    {
+      "angle_text": "0.00000047683668342600633860417502773998421616852283477783203125",
+      "angle_unit": "half_turns",
+      "assembly_line": 10991,
+      "cell_line": 10992,
+      "classification": "synthesis",
+      "half_turns_exact": "2199021066029/4611686018427387904",
+      "source_line": "Z_POW q59 0.00000047683668342600633860417502773998421616852283477783203125",
+      "target_wire": "q59"
+    },
+    {
+      "angle_text": "0.000000953674767051521966865212931452333577908575534820556640625",
+      "angle_unit": "half_turns",
+      "assembly_line": 10992,
+      "cell_line": 10993,
+      "classification": "synthesis",
+      "half_turns_exact": "8796097178677/9223372036854775808",
+      "source_line": "Z_POW q60 0.000000953674767051521966865212931452333577908575534820556640625",
+      "target_wire": "q60"
+    },
+    {
+      "angle_text": "0.000001907350334926318814743328999838922754861414432525634765625",
+      "angle_unit": "half_turns",
+      "assembly_line": 10993,
+      "cell_line": 10994,
+      "classification": "synthesis",
+      "half_turns_exact": "17592201743645/9223372036854775808",
+      "source_line": "Z_POW q61 0.000001907350334926318814743328999838922754861414432525634765625",
+      "target_wire": "q61"
+    },
+    {
+      "angle_text": "0.000003814698393690848197967735444535719580017030239105224609375",
+      "angle_unit": "half_turns",
+      "assembly_line": 10994,
+      "cell_line": 10995,
+      "classification": "synthesis",
+      "half_turns_exact": "35184382493403/9223372036854775808",
+      "source_line": "Z_POW q62 0.000003814698393690848197967735444535719580017030239105224609375",
+      "target_wire": "q62"
+    },
+    {
+      "angle_text": "0.000007629399884569350309693192002669093199074268341064453125",
+      "angle_unit": "half_turns",
+      "assembly_line": 10995,
+      "cell_line": 10996,
+      "classification": "synthesis",
+      "half_turns_exact": "8796099194165/1152921504606846976",
+      "source_line": "Z_POW q63 0.000007629399884569350309693192002669093199074268341064453125",
+      "target_wire": "q63"
+    },
+    {
+      "angle_text": "0.000015258796048645711408708880441054134280420839786529541015625",
+      "angle_unit": "half_turns",
+      "assembly_line": 10996,
+      "cell_line": 10997,
+      "classification": "synthesis",
+      "half_turns_exact": "140737552791149/9223372036854775808",
+      "source_line": "Z_POW q64 0.000015258796048645711408708880441054134280420839786529541015625",
+      "target_wire": "q64"
+    },
+    {
+      "angle_text": "0.00003051759300910458251598900147882886813022196292877197265625",
+      "angle_unit": "half_turns",
+      "assembly_line": 10997,
+      "cell_line": 10998,
+      "classification": "synthesis",
+      "half_turns_exact": "140737556996145/4611686018427387904",
+      "source_line": "Z_POW q78 0.00003051759300910458251598900147882886813022196292877197265625",
+      "target_wire": "q78"
+    },
+    {
+      "angle_text": "0.000061035216452087997889008885721295882831327617168426513671875",
+      "angle_unit": "half_turns",
+      "assembly_line": 10998,
+      "cell_line": 10999,
+      "classification": "synthesis",
+      "half_turns_exact": "562950508687567/9223372036854775808",
+      "source_line": "Z_POW q65 0.000061035216452087997889008885721295882831327617168426513671875",
+      "target_wire": "q65"
+    },
+    {
+      "angle_text": "0.000122070522636301913819989461984505396685563027858734130859375",
+      "angle_unit": "half_turns",
+      "assembly_line": 10999,
+      "cell_line": 11000,
+      "classification": "synthesis",
+      "half_turns_exact": "1125901845007915/9223372036854775808",
+      "source_line": "Z_POW q69 0.000122070522636301913819989461984505396685563027858734130859375",
+      "target_wire": "q69"
+    },
+    {
+      "angle_text": "0.000244141346032787187429746733613455944578163325786590576171875",
+      "angle_unit": "half_turns",
+      "assembly_line": 11000,
+      "cell_line": 11001,
+      "classification": "synthesis",
+      "half_turns_exact": "2251806464038895/9223372036854775808",
+      "source_line": "Z_POW q70 0.000244141346032787187429746733613455944578163325786590576171875",
+      "target_wire": "q70"
+    },
+    {
+      "angle_text": "0.00048828045289801662309780994064567494206130504608154296875",
+      "angle_unit": "half_turns",
+      "assembly_line": 11001,
+      "cell_line": 11002,
+      "classification": "synthesis",
+      "half_turns_exact": "281474517212647/576460752303423488",
+      "source_line": "Z_POW q71 0.00048828045289801662309780994064567494206130504608154296875",
+      "target_wire": "q71"
+    },
+    {
+      "angle_text": "0.000976563623333087139910535512399292201735079288482666015625",
+      "angle_unit": "half_turns",
+      "assembly_line": 11002,
+      "cell_line": 11003,
+      "classification": "synthesis",
+      "half_turns_exact": "1125901201957497/1152921504606846976",
+      "source_line": "Z_POW q76 0.000976563623333087139910535512399292201735079288482666015625",
+      "target_wire": "q76"
+    },
+    {
+      "angle_text": "0.001953118776800059929778241585296427729190327227115631103515625",
+      "angle_unit": "half_turns",
+      "assembly_line": 11003,
+      "cell_line": 11004,
+      "classification": "synthesis",
+      "half_turns_exact": "18014341110593677/9223372036854775808",
+      "source_line": "Z_POW q77 0.001953118776800059929778241585296427729190327227115631103515625",
+      "target_wire": "q77"
+    },
+    {
+      "angle_text": "0.003906242549419403076171875",
+      "angle_unit": "half_turns",
+      "assembly_line": 11004,
+      "cell_line": 11005,
+      "classification": "synthesis",
+      "half_turns_exact": "524287/134217728",
+      "source_line": "Z_POW q66 0.003906242549419403076171875",
+      "target_wire": "q66"
+    },
+    {
+      "angle_text": "0.007812492549419403076171875",
+      "angle_unit": "half_turns",
+      "assembly_line": 11005,
+      "cell_line": 11006,
+      "classification": "synthesis",
+      "half_turns_exact": "1048575/134217728",
+      "source_line": "Z_POW q72 0.007812492549419403076171875",
+      "target_wire": "q72"
+    }
+  ],
+  "positions": {
+    "assembly_line": "1-based body line",
+    "cell_line": "1-based cell line, including magic"
+  },
+  "schema_version": 1
+}

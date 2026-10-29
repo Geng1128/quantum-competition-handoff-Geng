@@ -1,0 +1,162 @@
+{
+  "repository": "quantum-competition",
+  "created": "2026-10-29",
+  "purpose": "Google Quantum AI Verifiable Quantum Circuit Compilation competition research handoff",
+  "tracked_scope": [
+    "HANDOFF.md",
+    "experiments/",
+    "scripts/",
+    "tests/",
+    "runs/dqi_profile/source/",
+    "runs/*.json and selected chemistry logs/results",
+    "external/new_public/rustad_r10_src/src/",
+    "external/new_public/rustad_r10_src/third_party/",
+    "selected small NPZ checkpoints listed below"
+  ],
+  "excluded_scope": [
+    "external/competition/ and verifier binaries",
+    "external/*/submission.zip, *.kmb and extracted public circuit bundles",
+    "runs/**/submission.zip, *.kmb, *.npy, *.npz and resume checkpoints unless force-added as selected samples",
+    "Python environments, caches, bytecode, logs marked local-only, credentials and tokens"
+  ],
+  "selected_artifacts": [
+    {
+      "path": "HANDOFF.md",
+      "bytes": 26347,
+      "sha256": "0abf10911dab3b309db99f1b083402f12b02f20f25a3ee1ed5f0fb69b481099c"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 1278,
+      "sha256": "a5e5d9eaef3c03888758e680451e0c7967eda6fae42abb91703d9af9ae7baa87"
+    },
+    {
+      "path": "kernels.json",
+      "bytes": 23311,
+      "sha256": "81fe43c47381f87a6177ee7c7ee4036171370f8ea5c635c376f4448c2058004b"
+    },
+    {
+      "path": "runs/profile_20261029.json",
+      "bytes": 6557,
+      "sha256": "2cbde2ed11e1961e8cee694869655286985c9f374dfb5c0d8fcf950d638454a0"
+    },
+    {
+      "path": "runs/kaggle_leaderboard.json",
+      "bytes": 1996234,
+      "sha256": "4fe7fabc985013a654757905073c733f82c6ada46482bb7c8525b3c2dc619b9b"
+    },
+    {
+      "path": "runs/kaggle_discussions_20261029.json",
+      "bytes": 199078,
+      "sha256": "409cfcb00350c77e6479c24474ee2052d5eb1b7c4b7e55012ae8d25df4832306"
+    },
+    {
+      "path": "runs/submission_day_20261029.json",
+      "bytes": 994,
+      "sha256": "6e36bb4a5698cb09e5348e290c03d30043d7d51cbaa4d4e45c6ecd884a22cc64"
+    },
+    {
+      "path": "runs/job_state.json",
+      "bytes": 4605,
+      "sha256": "7bad6be72bdbb147ba88b9ba681f030f2893ce3ae66f00a4dfddd99cb338c5f3"
+    },
+    {
+      "path": "runs/dqi_profile/source/blocks/dqi/pro-q2-897/source/build_897.py",
+      "bytes": 1892,
+      "sha256": "f7efed57d6e51e3d826a1acf8a0c8fe718df0202ff4d7a6e4cb3c75646f3d5b0"
+    },
+    {
+      "path": "runs/dqi_profile/source/blocks/dqi/pro-q2-897/source/final_decoder/decode.py",
+      "bytes": 19347,
+      "sha256": "71dc58dd9cb0bc22c3c803b0362e6af00f3b5b5e1add19ce9a2caad90368be5b"
+    },
+    {
+      "path": "runs/dqi_profile/source/blocks/dqi/pro-q2-897/source/exp/arithmetic/field.py",
+      "bytes": 20000,
+      "sha256": "d1d782fa966853ef87905f2352db162a98bb92f758e1cac31c1cc7ed46bbdd61"
+    },
+    {
+      "path": "external/new_public/rustad_r10_src/src/pq.py",
+      "bytes": 10002,
+      "sha256": "c718fcfab5d2a7704af6ac22ac8eb0d331e8b47f62f231bca42142ebc72a0c8c"
+    },
+    {
+      "path": "external/new_public/rustad_r10_src/src/pq_lb.py",
+      "bytes": 6594,
+      "sha256": "a912abd6f94a6fe8709b4f428914693d3a17c021144882f39b8d935824d8d17d"
+    },
+    {
+      "path": "external/new_public/rustad_r10_src/src/gauge_qrom.py",
+      "bytes": 6157,
+      "sha256": "40194411b1c3447b39deda51820f65a88d6dd70179bec6d5ae19f25480e9624e"
+    },
+    {
+      "path": "external/new_public/rustad_r10_src/src/finish.py",
+      "bytes": 7466,
+      "sha256": "f4df7260244e94ac5f1103324c707f922a479679549e0d9d654bebbee3af4d4b"
+    },
+    {
+      "path": "runs/chem_v2/r7/r8_b143_c62_cont.npz",
+      "bytes": 1256022,
+      "sha256": "a59f436e25c25bdcddd47d9bc1166ee7373649e9e5edd48b4ebd311ab26f8a31"
+    },
+    {
+      "path": "runs/chem_v2/r7/r8_tail.npz",
+      "bytes": 972310,
+      "sha256": "d0b5a5960526f026543fabafd30a2820655a4865c63b4620c537e2ba2542f82f"
+    },
+    {
+      "path": "runs/chem_v2/r7/r8_tail_dsearch.npz",
+      "bytes": 1256022,
+      "sha256": "89a693536138246e3b1ed90511db881cd6f07237522da7bd59b993ec26b68535"
+    },
+    {
+      "path": "runs/chem_v2/r7/r8_wlbfgs_dsearch.npz",
+      "bytes": 1256022,
+      "sha256": "453255ff4d38129b2f32b6c3955c68c0821cfdc27a0c54a295fc69aea64bcad2"
+    },
+    {
+      "path": "runs/chem_v2/public_factorizations/rustad_r10.npz",
+      "bytes": 1422702,
+      "sha256": "ef7c7d2460179826a36725ce7254bdf81f627130e8f3a5017769918c17ce655e"
+    },
+    {
+      "path": "runs/gauge_probe_v1/candidate.npz",
+      "bytes": 1454831,
+      "sha256": "66ed12b82f87a76a51ac8e3f16bba2d78d84dd2abd185342231ac187407d9135"
+    }
+  ],
+  "submissions": [
+    {
+      "ref": "57759596",
+      "candidate": "somejoint_2244",
+      "status": "PENDING",
+      "local_score": 22.43777534520302,
+      "known_public_score": 22.37455
+    },
+    {
+      "ref": "57759605",
+      "candidate": "busyaprime_2234",
+      "status": "PENDING",
+      "local_score": 22.402947
+    },
+    {
+      "ref": "57759612",
+      "candidate": "dungluong_2234b",
+      "status": "PENDING",
+      "local_score": 22.40294
+    },
+    {
+      "ref": "57759622",
+      "candidate": "zongaobian_signed_digits",
+      "status": "PENDING",
+      "local_score": null
+    }
+  ],
+  "remote": null,
+  "notes": [
+    "No remote Git hosting URL was provided; this commit is local and can be connected later with git remote add.",
+    "Public-source code is retained with its original license files; provenance and credits are recorded in HANDOFF.md.",
+    "global_beam.py is experimental and has no verified candidate output."
+  ]
+}

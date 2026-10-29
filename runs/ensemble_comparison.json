@@ -1,0 +1,42 @@
+{
+  "source": "https://www.kaggle.com/code/seshurajup/quantum-circuits-ensemble-lb-10-53111",
+  "compared_with": "runs/portfolio_update_v1/submission.zip",
+  "same_member_set": true,
+  "all_payload_bytes_identical": true,
+  "member_count": 29,
+  "changed_members": [],
+  "source_member_sha256": {
+    "invsqrt.kmb": "58c7ccb60f61088c9c3d14a562f6c1d795bcb8ac12b364cb16941b54b74f5cf1",
+    "dqi.kmb": "c5da9cd4e2d73dd41417e539f2659009d646b3ee30ddb5ca494261378a502856",
+    "dfthcsos/angle_k_5.kmb": "c14c64ddc93732b06dae566fd782080809b3fdc5786d623e1520768d1d2c752d",
+    "dfthcsos/angle_k_23.kmb": "e43348f60bfc343b3718c57fdb62fad4a24fff0ad735293b1480212572efa97f",
+    "dfthcsos/angle_k_24.kmb": "ed206f69e3e9745e40593c52fdb9e7ba5b56748230bd035bccb244992a2d5d6e",
+    "dfthcsos/angle_k_7.kmb": "16ac8bb19e87b31e966b3019a44438e4fdd1ab10a08047d44d918f66edfb4c1a",
+    "dfthcsos/angle_k_1.kmb": "4d96ca6a636e4a7a4751afa933712c56745fbf2a51c49a91493c0d03b2a992a7",
+    "dfthcsos/angle_k_12.kmb": "7ff8ed62ff1910be046e0bb051ed4542abf2655265f1c8b787fc00f155ce7b60",
+    "dfthcsos/angle_k_9.kmb": "ee63074ee28f7204eb4c9cc6251fbbc45600321ec678ea047046c835e8d76445",
+    "dfthcsos/angle_k_21.kmb": "ce6e637d1eb2cc3e26a0b5ef99aba862cfd4c63eb894501981e9d45c3fd9574a",
+    "dfthcsos/angle_k_22.kmb": "eab7263f949faeff9bbb069ac83aad755e4f5c26c341e438997bb89407ab109d",
+    "dfthcsos/angle_k_0.kmb": "85ffbc608b63cac3b8013d8695e4b2e6dd6d5a8853b1d6aabba747d85a5fb873",
+    "dfthcsos/angle_k_11.kmb": "85eb86d6b43d72127e98a6a8fea5c7bc1b1cdb99016fc6103cfd7514d50aa0dd",
+    "dfthcsos/angle_k_8.kmb": "71fc2738cec34604c233a9b60942c7092ab86c1b6211551b72fed39149ecdf79",
+    "dfthcsos/angle_k_20.kmb": "d3bff9c372ac3b310a76a89ab5ff55c3d70703152e2a0ac1d225ee2dc9258851",
+    "dfthcsos/angle_k_19.kmb": "75f8f138d48ace3ee3b4c4159263acac79517b46a7242a41c77a5e3f880bc5f2",
+    "dfthcsos/angle_k_13.kmb": "295156a9d7f7d6f43dc85e5a209acf93a4d5a889694069b341ec5e63a1cb987b",
+    "dfthcsos/angle_k_3.kmb": "1f15378ec16b017e1bd8fcc1ce974f15d6ea2486d4a89a70586dd14e0480d2c5",
+    "dfthcsos/angle_k_16.kmb": "5194206d5a8f51f66d6877aa3513a966a760e354cec3f250f28864a8dd3d0d86",
+    "dfthcsos/angle_k_10.kmb": "fab1dd3e92627038b51e1fcbcdfc8c72f3c97e03dfa0587a48124e64e9cd8d5d",
+    "dfthcsos/angle_k_4.kmb": "b73bd5fd665f491558b397f2365b630d1b3230d65ae3ec19f6803de5dc3cd99e",
+    "dfthcsos/angle_k_17.kmb": "74e376fe0577192e7cf6a27e8909e483b7c824f677fa1c91b210f74c7126b113",
+    "dfthcsos/angle_k_2.kmb": "9cb6f42c9586dc921a3ca837eba24ae7bae82b7a692512af1014e1e5ca4d6d29",
+    "dfthcsos/angle_k_6.kmb": "1a64c590b95f921c615253da0a2ac67c180a72a340b4220859b9731839a563de",
+    "dfthcsos/angle_k_18.kmb": "2bbd511ec0858007c9d2198af54ddd45ab8defb11bfe0ec1f76fca7cde9a5ab3",
+    "dfthcsos/submission.npz": "eac3bdf6dcdc75d6ef4018c4e6785da453571066cdcf29c8e4a479291dfc3644",
+    "dfthcsos/angle_k_15.kmb": "fd882e9606ae409e99cf4b2cc7ebd2f9bbe5931d2e100d512982b817d5dd72d2",
+    "dfthcsos/angle_k_14.kmb": "faec5c47c3a48183bd0601a6350928d3f562f3b8489d173b28ebfbfbaed4a553"
+  },
+  "regular_file_count": 28,
+  "source_directory_entries": [
+    "dfthcsos/"
+  ]
+}

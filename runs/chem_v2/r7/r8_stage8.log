@@ -1,0 +1,3 @@
+start R8 B143 C62 error_2 0.013445 direction nearest
+stage 4: frozen 172/85800 after-freeze 0.024335 retrained 0.016096 (137s)
+stage 8: frozen 644/85800 after-freeze 0.038658 retrained 0.037827 (229s)

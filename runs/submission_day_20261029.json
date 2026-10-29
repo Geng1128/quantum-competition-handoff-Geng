@@ -1,0 +1,37 @@
+{
+  "status": "PENDING",
+  "submissions": [
+    {
+      "submission_ref": 57759596,
+      "candidate": "somejoint_2244",
+      "local_score": 22.43777534520302,
+      "expected_public_score": 22.37455,
+      "expected_rank": "~573",
+      "status": "PENDING"
+    },
+    {
+      "submission_ref": 57759605,
+      "candidate": "busyaprime_2234",
+      "local_score": 22.40294721948608,
+      "expected_rank": "~560",
+      "status": "PENDING"
+    },
+    {
+      "submission_ref": 57759612,
+      "candidate": "dungluong_2234b",
+      "local_score": 22.40294,
+      "expected_rank": "~560",
+      "status": "PENDING"
+    },
+    {
+      "submission_ref": 57759622,
+      "candidate": "zongaobian_signed_digits",
+      "local_score": null,
+      "status": "PENDING"
+    }
+  ],
+  "quota_used_this_batch": 4,
+  "previous_completed_public_score": 22.37455,
+  "previous_completed_submission_ref": 57732578,
+  "leaderboard_snapshot": "runs/kaggle_leaderboard.json"
+}

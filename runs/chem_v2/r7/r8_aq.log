@@ -1,0 +1,13 @@
+start R8 B143 C62 error_2 0.013445
+stage 4: frozen 15103/85800 after-freeze 0.013468 retrained 0.013468 (274s)
+stage 8: frozen 28321/85800 after-freeze 0.013620 retrained 0.013612 (539s)
+stage 12: frozen 39779/85800 after-freeze 0.014030 retrained 0.014054 (803s)
+stage 16: frozen 49603/85800 after-freeze 0.013899 retrained 0.013823 (1002s)
+stage 20: frozen 57919/85800 after-freeze 0.014521 retrained 0.013879 (1133s)
+stage 24: frozen 64853/85800 after-freeze 0.014710 retrained 0.014171 (1357s)
+stage 28: frozen 70529/85800 after-freeze 0.015970 retrained 0.014981 (1619s)
+stage 32: frozen 75075/85800 after-freeze 0.018702 retrained 0.016754 (1880s)
+stage 36: frozen 78615/85800 after-freeze 0.021857 retrained 0.019901 (2011s)
+stage 40: frozen 81275/85800 after-freeze 0.026847 retrained 0.024761 (2140s)
+stage 44: frozen 83182/85800 after-freeze 0.034142 retrained 0.031532 (2279s)
+stage 48: frozen 84459/85800 after-freeze 0.043888 retrained 0.041190 (2409s)

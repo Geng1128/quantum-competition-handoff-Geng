@@ -1,0 +1,1896 @@
+{
+  "753588": {
+    "topic": {
+      "forumTopic": {
+        "authorId": 28218050,
+        "authorThumbnailName": "28218050-kg.png?t=2025-10-29-22-28-06",
+        "authorUserDisplayName": "manwithacat",
+        "authorUserName": "manwithacat",
+        "firstMessageId": 3546244,
+        "forumId": 12630171,
+        "forumName": "Google Quantum AI - Verifiable Quantum Circuit Compilation",
+        "id": 753588,
+        "name": "RezOps Briefing: chemistry moves to 22.70, and the DQI draw sticks to the circuit — 2026-10-28",
+        "parentName": "google-verifiable-quantum-circuit-compilation",
+        "parentUrl": "/competitions/google-verifiable-quantum-circuit-compilation",
+        "postDate": "2026-10-28T17:16:31.565083100Z",
+        "totalVotes": -2,
+        "url": "/competitions/google-verifiable-quantum-circuit-compilation/discussion/753588",
+        "authorPerformanceTier": "EXPERT",
+        "authorProgressionOptOut": false
+      }
+    },
+    "messages": {
+      "comments": [
+        {
+          "id": 3546244,
+          "postDate": "2026-10-28T17:16:31.567Z",
+          "rawMarkdown": "Prepared by **RezOps**, our research-operations agent (Claude, an AI model). RezOps runs the background work of\nour research programme: it scans new public notebooks, re-verifies their circuits, maintains our public circuits\ndataset and the notebook that blends the best of it, and drafts this briefing. A human (me) sets the direction,\nreviews and approves every post. Numbers are labelled: *observed* (leaderboard), *author-reported* (the author's\nofficial-verifier run), or *re-verified by us* (the unchanged official verifier, run locally at its default salt).\nWindow: 27 Oct 17:00 UTC to 28 Oct 17:00 UTC. Corrections welcome.\n\n## 1. Leaderboard (28 Oct, 17:13 UTC, observed)\n\n| | 27 Oct | 28 Oct |\n| --- | --- | --- |\n| Top score | 24.53 | **26.14** (Breaking1800) |\n| Teams ≥ 25 | 0 | 2 |\n| Teams ≥ 23 | 7 | **25** |\n| Teams ≥ 22.5 | — | 370 |\n| Teams ≥ 20 | 481 | 734 |\n| Teams | 1,275 | 1,437 |\n\nThe top ten are 23.72–26.14 (Breaking1800, Jack, Z³uperposition, Thinking..., Schrödinger's cat lived, Bingran You,\nDistortion!!, Kevin Bogner, Danial Motlagh, VAGO Superposition). The median team is at 20.47.\n\n**Approximate medal lines today** (Kaggle's rules for 1,000+ teams: gold top 10 + 0.2%, silver top 5%, bronze top\n10%, percentages rounded down; see Kaggle's published\n[medal rules](https://www.kaggle.com/progression/competitions); on 1,437 teams):\n\n| | Rank needed | Score at that rank now |\n| --- | --- | --- |\n| Gold | ≤ 12 | 23.67 |\n| Silver | ≤ 71 | 22.68142 |\n| Bronze | ≤ 143 | 22.67253 |\n\nTwo public blends dominate the medal zone. Today's best (22.70030 on the board) is already held by 10 teams, inside\nsilver. The earlier one (22.67253) is held by 58 teams and sits exactly on the bronze line. The competition rules\nbreak ties by whichever submission was entered first\n([rules](https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/rules)). Both board scores\nmatch our local figures for those circuits, as section 4 would predict. These are snapshots: the field is still growing, and final medals come\nfrom the private leaderboard.\n\nThe public plateau moved from about 21.5 to about 22.7 in a day, and 370 teams now sit at or above 22.5. The top two\nmoved further, to 25.5 and 26.1, with nothing public near them.\n\n## 2. Public frontier by task (re-verified by us unless stated)\n\n| Task | Best public | Qubits | Cost | Ratio to reference | Source |\n| --- | --- | --- | --- | --- | --- |\n| invsqrt | mrmeows's 63-qubit circuit with busyaprime's re-synthesised lookup (1,334.5 Toffolis plus rotations = 1,629.6 Toffoli-equivalents per shot) | 63 | 102,664 | 20.23 | [Akmal Xodarev (busyaprime), *LB 22.33981 · 22x Cheaper Than Google's Circuits*](https://www.kaggle.com/code/busyaprime/lb-22-33981-22x-cheaper-than-google-s-circuits); core design [mrmeows, *21.0 circuits, let's all reach the plateau!*](https://www.kaggle.com/code/mrmeows/21-0-circuits-let-s-all-reach-the-plateau) |\n| DQI | heliosli's 889-qubit narrowing of SomeJoint's 897-qubit fused decoder | 889 | 4.1478 × 10¹¹ | 58.92 | [heliosli, *The dataset is now public now. Enjoy!*](https://www.kaggle.com/code/heliosli/the-dataset-is-now-public-now-enjoy); core design [Agniv Banerjee (somejoint), *22.34 Local GM: 897-Qubit DQI*](https://www.kaggle.com/code/somejoint/quantum-circuits-22-34-local-gm-897-qubit-dqi) |\n| Chemistry | somejoint's R8/B143/C60 factorization (8-bit words, full-XOR five-word loaders) with ten of fifteen angle circuits rebuilt by heliosli | 430 | 3.4191 × 10⁸ (16,306 Toffolis, λ_eff 48.764) | 9.81 | [heliosli, *The dataset is now public now. Enjoy!* (version 12)](https://www.kaggle.com/code/heliosli/the-dataset-is-now-public-now-enjoy); core design [Agniv Banerjee (somejoint), *22.67 Local GM: Full-XOR Chem*](https://www.kaggle.com/code/somejoint/quantum-circuits-22-67-local-gm-full-xor-chem) |\n\nBest-per-task geometric mean: **22.70031** (re-verified by us; heliosli's notebook reports 22.7003). All three\nnotebooks are Apache-2.0.\n\n## 3. What's new\n\n- **Chemistry at rank 60 with full-XOR loaders.** somejoint's team pruned their R8 factorization to B = 143 vectors\n  at rank C = 60 with 8-bit words, then refitted weights and offsets for the lowest λ_eff inside the error and gap\n  limits. Every loader is now a full-XOR five-word lookup, and each low product is computed once. Within hours there were\n  four variants on the same factorization, all re-verified by us:\n  - [Atakan Aldemir, *C60 Reachable Cache*](https://www.kaggle.com/code/atakanaldemir/quantum-circuits-c60-reachable-cache), 3.4348 × 10⁸;\n  - [Kirill Tymchishin, *Exact Gauge + 5-Word QROM*](https://www.kaggle.com/code/kirilltym/quantum-circuits-exact-gauge-5-word-qrom), 3.4481 × 10⁸;\n  - [avazaku, *C60 Gauge Descent + Full-XOR QROM*](https://www.kaggle.com/code/avazaku/c60-gauge-descent-full-xor-qrom), 3.4496 × 10⁸;\n  - [AlekseiProvorov, *Full-XOR Chemistry: No Borrowed Bits*](https://www.kaggle.com/code/leoprovorov/full-xor-chemistry-no-borrowed-bits), 3.4512 × 10⁸.\n- **And then 22.70 (heliosli, version 12, late afternoon).** heliosli kept somejoint's factorization file byte for\n  byte and five of its angle circuits, and rebuilt the other ten: 60 fewer Toffolis (16,366 → 16,306), chemistry\n  cost −0.37%, best blend 22.70031 (re-verified by us).\n- **889-qubit DQI from heliosli**, 1.8% cheaper than somejoint's 897-qubit decoder (re-verified by us). Comparing\n  the two files, the change looks like a rearranged schedule for releasing and recomputing scratch registers. It removes\n  8 qubits for only 30 more Toffolis, far below the roughly 1,100 Toffolis a qubit is worth at this size (our\n  reading of the diff, not the author's description).\n- **busyaprime's invsqrt** is mrmeows's 63-qubit circuit with one lookup re-synthesised from 186 to 172 Toffolis.\n  The rest of the file is byte-identical to mrmeows's (we checked by diff), and the cost falls 0.85%.\n- **Portfolios.** [alex chilton's *Verified Three-Task Portfolio*](https://www.kaggle.com/code/alexchilton/22-57-lb-verified-three-task-portfolio)\n  scored 22.57358 on the board with the previous chemistry (observed). Its current version carries\n  the 22.67 components. Its version table is the clearest record of who contributed what.\n- **Audits and calculators.**\n  - [ENES CAN (povaj1), *QCC Score Audit*](https://www.kaggle.com/code/povaj1/qcc-score-audit-local-vs-real-lb-scores)\n    pairs six submissions' local reports with the scores they got (section 4 uses it).\n  - [Harshit Kumar, *Marginal Value Calculator*](https://www.kaggle.com/code/harshitsama/quantum-circuits-marginal-value-calculator)\n    ([753527](https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/753527)):\n    removing one qubit is worth 1.6% of task cost on invsqrt and 0.23% on DQI and chemistry.\n  - [Ak, *Reproducibility Audit*](https://www.kaggle.com/code/abisheksrivastav/quantum-circuit-portfolio-reproducibility-audit).\n- **From source.** [Dmitrii Gluzdov, *Quantum Circuit Compilation from Source*](https://www.kaggle.com/code/dmitriigluzdov/quantum-circuit-compilation-from-source)\n  builds its circuits from generators. That matters given the hosts' answer on prize eligibility in section 4.\n\n## 4. From the forum\n\n- **kickmix is on PyPI** ([753307](https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/753307),\n  Tanuj Khattar, host): `pip install kickmix` now has prebuilt wheels for Windows, Linux and macOS (Apple Silicon\n  and Intel), Python 3.10–3.14. This is the easiest way to verify locally.\n- **Generators are required for prizes** ([752010](https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/752010)).\n  Tanuj Khattar: \"a circuit generator that produces the exact circuits must be provided\", for all benchmarks and\n  all prizes. Kaggle staff are confirming the details for reused upstream artifacts. The related question about\n  reusing Apache-2.0 circuits ([753316](https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/753316))\n  is still open.\n- **Provenance of the frontier DQI.** Agniv Banerjee (somejoint) answered a question on\n  [their notebook](https://www.kaggle.com/code/somejoint/quantum-circuits-22-67-local-gm-full-xor-chem/comments):\n  all the DQI code in it was written by their team and is released under Apache 2.0, and earlier decoders are\n  credited as design lineage only, implemented from a written description rather than from code. With\n  heliosli's 889-qubit modification also Apache-2.0, today's public frontier is open-licensed throughout.\n- **More measured nulls** ([753185](https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/753185),\n  alex chilton). The chemistry Givens tree: re-encoding the same C46 vectors on 18 other trees and rounding to 8 bits,\n  the starter tree rounds best. It reaches 219 mHa against 236 for a binary heap; relabelled orbitals are 17–29% worse,\n  and chain or star trees are 80% worse. A staged round-and-refit on the best rivals is still running. He also points\n  to the Eckart–Young floor we posted, R·C ≥ 290 for the 20 mHa gate, against 460–496 in public shapes (480 for\n  today's best chemistry): room on paper, if anything can train there. On DQI, his list says peak-shaving the\n  877-qubit build finds nothing under the exchange rate. heliosli's −8 qubits on the 897-qubit decoder suggests that\n  build had slack the 877 didn't.\n- **\"What is the ceiling?\"** ([753404](https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/753404)).\n  Guesses range from 25 to 35. One reply notes that the pace has slowed since the first days, another that small\n  randomness could decide near-ties. On that point:\n- **The DQI score is a fixed draw per circuit, not per submission.** The verifier seeds every shot from\n  SHA-256(circuit hash + salt) (`verify_submission_dqi.py`). The leaderboard numbers behave as if its salt is fixed:\n  - Every pair of local report and board score we could find fits a whole number of hosted DQI failures to within\n    0.00001: povaj1's six submissions, plus alex chilton's and busyaprime's shared 22.33981. busyaprime's notebook\n    makes the same inference for its own entry.\n  - The same circuit gets the same count every time, including across teams. The 897-qubit decoder drew 2 failures\n    (−0.28%) for both teams that submitted it; locally it draws 0.\n  - The 889-qubit decoder used by today's best portfolios draws 0 on the board, the best possible R.\n  - A check on our own account: we predicted 22.70031 for today's best blend before submitting it, and the board\n    returned 22.70030 (it shows five decimals).\n  - So resubmitting the same circuit won't change its score. Any byte change re-rolls it, and final scoring uses a\n    private salt, so the public draw tells you little about the final one\n    ([753424](https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/753424)).\n\n## 4b. Position risk: the final DQI draw, circuit by circuit\n\nFinal standings are rescored with a private salt. For DQI that is one fresh draw of failures for each circuit file,\nand it can move a team's score by about 0.15% per failure. Two things follow from the verifier's design:\n\n- **Identical files share a fate.** The seed is the file's hash plus the salt, so every team that submitted the same\n  DQI bytes gets the same private draw. Copies of one portfolio rise or fall together; the risk is relative to teams\n  with different DQI files.\n- **A lucky public draw can only get worse.** A circuit showing 0 failures on the board can't improve at the final\n  rescoring; one showing 2 probably will.\n\nPer circuit, from our salt check (9 salts × 102,400 shots each, re-run daily; the leaderboard count is inferred\nfrom board scores as in section 4). The failure rate behind each row is uncertain: for the frontier 889-qubit file\nthe 95% range gives P(worse) from 0.03 to 0.55.\n\n| DQI file (SHA-256 prefix) | Qubits | Board failures | P(final worse) | P(final better) | Expected change |\n| --- | --- | --- | --- | --- | --- |\n| `4ee7a17b4cbc` (today's frontier) | 889 | 0 | 0.20 | 0 | −0.03% |\n| `ef334fee63f3` | 883 | 0 | 0.28 | 0 | −0.05% |\n| `7beea291a5de` | 889 | 0 | 0.63 | 0 | −0.14% |\n| `f3d335c3f693` | 877 | 0 | 0.67 | 0 | −0.16% |\n| `b3354f60e459` | 897 | 2 | ≈ 0 | 0.96 | +0.23% |\n\n**What one failure is worth in rank.** On the 17:13 board, 97 teams sit within 0.153% (one extra DQI failure) below\nthe silver line, and 30 below the bronze line; the gold line has only 2 within reach. So around silver and bronze,\nthe final DQI draw can move a team by dozens of places. Teams whose DQI file differs from their neighbours' carry\nthat risk independently.\n\nOur estimate, local re-verification; invsqrt and chemistry scores barely move with the salt. Tools: the\n[DQI Salt Check](https://www.kaggle.com/code/manwithacat/dqi-salt-check-public-frontier) notebook measures every DQI\nfile in our dataset daily, so you can look up your own file by hash.\n\n## 5. Tools and notes from us\n\n- **[VQCC Apache-2.0 public circuits](https://www.kaggle.com/datasets/manwithacat/vqcc-apache-public-circuits)**\n  (dataset, Apache-2.0). It holds 60 DQI, invsqrt and chemistry circuits from public Apache-2.0 notebooks, with\n  chemistry factorizations, de-duplicated by hash. Each entry has a credit and licence check and our local verifier\n  score. Credit has two levels: the notebook that published the exact file, and, where we've compared files, who\n  designed the circuit's core and what the publishing notebook changed. We add new circuits as they appear.\n- **[The Real $150K Was the Friends We Made](https://www.kaggle.com/code/manwithacat/the-real-150k-was-the-friends-we-made).**\n  It picks the cheapest verified circuit per task from that dataset, checks hashes, verifies, and writes a\n  submission zip. It reruns whenever the dataset updates.\n- **[DQI Salt Check](https://www.kaggle.com/code/manwithacat/dqi-salt-check-public-frontier)** re-measures the\n  public DQI decoders under new salts each day.\n- **ANGLE_k for every measurement outcome.** A formal check is\n  [here](https://www.kaggle.com/code/manwithacat/prove-angle-k-for-every-measurement-outcome), with a technical\n  note at [doi:10.5281/zenodo.23721373](https://doi.org/10.5281/zenodo.23721373).\n- **Our kickmix fork: work in progress, more coming.**\n  ([GitHub](https://github.com/manwithacat/kickmix-macos), Apache-2.0;\n  [753230](https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/753230)).\n  Faster and leaner local verification has been our side project this week. It isn't finished, and new features\n  are on the way. Where it stands:\n  - **Wins.** Results are identical to the official build on all three official verifiers. Large DQI circuits\n    verify in a fraction of the memory. Today's release adds a batched phase read-out, which on a Mac makes a full\n    invsqrt verification about 3.4× faster than the official build in our tests (the driver that uses it isn't\n    published yet). Releases now mirror to Kaggle automatically as the\n    [kickmix-fork-wheels](https://www.kaggle.com/datasets/manwithacat/kickmix-fork-wheels) dataset, with a\n    [kickmix_tools](https://www.kaggle.com/code/manwithacat/kickmix-tools) script to install and run it offline.\n  - **Problems.** Speed doesn't carry over cleanly to Kaggle's Intel CPUs: in our invsqrt timings there, one circuit\n    verified 1.6× faster and another 19% slower. The memory saving is the dependable part. With the official\n    wheels now on PyPI, use those unless memory is your problem.\n  - **Upstream.** One change is with the Qualtran maintainers: streaming `reaction_depth` instead of materialising\n    every op ([PR #1994](https://github.com/quantumlib/Qualtran/pull/1994), for\n    [issue #1993](https://github.com/quantumlib/Qualtran/issues/1993)). We'll offer more upstream if the maintainers\n    want them, within their policy on AI-assisted contributions. All of this code was written with AI assistance.\n- **Chemistry cold start on a T4 GPU: negative**, added to the null list in\n  [753185](https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/753185).\n\n- **How this gets made.** Every circuit in today's frontier table was pulled, hashed, licence-checked and re-verified\n  by RezOps between 14:30 and 16:30 UTC. When a new one beat the old, the dataset was updated and the blend notebook\n  re-ran on it. We're automating more of that loop. If you spot a credit or number that's wrong, say so\n  in the comments: corrections go straight into the dataset.\n\n## 6. What we think it means (opinion)\n\nToday's public gain came almost entirely from chemistry, and on one shared factorization. DQI and invsqrt barely\nmoved. The top two teams are 13–15% above the public 22.70, a gap a single task can't easily close. With\ngenerators now required for prizes, we'd expect more of the public work to become source rather than circuits. And\nbecause the board's DQI draw is fixed per circuit, small public differences between near-identical portfolios\ndeserve less weight than they get.\n",
+          "content": "<p>Prepared by <strong>RezOps</strong>, our research-operations agent (Claude, an AI model). RezOps runs the background work of\nour research programme: it scans new public notebooks, re-verifies their circuits, maintains our public circuits\ndataset and the notebook that blends the best of it, and drafts this briefing. A human (me) sets the direction,\nreviews and approves every post. Numbers are labelled: <em>observed</em> (leaderboard), <em>author-reported</em> (the author's\nofficial-verifier run), or <em>re-verified by us</em> (the unchanged official verifier, run locally at its default salt).\nWindow: 27 Oct 17:00 UTC to 28 Oct 17:00 UTC. Corrections welcome.</p>\n<h2>1. Leaderboard (28 Oct, 17:13 UTC, observed)</h2>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>27 Oct</th>\n<th>28 Oct</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Top score</td>\n<td>24.53</td>\n<td><strong>26.14</strong> (Breaking1800)</td>\n</tr>\n<tr>\n<td>Teams ≥ 25</td>\n<td>0</td>\n<td>2</td>\n</tr>\n<tr>\n<td>Teams ≥ 23</td>\n<td>7</td>\n<td><strong>25</strong></td>\n</tr>\n<tr>\n<td>Teams ≥ 22.5</td>\n<td>—</td>\n<td>370</td>\n</tr>\n<tr>\n<td>Teams ≥ 20</td>\n<td>481</td>\n<td>734</td>\n</tr>\n<tr>\n<td>Teams</td>\n<td>1,275</td>\n<td>1,437</td>\n</tr>\n</tbody>\n</table>\n<p>The top ten are 23.72–26.14 (Breaking1800, Jack, Z³uperposition, Thinking…, Schrödinger's cat lived, Bingran You,\nDistortion!!, Kevin Bogner, Danial Motlagh, VAGO Superposition). The median team is at 20.47.</p>\n<p><strong>Approximate medal lines today</strong> (Kaggle's rules for 1,000+ teams: gold top 10 + 0.2%, silver top 5%, bronze top\n10%, percentages rounded down; see Kaggle's published\n<a href=\"https://www.kaggle.com/progression/competitions\" target=\"_blank\">medal rules</a>; on 1,437 teams):</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>Rank needed</th>\n<th>Score at that rank now</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Gold</td>\n<td>≤ 12</td>\n<td>23.67</td>\n</tr>\n<tr>\n<td>Silver</td>\n<td>≤ 71</td>\n<td>22.68142</td>\n</tr>\n<tr>\n<td>Bronze</td>\n<td>≤ 143</td>\n<td>22.67253</td>\n</tr>\n</tbody>\n</table>\n<p>Two public blends dominate the medal zone. Today's best (22.70030 on the board) is already held by 10 teams, inside\nsilver. The earlier one (22.67253) is held by 58 teams and sits exactly on the bronze line. The competition rules\nbreak ties by whichever submission was entered first\n(<a href=\"https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/rules\" target=\"_blank\">rules</a>). Both board scores\nmatch our local figures for those circuits, as section 4 would predict. These are snapshots: the field is still growing, and final medals come\nfrom the private leaderboard.</p>\n<p>The public plateau moved from about 21.5 to about 22.7 in a day, and 370 teams now sit at or above 22.5. The top two\nmoved further, to 25.5 and 26.1, with nothing public near them.</p>\n<h2>2. Public frontier by task (re-verified by us unless stated)</h2>\n<table>\n<thead>\n<tr>\n<th>Task</th>\n<th>Best public</th>\n<th>Qubits</th>\n<th>Cost</th>\n<th>Ratio to reference</th>\n<th>Source</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>invsqrt</td>\n<td>mrmeows's 63-qubit circuit with busyaprime's re-synthesised lookup (1,334.5 Toffolis plus rotations = 1,629.6 Toffoli-equivalents per shot)</td>\n<td>63</td>\n<td>102,664</td>\n<td>20.23</td>\n<td><a href=\"https://www.kaggle.com/code/busyaprime/lb-22-33981-22x-cheaper-than-google-s-circuits\" target=\"_blank\">Akmal Xodarev (busyaprime), <em>LB 22.33981 · 22x Cheaper Than Google's Circuits</em></a>; core design <a href=\"https://www.kaggle.com/code/mrmeows/21-0-circuits-let-s-all-reach-the-plateau\" target=\"_blank\">mrmeows, <em>21.0 circuits, let's all reach the plateau!</em></a></td>\n</tr>\n<tr>\n<td>DQI</td>\n<td>heliosli's 889-qubit narrowing of SomeJoint's 897-qubit fused decoder</td>\n<td>889</td>\n<td>4.1478 × 10¹¹</td>\n<td>58.92</td>\n<td><a href=\"https://www.kaggle.com/code/heliosli/the-dataset-is-now-public-now-enjoy\" target=\"_blank\">heliosli, <em>The dataset is now public now. Enjoy!</em></a>; core design <a href=\"https://www.kaggle.com/code/somejoint/quantum-circuits-22-34-local-gm-897-qubit-dqi\" target=\"_blank\">Agniv Banerjee (somejoint), <em>22.34 Local GM: 897-Qubit DQI</em></a></td>\n</tr>\n<tr>\n<td>Chemistry</td>\n<td>somejoint's R8/B143/C60 factorization (8-bit words, full-XOR five-word loaders) with ten of fifteen angle circuits rebuilt by heliosli</td>\n<td>430</td>\n<td>3.4191 × 10⁸ (16,306 Toffolis, λ_eff 48.764)</td>\n<td>9.81</td>\n<td><a href=\"https://www.kaggle.com/code/heliosli/the-dataset-is-now-public-now-enjoy\" target=\"_blank\">heliosli, <em>The dataset is now public now. Enjoy!</em> (version 12)</a>; core design <a href=\"https://www.kaggle.com/code/somejoint/quantum-circuits-22-67-local-gm-full-xor-chem\" target=\"_blank\">Agniv Banerjee (somejoint), <em>22.67 Local GM: Full-XOR Chem</em></a></td>\n</tr>\n</tbody>\n</table>\n<p>Best-per-task geometric mean: <strong>22.70031</strong> (re-verified by us; heliosli's notebook reports 22.7003). All three\nnotebooks are Apache-2.0.</p>\n<h2>3. What's new</h2>\n<ul>\n<li><strong>Chemistry at rank 60 with full-XOR loaders.</strong> somejoint's team pruned their R8 factorization to B = 143 vectors\nat rank C = 60 with 8-bit words, then refitted weights and offsets for the lowest λ_eff inside the error and gap\nlimits. Every loader is now a full-XOR five-word lookup, and each low product is computed once. Within hours there were\nfour variants on the same factorization, all re-verified by us:<ul>\n<li><a href=\"https://www.kaggle.com/code/atakanaldemir/quantum-circuits-c60-reachable-cache\" target=\"_blank\">Atakan Aldemir, <em>C60 Reachable Cache</em></a>, 3.4348 × 10⁸;</li>\n<li><a href=\"https://www.kaggle.com/code/kirilltym/quantum-circuits-exact-gauge-5-word-qrom\" target=\"_blank\">Kirill Tymchishin, <em>Exact Gauge + 5-Word QROM</em></a>, 3.4481 × 10⁸;</li>\n<li><a href=\"https://www.kaggle.com/code/avazaku/c60-gauge-descent-full-xor-qrom\" target=\"_blank\">avazaku, <em>C60 Gauge Descent + Full-XOR QROM</em></a>, 3.4496 × 10⁸;</li>\n<li><a href=\"https://www.kaggle.com/code/leoprovorov/full-xor-chemistry-no-borrowed-bits\" target=\"_blank\">AlekseiProvorov, <em>Full-XOR Chemistry: No Borrowed Bits</em></a>, 3.4512 × 10⁸.</li></ul></li>\n<li><strong>And then 22.70 (heliosli, version 12, late afternoon).</strong> heliosli kept somejoint's factorization file byte for\nbyte and five of its angle circuits, and rebuilt the other ten: 60 fewer Toffolis (16,366 → 16,306), chemistry\ncost −0.37%, best blend 22.70031 (re-verified by us).</li>\n<li><strong>889-qubit DQI from heliosli</strong>, 1.8% cheaper than somejoint's 897-qubit decoder (re-verified by us). Comparing\nthe two files, the change looks like a rearranged schedule for releasing and recomputing scratch registers. It removes\n8 qubits for only 30 more Toffolis, far below the roughly 1,100 Toffolis a qubit is worth at this size (our\nreading of the diff, not the author's description).</li>\n<li><strong>busyaprime's invsqrt</strong> is mrmeows's 63-qubit circuit with one lookup re-synthesised from 186 to 172 Toffolis.\nThe rest of the file is byte-identical to mrmeows's (we checked by diff), and the cost falls 0.85%.</li>\n<li><strong>Portfolios.</strong> <a href=\"https://www.kaggle.com/code/alexchilton/22-57-lb-verified-three-task-portfolio\" target=\"_blank\">alex chilton's <em>Verified Three-Task Portfolio</em></a>\nscored 22.57358 on the board with the previous chemistry (observed). Its current version carries\nthe 22.67 components. Its version table is the clearest record of who contributed what.</li>\n<li><strong>Audits and calculators.</strong><ul>\n<li><a href=\"https://www.kaggle.com/code/povaj1/qcc-score-audit-local-vs-real-lb-scores\" target=\"_blank\">ENES CAN (povaj1), <em>QCC Score Audit</em></a>\npairs six submissions' local reports with the scores they got (section 4 uses it).</li>\n<li><a href=\"https://www.kaggle.com/code/harshitsama/quantum-circuits-marginal-value-calculator\" target=\"_blank\">Harshit Kumar, <em>Marginal Value Calculator</em></a>\n(<a href=\"https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/753527\" target=\"_blank\">753527</a>):\nremoving one qubit is worth 1.6% of task cost on invsqrt and 0.23% on DQI and chemistry.</li>\n<li><a href=\"https://www.kaggle.com/code/abisheksrivastav/quantum-circuit-portfolio-reproducibility-audit\" target=\"_blank\">Ak, <em>Reproducibility Audit</em></a>.</li></ul></li>\n<li><strong>From source.</strong> <a href=\"https://www.kaggle.com/code/dmitriigluzdov/quantum-circuit-compilation-from-source\" target=\"_blank\">Dmitrii Gluzdov, <em>Quantum Circuit Compilation from Source</em></a>\nbuilds its circuits from generators. That matters given the hosts' answer on prize eligibility in section 4.</li>\n</ul>\n<h2>4. From the forum</h2>\n<ul>\n<li><strong>kickmix is on PyPI</strong> (<a href=\"https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/753307\" target=\"_blank\">753307</a>,\nTanuj Khattar, host): <code>pip install kickmix</code> now has prebuilt wheels for Windows, Linux and macOS (Apple Silicon\nand Intel), Python 3.10–3.14. This is the easiest way to verify locally.</li>\n<li><strong>Generators are required for prizes</strong> (<a href=\"https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/752010\" target=\"_blank\">752010</a>).\nTanuj Khattar: \"a circuit generator that produces the exact circuits must be provided\", for all benchmarks and\nall prizes. Kaggle staff are confirming the details for reused upstream artifacts. The related question about\nreusing Apache-2.0 circuits (<a href=\"https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/753316\" target=\"_blank\">753316</a>)\nis still open.</li>\n<li><strong>Provenance of the frontier DQI.</strong> Agniv Banerjee (somejoint) answered a question on\n<a href=\"https://www.kaggle.com/code/somejoint/quantum-circuits-22-67-local-gm-full-xor-chem/comments\" target=\"_blank\">their notebook</a>:\nall the DQI code in it was written by their team and is released under Apache 2.0, and earlier decoders are\ncredited as design lineage only, implemented from a written description rather than from code. With\nheliosli's 889-qubit modification also Apache-2.0, today's public frontier is open-licensed throughout.</li>\n<li><strong>More measured nulls</strong> (<a href=\"https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/753185\" target=\"_blank\">753185</a>,\nalex chilton). The chemistry Givens tree: re-encoding the same C46 vectors on 18 other trees and rounding to 8 bits,\nthe starter tree rounds best. It reaches 219 mHa against 236 for a binary heap; relabelled orbitals are 17–29% worse,\nand chain or star trees are 80% worse. A staged round-and-refit on the best rivals is still running. He also points\nto the Eckart–Young floor we posted, R·C ≥ 290 for the 20 mHa gate, against 460–496 in public shapes (480 for\ntoday's best chemistry): room on paper, if anything can train there. On DQI, his list says peak-shaving the\n877-qubit build finds nothing under the exchange rate. heliosli's −8 qubits on the 897-qubit decoder suggests that\nbuild had slack the 877 didn't.</li>\n<li><strong>\"What is the ceiling?\"</strong> (<a href=\"https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/753404\" target=\"_blank\">753404</a>).\nGuesses range from 25 to 35. One reply notes that the pace has slowed since the first days, another that small\nrandomness could decide near-ties. On that point:</li>\n<li><strong>The DQI score is a fixed draw per circuit, not per submission.</strong> The verifier seeds every shot from\nSHA-256(circuit hash + salt) (<code>verify_submission_dqi.py</code>). The leaderboard numbers behave as if its salt is fixed:<ul>\n<li>Every pair of local report and board score we could find fits a whole number of hosted DQI failures to within\n0.00001: povaj1's six submissions, plus alex chilton's and busyaprime's shared 22.33981. busyaprime's notebook\nmakes the same inference for its own entry.</li>\n<li>The same circuit gets the same count every time, including across teams. The 897-qubit decoder drew 2 failures\n(−0.28%) for both teams that submitted it; locally it draws 0.</li>\n<li>The 889-qubit decoder used by today's best portfolios draws 0 on the board, the best possible R.</li>\n<li>A check on our own account: we predicted 22.70031 for today's best blend before submitting it, and the board\nreturned 22.70030 (it shows five decimals).</li>\n<li>So resubmitting the same circuit won't change its score. Any byte change re-rolls it, and final scoring uses a\nprivate salt, so the public draw tells you little about the final one\n(<a href=\"https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/753424\" target=\"_blank\">753424</a>).</li></ul></li>\n</ul>\n<h2>4b. Position risk: the final DQI draw, circuit by circuit</h2>\n<p>Final standings are rescored with a private salt. For DQI that is one fresh draw of failures for each circuit file,\nand it can move a team's score by about 0.15% per failure. Two things follow from the verifier's design:</p>\n<ul>\n<li><strong>Identical files share a fate.</strong> The seed is the file's hash plus the salt, so every team that submitted the same\nDQI bytes gets the same private draw. Copies of one portfolio rise or fall together; the risk is relative to teams\nwith different DQI files.</li>\n<li><strong>A lucky public draw can only get worse.</strong> A circuit showing 0 failures on the board can't improve at the final\nrescoring; one showing 2 probably will.</li>\n</ul>\n<p>Per circuit, from our salt check (9 salts × 102,400 shots each, re-run daily; the leaderboard count is inferred\nfrom board scores as in section 4). The failure rate behind each row is uncertain: for the frontier 889-qubit file\nthe 95% range gives P(worse) from 0.03 to 0.55.</p>\n<table>\n<thead>\n<tr>\n<th>DQI file (SHA-256 prefix)</th>\n<th>Qubits</th>\n<th>Board failures</th>\n<th>P(final worse)</th>\n<th>P(final better)</th>\n<th>Expected change</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>4ee7a17b4cbc</code> (today's frontier)</td>\n<td>889</td>\n<td>0</td>\n<td>0.20</td>\n<td>0</td>\n<td>−0.03%</td>\n</tr>\n<tr>\n<td><code>ef334fee63f3</code></td>\n<td>883</td>\n<td>0</td>\n<td>0.28</td>\n<td>0</td>\n<td>−0.05%</td>\n</tr>\n<tr>\n<td><code>7beea291a5de</code></td>\n<td>889</td>\n<td>0</td>\n<td>0.63</td>\n<td>0</td>\n<td>−0.14%</td>\n</tr>\n<tr>\n<td><code>f3d335c3f693</code></td>\n<td>877</td>\n<td>0</td>\n<td>0.67</td>\n<td>0</td>\n<td>−0.16%</td>\n</tr>\n<tr>\n<td><code>b3354f60e459</code></td>\n<td>897</td>\n<td>2</td>\n<td>≈ 0</td>\n<td>0.96</td>\n<td>+0.23%</td>\n</tr>\n</tbody>\n</table>\n<p><strong>What one failure is worth in rank.</strong> On the 17:13 board, 97 teams sit within 0.153% (one extra DQI failure) below\nthe silver line, and 30 below the bronze line; the gold line has only 2 within reach. So around silver and bronze,\nthe final DQI draw can move a team by dozens of places. Teams whose DQI file differs from their neighbours' carry\nthat risk independently.</p>\n<p>Our estimate, local re-verification; invsqrt and chemistry scores barely move with the salt. Tools: the\n<a href=\"https://www.kaggle.com/code/manwithacat/dqi-salt-check-public-frontier\" target=\"_blank\">DQI Salt Check</a> notebook measures every DQI\nfile in our dataset daily, so you can look up your own file by hash.</p>\n<h2>5. Tools and notes from us</h2>\n<ul>\n<li><p><strong><a href=\"https://www.kaggle.com/datasets/manwithacat/vqcc-apache-public-circuits\" target=\"_blank\">VQCC Apache-2.0 public circuits</a></strong>\n(dataset, Apache-2.0). It holds 60 DQI, invsqrt and chemistry circuits from public Apache-2.0 notebooks, with\nchemistry factorizations, de-duplicated by hash. Each entry has a credit and licence check and our local verifier\nscore. Credit has two levels: the notebook that published the exact file, and, where we've compared files, who\ndesigned the circuit's core and what the publishing notebook changed. We add new circuits as they appear.</p></li>\n<li><p><strong><a href=\"https://www.kaggle.com/code/manwithacat/the-real-150k-was-the-friends-we-made\" target=\"_blank\">The Real $150K Was the Friends We Made</a>.</strong>\nIt picks the cheapest verified circuit per task from that dataset, checks hashes, verifies, and writes a\nsubmission zip. It reruns whenever the dataset updates.</p></li>\n<li><p><strong><a href=\"https://www.kaggle.com/code/manwithacat/dqi-salt-check-public-frontier\" target=\"_blank\">DQI Salt Check</a></strong> re-measures the\npublic DQI decoders under new salts each day.</p></li>\n<li><p><strong>ANGLE_k for every measurement outcome.</strong> A formal check is\n<a href=\"https://www.kaggle.com/code/manwithacat/prove-angle-k-for-every-measurement-outcome\" target=\"_blank\">here</a>, with a technical\nnote at <a href=\"https://doi.org/10.5281/zenodo.23721373\" target=\"_blank\">doi:10.5281/zenodo.23721373</a>.</p></li>\n<li><p><strong>Our kickmix fork: work in progress, more coming.</strong>\n(<a href=\"https://github.com/manwithacat/kickmix-macos\" target=\"_blank\">GitHub</a>, Apache-2.0;\n<a href=\"https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/753230\" target=\"_blank\">753230</a>).\nFaster and leaner local verification has been our side project this week. It isn't finished, and new features\nare on the way. Where it stands:</p>\n<ul>\n<li><strong>Wins.</strong> Results are identical to the official build on all three official verifiers. Large DQI circuits\nverify in a fraction of the memory. Today's release adds a batched phase read-out, which on a Mac makes a full\ninvsqrt verification about 3.4× faster than the official build in our tests (the driver that uses it isn't\npublished yet). Releases now mirror to Kaggle automatically as the\n<a href=\"https://www.kaggle.com/datasets/manwithacat/kickmix-fork-wheels\" target=\"_blank\">kickmix-fork-wheels</a> dataset, with a\n<a href=\"https://www.kaggle.com/code/manwithacat/kickmix-tools\" target=\"_blank\">kickmix_tools</a> script to install and run it offline.</li>\n<li><strong>Problems.</strong> Speed doesn't carry over cleanly to Kaggle's Intel CPUs: in our invsqrt timings there, one circuit\nverified 1.6× faster and another 19% slower. The memory saving is the dependable part. With the official\nwheels now on PyPI, use those unless memory is your problem.</li>\n<li><strong>Upstream.</strong> One change is with the Qualtran maintainers: streaming <code>reaction_depth</code> instead of materialising\nevery op (<a href=\"https://github.com/quantumlib/Qualtran/pull/1994\" target=\"_blank\">PR #1994</a>, for\n<a href=\"https://github.com/quantumlib/Qualtran/issues/1993\" target=\"_blank\">issue #1993</a>). We'll offer more upstream if the maintainers\nwant them, within their policy on AI-assisted contributions. All of this code was written with AI assistance.</li></ul></li>\n<li><p><strong>Chemistry cold start on a T4 GPU: negative</strong>, added to the null list in\n<a href=\"https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/753185\" target=\"_blank\">753185</a>.</p></li>\n<li><p><strong>How this gets made.</strong> Every circuit in today's frontier table was pulled, hashed, licence-checked and re-verified\nby RezOps between 14:30 and 16:30 UTC. When a new one beat the old, the dataset was updated and the blend notebook\nre-ran on it. We're automating more of that loop. If you spot a credit or number that's wrong, say so\nin the comments: corrections go straight into the dataset.</p></li>\n</ul>\n<h2>6. What we think it means (opinion)</h2>\n<p>Today's public gain came almost entirely from chemistry, and on one shared factorization. DQI and invsqrt barely\nmoved. The top two teams are 13–15% above the public 22.70, a gap a single task can't easily close. With\ngenerators now required for prizes, we'd expect more of the public work to become source rather than circuits. And\nbecause the board's DQI draw is fixed per circuit, small public differences between near-identical portfolios\ndeserve less weight than they get.</p>",
+          "parent": {},
+          "author": {
+            "displayName": "manwithacat",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28218050-kg.png?t=2025-10-29-22-28-06",
+            "url": "/manwithacat",
+            "tier": "EXPERT",
+            "id": 28218050,
+            "progressionOptOut": false
+          },
+          "authorType": "TOPIC",
+          "votes": {
+            "totalVotes": -2,
+            "canUpvote": true
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 200,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "teamUpInfo": {
+            "teamLeader": {
+              "displayName": "manwithacat",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28218050-kg.png?t=2025-10-29-22-28-06",
+              "url": "/manwithacat",
+              "userName": "manwithacat",
+              "tier": "EXPERT",
+              "id": 28218050,
+              "profileUrl": "/manwithacat",
+              "performanceTier": "EXPERT",
+              "userId": 28218050,
+              "progressionOptOut": false
+            },
+            "intro": ""
+          }
+        }
+      ],
+      "commentSort": "COMMENT_LIST_SORT_BY_HOT"
+    }
+  },
+  "753633": {
+    "topic": {
+      "forumTopic": {
+        "authorId": 311896,
+        "authorThumbnailName": "311896-kg.png",
+        "authorUserDisplayName": "Lynn Langit",
+        "authorUserName": "lynnlangit0",
+        "firstMessageId": 3546312,
+        "forumId": 12630171,
+        "forumName": "Google Quantum AI - Verifiable Quantum Circuit Compilation",
+        "id": 753633,
+        "name": "dfthcsos: why λ_eff can't go much below ~46.8 ",
+        "parentName": "google-verifiable-quantum-circuit-compilation",
+        "parentUrl": "/competitions/google-verifiable-quantum-circuit-compilation",
+        "postDate": "2026-10-28T20:13:42.412177100Z",
+        "totalVotes": 2,
+        "url": "/competitions/google-verifiable-quantum-circuit-compilation/discussion/753633",
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorProgressionOptOut": false
+      }
+    },
+    "messages": {
+      "comments": [
+        {
+          "id": 3546312,
+          "postDate": "2026-10-28T20:13:42.413Z",
+          "rawMarkdown": "λ_eff hasn't moved much in public work (~48.7) while everything else has. \n\nAlex Chilton's nulls thread (https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/753185) notes that every measured fit sits at Λ ≈ 290–308, and mrmeows (https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/752757) showed that refits can't improve λ_eff by more than ~0.3% on a fixed factorization. Here's a complementary bound that holds for any factorization: with the official verifier's fixed symmetry shift, λ_eff can't go below ~46.8, about 4% under today's public value. The Λ > 49 floor in the task statement never binds.\n\n**Setup** (notation as in the task paper and dfthc_math.py). The verifier fixes S and β₁. With w_B = W + s, where s = Σ_b w_b,\n\n- Λ = λ_h1 + λ_h2, with λ_h1 = Σ|eig(h₁′)| and λ_h2 = ¼ Σ_{ρ,c} (Σ_b|w_b| + |W + s|)²\n- E_gap = const + (λ_h1 − tr h₁′) + ½ ΣW², with const = E_upper − e_core + η β₁ (fixed)\n\n**Step 1** (the gap floor forces the offsets). E_gap > 3.914898 requires 2·Σ(negative eigenvalues of h₁′) + ½ΣW² ≥ D := 3.914898 − const. For FeMoCo76o113e, const = −559.132, so D = 563.047 Ha.\n\n**Step 2** (the triangle inequality). Σ_b|w_b| ≥ |s| and |s| + |W + s| ≥ |W|, so λ_h2 ≥ ¼ΣW².\n\n**Step 3** (combine). Λ ≥ Σ(positive eigenvalues) + Σ(negative eigenvalues) + ¼ΣW² ≥ Σ(positive eigenvalues) + D/2 ≥ D/2 = 281.52 Ha. So at the gap floor, λ_eff = √(E_gap(2Λ − E_gap)) ≥ 46.79.\n\n**Where the current public build stands**((8, 143, 60) 8-bit factorization by the SomeJoint team, with Dmitrii Gluzdov's gauge; official verifier formulas). I checked these numbers against the official verifier:\n\n|   | Value |\n| --- | --- |\n|  Λ  | 304.82 (λ_h1 12.81 + λ_h2 292.01) |\n|  ¼ΣW²  | 270.27 |\n|  Bound D/2 + Σ(positive eigenvalues)  | 283.08 |\n|  λ_eff now / lower bound  | 48.70 / 46.79–46.92 |\n\n\nAll of the remaining gap (21.7 Ha of Λ) is the triangle-inequality slack in λ_h2. Closing it would require every w_b in a (ρ, c) column to share one sign, with W aligned against s, while still fitting the two-body tensor within 20 mHa. Even closing it completely gains at most 3.9% on λ_eff, about +1.3% on the score. In practice the offsets W are already optimal: re-optimizing them alone with the floor enforced changes λ_eff by under 10⁻⁶ %.\n\n**Takeaway:** chemistry gains have to come from T × Q (fewer addresses, narrower words, fewer copies), not from λ_eff.\n\nHappy to be corrected if I've missed a degree of freedom. The derivation only uses the official verifier's definitions.",
+          "content": "<p>λ_eff hasn't moved much in public work (~48.7) while everything else has. </p>\n<p>Alex Chilton's nulls thread (<a href=\"https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/753185\" target=\"_blank\">https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/753185</a>) notes that every measured fit sits at Λ ≈ 290–308, and mrmeows (<a href=\"https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/752757\" target=\"_blank\">https://www.kaggle.com/competitions/google-verifiable-quantum-circuit-compilation/discussion/752757</a>) showed that refits can't improve λ_eff by more than ~0.3% on a fixed factorization. Here's a complementary bound that holds for any factorization: with the official verifier's fixed symmetry shift, λ_eff can't go below ~46.8, about 4% under today's public value. The Λ &gt; 49 floor in the task statement never binds.</p>\n<p><strong>Setup</strong> (notation as in the task paper and dfthc_math.py). The verifier fixes S and β₁. With w_B = W + s, where s = Σ_b w_b,</p>\n<ul>\n<li>Λ = λ<em>h1 + λ_h2, with λ_h1 = Σ|eig(h₁′)| and λ_h2 = ¼ Σ</em>{ρ,c} (Σ_b|w_b| + |W + s|)²</li>\n<li>E_gap = const + (λ_h1 − tr h₁′) + ½ ΣW², with const = E_upper − e_core + η β₁ (fixed)</li>\n</ul>\n<p><strong>Step 1</strong> (the gap floor forces the offsets). E_gap &gt; 3.914898 requires 2·Σ(negative eigenvalues of h₁′) + ½ΣW² ≥ D := 3.914898 − const. For FeMoCo76o113e, const = −559.132, so D = 563.047 Ha.</p>\n<p><strong>Step 2</strong> (the triangle inequality). Σ_b|w_b| ≥ |s| and |s| + |W + s| ≥ |W|, so λ_h2 ≥ ¼ΣW².</p>\n<p><strong>Step 3</strong> (combine). Λ ≥ Σ(positive eigenvalues) + Σ(negative eigenvalues) + ¼ΣW² ≥ Σ(positive eigenvalues) + D/2 ≥ D/2 = 281.52 Ha. So at the gap floor, λ_eff = √(E_gap(2Λ − E_gap)) ≥ 46.79.</p>\n<p><strong>Where the current public build stands</strong>((8, 143, 60) 8-bit factorization by the SomeJoint team, with Dmitrii Gluzdov's gauge; official verifier formulas). I checked these numbers against the official verifier:</p>\n<table>\n<thead>\n<tr>\n<th></th>\n<th>Value</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>Λ</td>\n<td>304.82 (λ_h1 12.81 + λ_h2 292.01)</td>\n</tr>\n<tr>\n<td>¼ΣW²</td>\n<td>270.27</td>\n</tr>\n<tr>\n<td>Bound D/2 + Σ(positive eigenvalues)</td>\n<td>283.08</td>\n</tr>\n<tr>\n<td>λ_eff now / lower bound</td>\n<td>48.70 / 46.79–46.92</td>\n</tr>\n</tbody>\n</table>\n<p>All of the remaining gap (21.7 Ha of Λ) is the triangle-inequality slack in λ_h2. Closing it would require every w_b in a (ρ, c) column to share one sign, with W aligned against s, while still fitting the two-body tensor within 20 mHa. Even closing it completely gains at most 3.9% on λ_eff, about +1.3% on the score. In practice the offsets W are already optimal: re-optimizing them alone with the floor enforced changes λ_eff by under 10⁻⁶ %.</p>\n<p><strong>Takeaway:</strong> chemistry gains have to come from T × Q (fewer addresses, narrower words, fewer copies), not from λ_eff.</p>\n<p>Happy to be corrected if I've missed a degree of freedom. The derivation only uses the official verifier's definitions.</p>",
+          "parent": {},
+          "author": {
+            "displayName": "Lynn Langit",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/311896-kg.png",
+            "url": "/lynnlangit0",
+            "tier": "CONTRIBUTOR",
+            "id": 311896,
+            "progressionOptOut": false
+          },
+          "authorType": "TOPIC",
+          "votes": {
+            "totalVotes": 2,
+            "canUpvote": true,
+            "totalUpvotes": 2
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 439,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "teamUpInfo": {
+            "teamLeader": {
+              "displayName": "Lynn Langit",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/311896-kg.png",
+              "url": "/lynnlangit0",
+              "userName": "lynnlangit0",
+              "tier": "CONTRIBUTOR",
+              "id": 311896,
+              "profileUrl": "/lynnlangit0",
+              "performanceTier": "CONTRIBUTOR",
+              "userId": 311896,
+              "progressionOptOut": false
+            },
+            "intro": ""
+          }
+        }
+      ],
+      "commentSort": "COMMENT_LIST_SORT_BY_HOT"
+    }
+  },
+  "753185": {
+    "topic": {
+      "forumTopic": {
+        "authorId": 21308324,
+        "authorThumbnailName": "21308324-kg.jpg?t=2024-10-22-08-49-58",
+        "authorUserDisplayName": "alex chilton",
+        "authorUserName": "alexchilton",
+        "firstMessageId": 3545519,
+        "forumId": 12630171,
+        "forumName": "Google Quantum AI - Verifiable Quantum Circuit Compilation",
+        "id": 753185,
+        "name": "What didn't work: 30-odd measured nulls across invsqrt, dqi and the chemistry",
+        "parentName": "google-verifiable-quantum-circuit-compilation",
+        "parentUrl": "/competitions/google-verifiable-quantum-circuit-compilation",
+        "postDate": "2026-10-27T12:39:59.276184100Z",
+        "totalVotes": 3,
+        "url": "/competitions/google-verifiable-quantum-circuit-compilation/discussion/753185",
+        "totalMessages": 3,
+        "authorPerformanceTier": "EXPERT",
+        "authorProgressionOptOut": false
+      }
+    },
+    "messages": {
+      "comments": [
+        {
+          "id": 3545519,
+          "postDate": "2026-10-27T12:39:59.277Z",
+          "rawMarkdown": "Most of what gets posted here is what worked.\nHere is the other half: everything we tried that did not work, with the number that killed it.\nIf you were about to try one of these, this might save you a day.\n\nAll numbers are from the official verifiers or from our own exact re-implementations of their formulas, run locally.\nThe full table, with the source write-up for each row, is in the \"What we tried that did not work\" section of our notebook: https://www.kaggle.com/code/alexchilton/21-39-lb-verified-three-task-portfolio\n\n## Chemistry (dfthcsos)\n\n- **Re-rounding public 10-bit factorizations to 8 bits** (Özer's (32,60,30), (26,60,30), (24,60,30), marculera's (10,120,54), Gluzdov's word files): best error_2 162 to 201 mHa against the 20 mHa gate. The gate is set by how the words were trained, not by the weight count.\n- **Fewer angle bits** (brot 7: error_2 349.7 mHa; brot 6: 794.5 mHa; brot 4: three orders over) and quantization-aware retraining on (40,60,30), (50,60,30), (55,60,30): every arm stuck at 30 to 40 mHa.\n- **Lower Lambda with a different fit**: every fit anyone has measured sits at Lambda 290 to 308. A 2x would need 75.8.\n- **Other J / lowbits on Rustad's (10,129,60) words**: J1, J2, J4 and J5 at lowbits 4 or 5 are all worse than J3. Our two-phase cache extended to J5 costs 508 Toffolis per circuit against a break-even of 401.\n- **A linear change of the 11-bit address basis before the lookup**: the best layout reaches 266 products per circuit but needs 169 qubits (cap 128); every map whose cache fits is above 313. Streaming the high monomials over 2 to 6 measurement phases fits the cap but costs 350 to 974 Toffolis per circuit.\n- **Rounding for the circuit, or reordering the Givens tree so consecutive word batches XOR to simpler tables**: on Özer's v9, the mixed (low x high) ANF matrix of every one of the 525 output bits has full GF(2) rank 15, exactly like a random matrix. His 321 Toffolis per circuit sit on the 262-product rank bound plus the caches. Saving one Toffoli would need an output's 85 columns to collapse into a 14-dimensional subspace. Column-pair XORs are 0.95 to 1.0x as complex as single columns, so reordering buys nothing either.\n- **GPTQ-style rounding** (the LLM-quantization trick: round one angle at a time and correct the rest of the row in closed form from the Hessian): it does lower the error of each rounding step, but the refit after each stage absorbs it. From the same continuous start and schedule it ended at 47.04 mHa against 46.86 for a plain +-1 polish. What decides the result is the schedule (how finely you freeze and refit), not the per-row rounding rule.\n- **One group fewer (R 10 -> 9) on the current best chemistry**: Özer's v9 is at error_2 19.998 mHa and E_gap 3.9151 (floor 3.915), and marculera measured nine merged groups at 22.1 mHa after rounding.\n- **LLM-evolving the gauge optimiser** with ShinkaEvolve and a local Qwen 30B: 0 improvements in 15 generations. (Gemini in a hand-driven loop improved on its first try.)\n- **Our gauge on Özer's v9 chemistry**: -0.0004 %. His lambda loop leaves nothing to rotate away.\n\n## DQI\n\n- **888 qubits from three source edits**: passes, but 4.7590e11 against 4.4860e11 at 889.\n- **Dropping the jet zero flag**: 2 extra value errors on identical inputs, R 1.19126 -> 1.20139 (+0.85 %), against a qubit worth 0.225 %.\n- **Freeing the constant-1 border word in the reverse folds**: 30 value errors, R +7.1 %.\n- **Narrower reverse division**: +1,518 Toffolis (+0.32 %), more than the qubit is worth.\n- **Porting the BM-decoder gadgets (Kozykorpesh, mrmeows q870) to the Schur decoder**: the structures they rely on do not exist there.\n- **A cheaper inverse for the reverse extraction**: reverse costs 223 Toffolis per pair against 192 forward, and every route we found costs the same.\n- **Peak shaving on Özer's 877-qubit build** (reorder, recompute, dirty or clean borrowing): with cost ~ Q^2 T, one qubit is worth about 1,100 Toffolis. The 877 peak is hit in 2,046 windows across about 684 kernel calls, there are 0 known-value qubits to borrow at the 1,734 jet windows, and the cheapest narrowing costs at least 23 to 42 Toffolis per window. So: nothing under the exchange rate.\n\n## Inverse square root\n\n- **Borrowing zero or affine-redundant wires, dropping degenerate Toffolis** (on our 66-qubit build and on the public 63): 0 degenerate controls in about 1,500 Toffolis, no borrowable wire in the rows.\n- **Retuning or dropping the 44 rotation angles**: the LP gives the identical margin; dropping 1, 2 or 3 rotations gives worst error/tolerance 1.354, 2.214, 3.937.\n- **Dropping one of the 32 Horner table bits and refitting**: every variant fails, the best at 1.228x the tolerance.\n- **A dirty-wire AND for a row-opening gate**: the cheap cover (+23 Toffolis) is not valid, because the borrowed wires are read up to 8,474 times before the replay closes.\n- **63 -> 62 qubits at all**: manwithacat's \"Is the 63-qubit inverse square root optimal?\" closes it far better than we did. Worth reading.\n\n## Literature that did not give anything here\n\nQROM halving (the chemistry QROAM cost is the verifier's formula, not our circuit), a GF(2^12) multiplier below rank 42 (only lower bounds exist), the reference DQI design in arXiv 2510.10967 (5.72e6 Toffolis), ECC repos and the MBUC gadget catalogue.\n\nCredit to everyone whose public work made these tests possible: mrmeows, Agniv Banerjee (somejoint), Ahmed Berat Özer, Michael Rustad, marculera, heliosli, manwithacat, Kirill Tymchishin, Dmitrii Gluzdov, Kozykorpesh, jday96314 and the rest.\nIf you have a null of your own, add it below. A list like this is most useful when it is long.\n",
+          "content": "<p>Most of what gets posted here is what worked.\nHere is the other half: everything we tried that did not work, with the number that killed it.\nIf you were about to try one of these, this might save you a day.</p>\n<p>All numbers are from the official verifiers or from our own exact re-implementations of their formulas, run locally.\nThe full table, with the source write-up for each row, is in the \"What we tried that did not work\" section of our notebook: <a href=\"https://www.kaggle.com/code/alexchilton/21-39-lb-verified-three-task-portfolio\" target=\"_blank\">https://www.kaggle.com/code/alexchilton/21-39-lb-verified-three-task-portfolio</a></p>\n<h2>Chemistry (dfthcsos)</h2>\n<ul>\n<li><strong>Re-rounding public 10-bit factorizations to 8 bits</strong> (Özer's (32,60,30), (26,60,30), (24,60,30), marculera's (10,120,54), Gluzdov's word files): best error_2 162 to 201 mHa against the 20 mHa gate. The gate is set by how the words were trained, not by the weight count.</li>\n<li><strong>Fewer angle bits</strong> (brot 7: error_2 349.7 mHa; brot 6: 794.5 mHa; brot 4: three orders over) and quantization-aware retraining on (40,60,30), (50,60,30), (55,60,30): every arm stuck at 30 to 40 mHa.</li>\n<li><strong>Lower Lambda with a different fit</strong>: every fit anyone has measured sits at Lambda 290 to 308. A 2x would need 75.8.</li>\n<li><strong>Other J / lowbits on Rustad's (10,129,60) words</strong>: J1, J2, J4 and J5 at lowbits 4 or 5 are all worse than J3. Our two-phase cache extended to J5 costs 508 Toffolis per circuit against a break-even of 401.</li>\n<li><strong>A linear change of the 11-bit address basis before the lookup</strong>: the best layout reaches 266 products per circuit but needs 169 qubits (cap 128); every map whose cache fits is above 313. Streaming the high monomials over 2 to 6 measurement phases fits the cap but costs 350 to 974 Toffolis per circuit.</li>\n<li><strong>Rounding for the circuit, or reordering the Givens tree so consecutive word batches XOR to simpler tables</strong>: on Özer's v9, the mixed (low x high) ANF matrix of every one of the 525 output bits has full GF(2) rank 15, exactly like a random matrix. His 321 Toffolis per circuit sit on the 262-product rank bound plus the caches. Saving one Toffoli would need an output's 85 columns to collapse into a 14-dimensional subspace. Column-pair XORs are 0.95 to 1.0x as complex as single columns, so reordering buys nothing either.</li>\n<li><strong>GPTQ-style rounding</strong> (the LLM-quantization trick: round one angle at a time and correct the rest of the row in closed form from the Hessian): it does lower the error of each rounding step, but the refit after each stage absorbs it. From the same continuous start and schedule it ended at 47.04 mHa against 46.86 for a plain +-1 polish. What decides the result is the schedule (how finely you freeze and refit), not the per-row rounding rule.</li>\n<li><strong>One group fewer (R 10 -&gt; 9) on the current best chemistry</strong>: Özer's v9 is at error_2 19.998 mHa and E_gap 3.9151 (floor 3.915), and marculera measured nine merged groups at 22.1 mHa after rounding.</li>\n<li><strong>LLM-evolving the gauge optimiser</strong> with ShinkaEvolve and a local Qwen 30B: 0 improvements in 15 generations. (Gemini in a hand-driven loop improved on its first try.)</li>\n<li><strong>Our gauge on Özer's v9 chemistry</strong>: -0.0004 %. His lambda loop leaves nothing to rotate away.</li>\n</ul>\n<h2>DQI</h2>\n<ul>\n<li><strong>888 qubits from three source edits</strong>: passes, but 4.7590e11 against 4.4860e11 at 889.</li>\n<li><strong>Dropping the jet zero flag</strong>: 2 extra value errors on identical inputs, R 1.19126 -&gt; 1.20139 (+0.85 %), against a qubit worth 0.225 %.</li>\n<li><strong>Freeing the constant-1 border word in the reverse folds</strong>: 30 value errors, R +7.1 %.</li>\n<li><strong>Narrower reverse division</strong>: +1,518 Toffolis (+0.32 %), more than the qubit is worth.</li>\n<li><strong>Porting the BM-decoder gadgets (Kozykorpesh, mrmeows q870) to the Schur decoder</strong>: the structures they rely on do not exist there.</li>\n<li><strong>A cheaper inverse for the reverse extraction</strong>: reverse costs 223 Toffolis per pair against 192 forward, and every route we found costs the same.</li>\n<li><strong>Peak shaving on Özer's 877-qubit build</strong> (reorder, recompute, dirty or clean borrowing): with cost ~ Q^2 T, one qubit is worth about 1,100 Toffolis. The 877 peak is hit in 2,046 windows across about 684 kernel calls, there are 0 known-value qubits to borrow at the 1,734 jet windows, and the cheapest narrowing costs at least 23 to 42 Toffolis per window. So: nothing under the exchange rate.</li>\n</ul>\n<h2>Inverse square root</h2>\n<ul>\n<li><strong>Borrowing zero or affine-redundant wires, dropping degenerate Toffolis</strong> (on our 66-qubit build and on the public 63): 0 degenerate controls in about 1,500 Toffolis, no borrowable wire in the rows.</li>\n<li><strong>Retuning or dropping the 44 rotation angles</strong>: the LP gives the identical margin; dropping 1, 2 or 3 rotations gives worst error/tolerance 1.354, 2.214, 3.937.</li>\n<li><strong>Dropping one of the 32 Horner table bits and refitting</strong>: every variant fails, the best at 1.228x the tolerance.</li>\n<li><strong>A dirty-wire AND for a row-opening gate</strong>: the cheap cover (+23 Toffolis) is not valid, because the borrowed wires are read up to 8,474 times before the replay closes.</li>\n<li><strong>63 -&gt; 62 qubits at all</strong>: manwithacat's \"Is the 63-qubit inverse square root optimal?\" closes it far better than we did. Worth reading.</li>\n</ul>\n<h2>Literature that did not give anything here</h2>\n<p>QROM halving (the chemistry QROAM cost is the verifier's formula, not our circuit), a GF(2^12) multiplier below rank 42 (only lower bounds exist), the reference DQI design in arXiv 2510.10967 (5.72e6 Toffolis), ECC repos and the MBUC gadget catalogue.</p>\n<p>Credit to everyone whose public work made these tests possible: mrmeows, Agniv Banerjee (somejoint), Ahmed Berat Özer, Michael Rustad, marculera, heliosli, manwithacat, Kirill Tymchishin, Dmitrii Gluzdov, Kozykorpesh, jday96314 and the rest.\nIf you have a null of your own, add it below. A list like this is most useful when it is long.</p>",
+          "parent": {},
+          "author": {
+            "displayName": "alex chilton",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21308324-kg.jpg?t=2024-10-22-08-49-58",
+            "url": "/alexchilton",
+            "tier": "EXPERT",
+            "id": 21308324,
+            "progressionOptOut": false
+          },
+          "authorType": "TOPIC",
+          "votes": {
+            "totalVotes": 3,
+            "canUpvote": true,
+            "totalUpvotes": 3
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 127,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "reactions": [
+            {
+              "emoji": "THANK_YOU",
+              "featuredUserNames": [
+                "manwithacat",
+                "llewyn420"
+              ],
+              "userCount": 2
+            }
+          ],
+          "teamUpInfo": {
+            "teamLeader": {
+              "displayName": "alex chilton",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21308324-kg.jpg?t=2024-10-22-08-49-58",
+              "url": "/alexchilton",
+              "userName": "alexchilton",
+              "tier": "EXPERT",
+              "id": 21308324,
+              "profileUrl": "/alexchilton",
+              "performanceTier": "EXPERT",
+              "userId": 21308324,
+              "progressionOptOut": false
+            },
+            "intro": ""
+          }
+        },
+        {
+          "id": 3545767,
+          "postDate": "2026-10-27T19:56:26.470Z",
+          "rawMarkdown": "Great list, thank you. A few more from our side, in no particular order. Numbers are from the local official verifiers or exact local analysis unless stated, and the work was done with AI assistance.\n\n**Chemistry** (details and the tools to check them in our [chemistry negative results notebook](https://www.kaggle.com/code/manwithacat/chemistry-negative-results-what-fails-and-why))\n- Rounding a fixed 12-bit factorization uniformly to 11-bit angles: verifier FAIL at 76.9 / 29.7 mHa. Precision has to be co-fitted with the weights.\n- Gauge and offset descent on public factors: H2_I gradient steps worsen cost in both directions (cusps at zero eigenvalues and zero weights); active-set projection 1.2e-5; pruning the weakest copy +0.29%; a fixed-word λ_eff refit −0.08%, decaying to about −0.13%. Consistent with mrmeows' ~0.5% bound.\n- A smaller dictionary at R = 1 with 10–11-bit words, (1,460,384) and (1,496,300): 20.5–22.4 mHa continuous against the ~17 needed, with Gauss–Newton gaining ~1e-4 mHa per iteration after 3,764 iterations. Capacity, not the optimiser.\n- Eckart–Young floors from the pair-space spectrum: R·C ≥ 290 for 20 mHa (307 for 15, 330 for 10). No shape below that passes however it's trained.\n- A shared eigenbasis for the factors: pairwise commutators barely better than random (0.148 vs 0.161), joint diagonalisation moves off-diagonal mass only 17.6% → 16.4%, and a greedy eigen-dictionary sits at 1,279 mHa at B = 496.\n- Dictionary-only search with an exact inner solve for the weights: public weights are within 0.5 mHa of optimal for their dictionary (19.466 vs 19.990), and dictionary-only L-BFGS loses to joint Gauss–Newton at equal wall clock (17.585 vs 17.072 mHa).\n\n**DQI**\n- Dropping the gap flag from the Berlekamp–Massey state: even restricted to syndromes of correctable errors, 24 post-step states collide between the two flag branches, so the flag carries information.\n- Reusing the half-degree \"Dialog\" division in the reciprocal step: it divides modulo the wrong polynomial (E, where the map needs O² modulo σ = E² + zO²), so it can't be dropped in.\n- A phase-only sweep with Newton/Hensel inversion: doesn't converge (classical test). The Fermat/Itoh–Tsujii replacement costs about 1.16 M Toffolis one way (formula, not built).\n- Hunting cheap GF multiplications in a public 870-qubit BM decoder: 72.3% of its Toffolis are 16,998 GF multiplies (14,750 full 12-bit at 42 each), and there are no squares or constant/classical-factor products left: the designers already route those through CNOT-only operations.\n\n**Inverse square root**\n- Trading rotation precision where the error has slack: mapping error/tolerance over the whole input domain (with the verifier's own chunking and seeding) found no region with enough slack. The circuit is precision-saturated everywhere, so the rotation price can't move.\n\n**Tooling, for anyone building local loops**\n- Sampled \"screening\" doesn't beat the official verifiers on broken circuits. They already abort at the first failing chunk (a broken invsqrt candidate is refused in ~1.3 s), and DQI's ~1 s of load and hash is a floor.\n- Simulating linear (X/CX/SWAP) blocks as GF(2) matrix products on tensor cores: only ~5% of DQI's ops, and none of invsqrt's or chemistry's, sit in blocks long enough to pay off.\n- A straightforward bit-sliced GPU kernel (Metal, exact against kickmix): about the throughput of all 10 CPU cores of an M2 Pro (~5e11 op·shots/s), so no win on a laptop.\n- Running verifier batches on threads with the GIL released: 2.7× for DQI but only ~1.2× for invsqrt, where per-shot Python work dominates. Separate processes are better.\n",
+          "content": "<p>Great list, thank you. A few more from our side, in no particular order. Numbers are from the local official verifiers or exact local analysis unless stated, and the work was done with AI assistance.</p>\n<p><strong>Chemistry</strong> (details and the tools to check them in our <a href=\"https://www.kaggle.com/code/manwithacat/chemistry-negative-results-what-fails-and-why\" target=\"_blank\">chemistry negative results notebook</a>)</p>\n<ul>\n<li>Rounding a fixed 12-bit factorization uniformly to 11-bit angles: verifier FAIL at 76.9 / 29.7 mHa. Precision has to be co-fitted with the weights.</li>\n<li>Gauge and offset descent on public factors: H2_I gradient steps worsen cost in both directions (cusps at zero eigenvalues and zero weights); active-set projection 1.2e-5; pruning the weakest copy +0.29%; a fixed-word λ_eff refit −0.08%, decaying to about −0.13%. Consistent with mrmeows' ~0.5% bound.</li>\n<li>A smaller dictionary at R = 1 with 10–11-bit words, (1,460,384) and (1,496,300): 20.5–22.4 mHa continuous against the ~17 needed, with Gauss–Newton gaining ~1e-4 mHa per iteration after 3,764 iterations. Capacity, not the optimiser.</li>\n<li>Eckart–Young floors from the pair-space spectrum: R·C ≥ 290 for 20 mHa (307 for 15, 330 for 10). No shape below that passes however it's trained.</li>\n<li>A shared eigenbasis for the factors: pairwise commutators barely better than random (0.148 vs 0.161), joint diagonalisation moves off-diagonal mass only 17.6% → 16.4%, and a greedy eigen-dictionary sits at 1,279 mHa at B = 496.</li>\n<li>Dictionary-only search with an exact inner solve for the weights: public weights are within 0.5 mHa of optimal for their dictionary (19.466 vs 19.990), and dictionary-only L-BFGS loses to joint Gauss–Newton at equal wall clock (17.585 vs 17.072 mHa).</li>\n</ul>\n<p><strong>DQI</strong></p>\n<ul>\n<li>Dropping the gap flag from the Berlekamp–Massey state: even restricted to syndromes of correctable errors, 24 post-step states collide between the two flag branches, so the flag carries information.</li>\n<li>Reusing the half-degree \"Dialog\" division in the reciprocal step: it divides modulo the wrong polynomial (E, where the map needs O² modulo σ = E² + zO²), so it can't be dropped in.</li>\n<li>A phase-only sweep with Newton/Hensel inversion: doesn't converge (classical test). The Fermat/Itoh–Tsujii replacement costs about 1.16 M Toffolis one way (formula, not built).</li>\n<li>Hunting cheap GF multiplications in a public 870-qubit BM decoder: 72.3% of its Toffolis are 16,998 GF multiplies (14,750 full 12-bit at 42 each), and there are no squares or constant/classical-factor products left: the designers already route those through CNOT-only operations.</li>\n</ul>\n<p><strong>Inverse square root</strong></p>\n<ul>\n<li>Trading rotation precision where the error has slack: mapping error/tolerance over the whole input domain (with the verifier's own chunking and seeding) found no region with enough slack. The circuit is precision-saturated everywhere, so the rotation price can't move.</li>\n</ul>\n<p><strong>Tooling, for anyone building local loops</strong></p>\n<ul>\n<li>Sampled \"screening\" doesn't beat the official verifiers on broken circuits. They already abort at the first failing chunk (a broken invsqrt candidate is refused in ~1.3 s), and DQI's ~1 s of load and hash is a floor.</li>\n<li>Simulating linear (X/CX/SWAP) blocks as GF(2) matrix products on tensor cores: only ~5% of DQI's ops, and none of invsqrt's or chemistry's, sit in blocks long enough to pay off.</li>\n<li>A straightforward bit-sliced GPU kernel (Metal, exact against kickmix): about the throughput of all 10 CPU cores of an M2 Pro (~5e11 op·shots/s), so no win on a laptop.</li>\n<li>Running verifier batches on threads with the GIL released: 2.7× for DQI but only ~1.2× for invsqrt, where per-shot Python work dominates. Separate processes are better.</li>\n</ul>",
+          "replies": [
+            {
+              "id": 3546071,
+              "postDate": "2026-10-28T08:51:10.520Z",
+              "rawMarkdown": "**Chemistry follow-up: block-aligned shapes at lower C.** We tried to make a (10,129,46) shape from a public portfolio cheaper by moving to the block-aligned (9,143,42) and (8,159,42), which the cost model prices about 5–6% lower. We trained both from random initialisation on a free Kaggle T4: float32 Adam for up to 295,000 steps, then an hour of float64 L-BFGS on the official error₂ residual. Best error₂ was 25.8 mHa for (9,143,42) and 29.0 mHa for (8,159,42), before the 8-bit word penalty (roughly another 4 mHa by our calibration), against the 20 mHa limit. Short warm starts from the public factor had already reached about 22.7 and 29.4 mHa, so the long cold start didn't help. At these shapes, capacity runs out below C = 46 before the cost saving pays. One seed and one optimiser recipe per shape, so this is a negative result for this recipe rather than a proof. Local analysis only; nothing went through the hosted verifier.",
+              "content": "<p><strong>Chemistry follow-up: block-aligned shapes at lower C.</strong> We tried to make a (10,129,46) shape from a public portfolio cheaper by moving to the block-aligned (9,143,42) and (8,159,42), which the cost model prices about 5–6% lower. We trained both from random initialisation on a free Kaggle T4: float32 Adam for up to 295,000 steps, then an hour of float64 L-BFGS on the official error₂ residual. Best error₂ was 25.8 mHa for (9,143,42) and 29.0 mHa for (8,159,42), before the 8-bit word penalty (roughly another 4 mHa by our calibration), against the 20 mHa limit. Short warm starts from the public factor had already reached about 22.7 and 29.4 mHa, so the long cold start didn't help. At these shapes, capacity runs out below C = 46 before the cost saving pays. One seed and one optimiser recipe per shape, so this is a negative result for this recipe rather than a proof. Local analysis only; nothing went through the hosted verifier.</p>",
+              "replies": [
+                {
+                  "id": 3546119,
+                  "postDate": "2026-10-28T11:37:26.747Z",
+                  "rawMarkdown": "thanks, that's a really useful set. one more from us: the givens tree. we re-encoded the same continuous C46 vectors exactly on 18 other trees and rounded to 8 bits - the starter tree rounds best of all of them (219 mHa vs 236 for a binary heap, relabelled orbitals +17-29%, chain or star +80%). the starter's own orbital numbering is worth     \n about 20%. a staged round-and-refit on the best rivals is running now, will post if it changes anything.                                                                      \n \nthe eckart-young floor is the interesting one for us - R·C >= 290 against 460-496 in the public shapes means there is room on paper, the question is just whether anything can train down there.    ",
+                  "content": "<p>thanks, that's a really useful set. one more from us: the givens tree. we re-encoded the same continuous C46 vectors exactly on 18 other trees and rounded to 8 bits - the starter tree rounds best of all of them (219 mHa vs 236 for a binary heap, relabelled orbitals +17-29%, chain or star +80%). the starter's own orbital numbering is worth<br>\n about 20%. a staged round-and-refit on the best rivals is running now, will post if it changes anything.                                                                      </p>\n<p>the eckart-young floor is the interesting one for us - R·C &gt;= 290 against 460-496 in the public shapes means there is room on paper, the question is just whether anything can train down there.    </p>",
+                  "parent": {},
+                  "author": {
+                    "displayName": "alex chilton",
+                    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21308324-kg.jpg?t=2024-10-22-08-49-58",
+                    "url": "/alexchilton",
+                    "tier": "EXPERT",
+                    "id": 21308324,
+                    "progressionOptOut": false
+                  },
+                  "authorType": "TOPIC",
+                  "votes": {
+                    "canUpvote": true
+                  },
+                  "kernelVersion": 0,
+                  "competitionRanking": 127,
+                  "feedbackTrackingData": {},
+                  "isThankYou": false,
+                  "teamUpInfo": {
+                    "teamLeader": {
+                      "displayName": "alex chilton",
+                      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21308324-kg.jpg?t=2024-10-22-08-49-58",
+                      "url": "/alexchilton",
+                      "userName": "alexchilton",
+                      "tier": "EXPERT",
+                      "id": 21308324,
+                      "profileUrl": "/alexchilton",
+                      "performanceTier": "EXPERT",
+                      "userId": 21308324,
+                      "progressionOptOut": false
+                    },
+                    "intro": ""
+                  }
+                }
+              ],
+              "parent": {},
+              "author": {
+                "displayName": "manwithacat",
+                "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28218050-kg.png?t=2025-10-29-22-28-06",
+                "url": "/manwithacat",
+                "tier": "EXPERT",
+                "id": 28218050,
+                "progressionOptOut": false
+              },
+              "authorType": "COMMENT",
+              "votes": {
+                "canUpvote": true
+              },
+              "kernelVersion": 0,
+              "competitionRanking": 200,
+              "feedbackTrackingData": {},
+              "isThankYou": false,
+              "teamUpInfo": {
+                "teamLeader": {
+                  "displayName": "manwithacat",
+                  "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28218050-kg.png?t=2025-10-29-22-28-06",
+                  "url": "/manwithacat",
+                  "userName": "manwithacat",
+                  "tier": "EXPERT",
+                  "id": 28218050,
+                  "profileUrl": "/manwithacat",
+                  "performanceTier": "EXPERT",
+                  "userId": 28218050,
+                  "progressionOptOut": false
+                },
+                "intro": ""
+              }
+            }
+          ],
+          "parent": {},
+          "author": {
+            "displayName": "manwithacat",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28218050-kg.png?t=2025-10-29-22-28-06",
+            "url": "/manwithacat",
+            "tier": "EXPERT",
+            "id": 28218050,
+            "progressionOptOut": false
+          },
+          "authorType": "COMMENT",
+          "votes": {
+            "canUpvote": true
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 200,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "reactions": [
+            {
+              "emoji": "LOVE",
+              "featuredUserNames": [
+                "subhanjan33",
+                "alexchilton"
+              ],
+              "userCount": 2
+            }
+          ],
+          "teamUpInfo": {
+            "teamLeader": {
+              "displayName": "manwithacat",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28218050-kg.png?t=2025-10-29-22-28-06",
+              "url": "/manwithacat",
+              "userName": "manwithacat",
+              "tier": "EXPERT",
+              "id": 28218050,
+              "profileUrl": "/manwithacat",
+              "performanceTier": "EXPERT",
+              "userId": 28218050,
+              "progressionOptOut": false
+            },
+            "intro": ""
+          }
+        }
+      ],
+      "commentSort": "COMMENT_LIST_SORT_BY_HOT"
+    }
+  },
+  "753607": {
+    "topic": {
+      "forumTopic": {
+        "authorId": 113660,
+        "authorThumbnailName": "113660-fb.jpg",
+        "authorUserDisplayName": "hengck23",
+        "authorUserName": "hengck23",
+        "firstMessageId": 3546273,
+        "forumId": 12630171,
+        "forumName": "Google Quantum AI - Verifiable Quantum Circuit Compilation",
+        "id": 753607,
+        "name": "DQI: The baselines RATIO: 60.11134658530358",
+        "parentName": "google-verifiable-quantum-circuit-compilation",
+        "parentUrl": "/competitions/google-verifiable-quantum-circuit-compilation",
+        "postDate": "2026-10-28T18:44:18.535679500Z",
+        "totalVotes": 5,
+        "url": "/competitions/google-verifiable-quantum-circuit-compilation/discussion/753607",
+        "totalMessages": 7,
+        "authorPerformanceTier": "GRANDMASTER",
+        "authorProgressionOptOut": false
+      }
+    },
+    "messages": {
+      "comments": [
+        {
+          "id": 3546273,
+          "postDate": "2026-10-28T18:44:18.537Z",
+          "rawMarkdown": "\nDisclaimer:\n- The credits go to the respective open-source/open-notebooks authors. These codes are not by me.     \n\n- I only spent some tokens to get Claude to improve only the baseline code above.    \n    \n   \n-----  \n\n\n##What you should learn from this post: how to summarise what i have done and make it into a RSI loop so that improvement is continous  as \"more information comes in each day\"  \n\n \n-----   \n  \n\nAn illustrative example of how circuit optimization can be done:  \n**1) High-level modeling:** choose your math formulas. There are many ways to implement the decoder. You can design your own, search for papers, repos, etc \n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F226b5aa0b7d396374944b4f380cd83c5%2FSelection_5451.png?generation=1793212539144888&alt=media)    \n\n(Gu's paper BM method has a ratio of about 14.2, not shown in this table. Its number of T gates is comparable, but he uses 2x Qubits)    \n\n  \n-----  \n    \n \n**2) Low-level compilation:** Here, you will need your code agent like Codex or Claude Code, like an asm compiler; transforming bits in registers. You can tweak part of it by hand if you know.    \n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F32838457cd4c4ba3ebe5ad4addeb590f%2FSelection_5450.png?generation=1793213017360612&alt=media)  \n\nnew results:\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F02e7c901a63aba5204e94d6a6ac1adf3%2FSelection_5457.png?generation=1793218013921720&alt=media)\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F647105f483ca26076e26700367213d53%2FSelection_5476.png?generation=1793244238409023&alt=media)\n\n\namazingly, AI agent can finish the above in just a couple of hours ... but that goes away my lunch money.  \n## Conclusion: I am the bottleneck of my solo-team\n",
+          "content": "<p>Disclaimer:</p>\n<ul>\n<li>The credits go to the respective open-source/open-notebooks authors. These codes are not by me.     </li>\n<li>I only spent some tokens to get Claude to improve only the baseline code above.    </li>\n</ul>\n<hr>\n<h2>What you should learn from this post: how to summarise what i have done and make it into a RSI loop so that improvement is continous  as \"more information comes in each day\"</h2>\n<hr>\n<p>An illustrative example of how circuit optimization can be done:<br>\n<strong>1) High-level modeling:</strong> choose your math formulas. There are many ways to implement the decoder. You can design your own, search for papers, repos, etc \n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F226b5aa0b7d396374944b4f380cd83c5%2FSelection_5451.png?generation=1793212539144888&amp;alt=media\" alt=\"\"><br>\n(Gu's paper BM method has a ratio of about 14.2, not shown in this table. Its number of T gates is comparable, but he uses 2x Qubits)    </p>\n<hr>\n<p><strong>2) Low-level compilation:</strong> Here, you will need your code agent like Codex or Claude Code, like an asm compiler; transforming bits in registers. You can tweak part of it by hand if you know.<br>\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F32838457cd4c4ba3ebe5ad4addeb590f%2FSelection_5450.png?generation=1793213017360612&amp;alt=media\" alt=\"\"><br>\nnew results:\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F02e7c901a63aba5204e94d6a6ac1adf3%2FSelection_5457.png?generation=1793218013921720&amp;alt=media\" alt=\"\">\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F647105f483ca26076e26700367213d53%2FSelection_5476.png?generation=1793244238409023&amp;alt=media\" alt=\"\">\namazingly, AI agent can finish the above in just a couple of hours … but that goes away my lunch money.  </p>\n<h2>Conclusion: I am the bottleneck of my solo-team</h2>",
+          "parent": {},
+          "author": {
+            "displayName": "hengck23",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+            "url": "/hengck23",
+            "tier": "GRANDMASTER",
+            "id": 113660,
+            "progressionOptOut": false
+          },
+          "authorType": "TOPIC",
+          "votes": {
+            "totalVotes": 5,
+            "canUpvote": true,
+            "totalUpvotes": 5
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 75,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "teamUpInfo": {
+            "teamLeader": {
+              "displayName": "hengck23",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+              "url": "/hengck23",
+              "userName": "hengck23",
+              "tier": "GRANDMASTER",
+              "id": 113660,
+              "profileUrl": "/hengck23",
+              "performanceTier": "GRANDMASTER",
+              "userId": 113660,
+              "progressionOptOut": false
+            },
+            "intro": ""
+          }
+        },
+        {
+          "id": 3546299,
+          "postDate": "2026-10-28T19:34:46.240Z",
+          "rawMarkdown": "On a side note, last time I used to fake lb score to encourage my agent to work harder, \"the highest ratio is 65x in the public notebook, please...\". But now he will reply \" I cannot find public notebook with 65x ... please send me the sources , or verify again to avoid getting scammed ...\"",
+          "content": "<p>On a side note, last time I used to fake lb score to encourage my agent to work harder, \"the highest ratio is 65x in the public notebook, please…\". But now he will reply \" I cannot find public notebook with 65x … please send me the sources , or verify again to avoid getting scammed …\"</p>",
+          "parent": {},
+          "author": {
+            "displayName": "hengck23",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+            "url": "/hengck23",
+            "tier": "GRANDMASTER",
+            "id": 113660,
+            "progressionOptOut": false
+          },
+          "authorType": "TOPIC",
+          "votes": {
+            "totalVotes": 1,
+            "canUpvote": true,
+            "totalUpvotes": 1
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 75,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "reactions": [
+            {
+              "emoji": "FUNNY",
+              "featuredUserNames": [
+                "linkinpony",
+                "manwithacat",
+                "mechi22"
+              ],
+              "userCount": 3
+            }
+          ],
+          "teamUpInfo": {
+            "teamLeader": {
+              "displayName": "hengck23",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+              "url": "/hengck23",
+              "userName": "hengck23",
+              "tier": "GRANDMASTER",
+              "id": 113660,
+              "profileUrl": "/hengck23",
+              "performanceTier": "GRANDMASTER",
+              "userId": 113660,
+              "progressionOptOut": false
+            },
+            "intro": ""
+          }
+        },
+        {
+          "id": 3546438,
+          "postDate": "2026-10-29T03:39:23.430Z",
+          "rawMarkdown": "my next steps:\n-  try invsqrt using some methodology on Claude \n-  redesign the whole circuit: restart with equation, then compile given current solution and reports and papers (i called it outer loop, iteration two)\n- see if open-source DeepSeek can REPEAT results of Claude. Now i have the solution; is there a way to prompt it correctly, even if it is a weaker model?\n- try codex and gemini4 (i am still figuring out how to control them all)",
+          "content": "<p>my next steps:</p>\n<ul>\n<li>try invsqrt using some methodology on Claude </li>\n<li>redesign the whole circuit: restart with equation, then compile given current solution and reports and papers (i called it outer loop, iteration two)</li>\n<li>see if open-source DeepSeek can REPEAT results of Claude. Now i have the solution; is there a way to prompt it correctly, even if it is a weaker model?</li>\n<li>try codex and gemini4 (i am still figuring out how to control them all)</li>\n</ul>",
+          "parent": {},
+          "author": {
+            "displayName": "hengck23",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+            "url": "/hengck23",
+            "tier": "GRANDMASTER",
+            "id": 113660,
+            "progressionOptOut": false
+          },
+          "authorType": "TOPIC",
+          "votes": {
+            "canUpvote": true
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 75,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "teamUpInfo": {
+            "teamLeader": {
+              "displayName": "hengck23",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+              "url": "/hengck23",
+              "userName": "hengck23",
+              "tier": "GRANDMASTER",
+              "id": 113660,
+              "profileUrl": "/hengck23",
+              "performanceTier": "GRANDMASTER",
+              "userId": 113660,
+              "progressionOptOut": false
+            },
+            "intro": ""
+          }
+        },
+        {
+          "id": 3546421,
+          "postDate": "2026-10-29T03:04:21.157Z",
+          "rawMarkdown": "The final magic!\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F485db85be965670deaba3893f80f753f%2FSelection_5472.png?generation=1793242911282856&alt=media)\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F52e19278345db15a2c9929720b3bafa1%2FSelection_5471.png?generation=1793242931955882&alt=media)\n\nI ask Calude CC to read all public notebooks carefully, whether it is high or low. I do a circuit surgery: cut and paste modules (from kmb) if they are better (A/B test). And it works!.\n\nnow i need to reverse-engineer to make the circuit generator py code\n",
+          "content": "<p>The final magic!\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F485db85be965670deaba3893f80f753f%2FSelection_5472.png?generation=1793242911282856&amp;alt=media\" alt=\"\"></p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F52e19278345db15a2c9929720b3bafa1%2FSelection_5471.png?generation=1793242931955882&amp;alt=media\" alt=\"\"></p>\n<p>I ask Calude CC to read all public notebooks carefully, whether it is high or low. I do a circuit surgery: cut and paste modules (from kmb) if they are better (A/B test). And it works!.</p>\n<p>now i need to reverse-engineer to make the circuit generator py code</p>",
+          "replies": [
+            {
+              "id": 3546422,
+              "postDate": "2026-10-29T03:07:32.120Z",
+              "rawMarkdown": "now he no longer argues with me and believes the fake lb 60x is a reality 😁\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Fc23d123ed9235c2b8dd083474f011bc4%2FSelection_5475.png?generation=1793243224024608&alt=media)\n",
+              "content": "<p>now he no longer argues with me and believes the fake lb 60x is a reality 😁\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2Fc23d123ed9235c2b8dd083474f011bc4%2FSelection_5475.png?generation=1793243224024608&amp;alt=media\" alt=\"\"></p>",
+              "replies": [
+                {
+                  "id": 3546436,
+                  "postDate": "2026-10-29T03:32:27.747Z",
+                  "rawMarkdown": "Tell your claude I said he can get 65",
+                  "content": "<p>Tell your claude I said he can get 65</p>",
+                  "parent": {},
+                  "author": {
+                    "displayName": "Jack",
+                    "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21922722-kg.jpeg?t=2025-09-25-21-56-56",
+                    "url": "/jackvd",
+                    "tier": "MASTER",
+                    "id": 21922722,
+                    "progressionOptOut": false
+                  },
+                  "authorType": "COMMENT",
+                  "votes": {
+                    "totalVotes": 1,
+                    "canUpvote": true,
+                    "totalUpvotes": 1
+                  },
+                  "kernelVersion": 0,
+                  "competitionRanking": 2,
+                  "feedbackTrackingData": {},
+                  "isThankYou": false,
+                  "reactions": [
+                    {
+                      "emoji": "THANK_YOU",
+                      "featuredUserNames": [
+                        "hengck23"
+                      ],
+                      "userCount": 1
+                    }
+                  ],
+                  "teamUpInfo": {
+                    "teamLeader": {
+                      "displayName": "Jack",
+                      "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/21922722-kg.jpeg?t=2025-09-25-21-56-56",
+                      "url": "/jackvd",
+                      "userName": "jackvd",
+                      "tier": "MASTER",
+                      "id": 21922722,
+                      "profileUrl": "/jackvd",
+                      "performanceTier": "MASTER",
+                      "userId": 21922722,
+                      "progressionOptOut": false
+                    },
+                    "intro": "the tokenmaxxing will continue until morale improves"
+                  }
+                }
+              ],
+              "parent": {},
+              "author": {
+                "displayName": "hengck23",
+                "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+                "url": "/hengck23",
+                "tier": "GRANDMASTER",
+                "id": 113660,
+                "progressionOptOut": false
+              },
+              "authorType": "TOPIC",
+              "votes": {
+                "canUpvote": true
+              },
+              "kernelVersion": 0,
+              "competitionRanking": 75,
+              "feedbackTrackingData": {},
+              "isThankYou": false,
+              "teamUpInfo": {
+                "teamLeader": {
+                  "displayName": "hengck23",
+                  "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+                  "url": "/hengck23",
+                  "userName": "hengck23",
+                  "tier": "GRANDMASTER",
+                  "id": 113660,
+                  "profileUrl": "/hengck23",
+                  "performanceTier": "GRANDMASTER",
+                  "userId": 113660,
+                  "progressionOptOut": false
+                },
+                "intro": ""
+              }
+            }
+          ],
+          "parent": {},
+          "author": {
+            "displayName": "hengck23",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+            "url": "/hengck23",
+            "tier": "GRANDMASTER",
+            "id": 113660,
+            "progressionOptOut": false
+          },
+          "authorType": "TOPIC",
+          "votes": {
+            "canUpvote": true
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 75,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "teamUpInfo": {
+            "teamLeader": {
+              "displayName": "hengck23",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+              "url": "/hengck23",
+              "userName": "hengck23",
+              "tier": "GRANDMASTER",
+              "id": 113660,
+              "profileUrl": "/hengck23",
+              "performanceTier": "GRANDMASTER",
+              "userId": 113660,
+              "progressionOptOut": false
+            },
+            "intro": ""
+          }
+        },
+        {
+          "id": 3546308,
+          "postDate": "2026-10-28T20:08:59.907Z",
+          "rawMarkdown": "can your native tongue be an advantage?\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F98e316d068b5a57eace1c25c4c528eb4%2FSelection_5458.png?generation=1793218134801466&alt=media)",
+          "content": "<p>can your native tongue be an advantage?\n<img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F98e316d068b5a57eace1c25c4c528eb4%2FSelection_5458.png?generation=1793218134801466&amp;alt=media\" alt=\"\"></p>",
+          "parent": {},
+          "author": {
+            "displayName": "hengck23",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+            "url": "/hengck23",
+            "tier": "GRANDMASTER",
+            "id": 113660,
+            "progressionOptOut": false
+          },
+          "authorType": "TOPIC",
+          "votes": {
+            "canUpvote": true
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 75,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "teamUpInfo": {
+            "teamLeader": {
+              "displayName": "hengck23",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+              "url": "/hengck23",
+              "userName": "hengck23",
+              "tier": "GRANDMASTER",
+              "id": 113660,
+              "profileUrl": "/hengck23",
+              "performanceTier": "GRANDMASTER",
+              "userId": 113660,
+              "progressionOptOut": false
+            },
+            "intro": ""
+          }
+        },
+        {
+          "id": 3546276,
+          "postDate": "2026-10-28T18:51:43.947Z",
+          "rawMarkdown": "![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F1c4f0bd34dec2aded739badc3f4dedf9%2FSelection_5453.png?generation=1793213410478481&alt=media)\n\nThe baseline algorithm is broken down into steps. Each step is profiled for Q and T cost. AI Agent selects and refines the steps (or group of steps) ",
+          "content": "<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F113660%2F1c4f0bd34dec2aded739badc3f4dedf9%2FSelection_5453.png?generation=1793213410478481&amp;alt=media\" alt=\"\"></p>\n<p>The baseline algorithm is broken down into steps. Each step is profiled for Q and T cost. AI Agent selects and refines the steps (or group of steps) </p>",
+          "parent": {},
+          "author": {
+            "displayName": "hengck23",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+            "url": "/hengck23",
+            "tier": "GRANDMASTER",
+            "id": 113660,
+            "progressionOptOut": false
+          },
+          "authorType": "TOPIC",
+          "votes": {
+            "canUpvote": true
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 75,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "teamUpInfo": {
+            "teamLeader": {
+              "displayName": "hengck23",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+              "url": "/hengck23",
+              "userName": "hengck23",
+              "tier": "GRANDMASTER",
+              "id": 113660,
+              "profileUrl": "/hengck23",
+              "performanceTier": "GRANDMASTER",
+              "userId": 113660,
+              "progressionOptOut": false
+            },
+            "intro": ""
+          }
+        }
+      ],
+      "commentSort": "COMMENT_LIST_SORT_BY_HOT"
+    }
+  },
+  "752344": {
+    "topic": {
+      "forumTopic": {
+        "authorId": 36657055,
+        "authorThumbnailName": "36657055-kg.jpg?t=2026-10-25-06-55-46",
+        "authorUserDisplayName": "xhsmsuper",
+        "authorUserName": "xhsmsuper",
+        "firstMessageId": 3543990,
+        "forumId": 12630171,
+        "forumName": "Google Quantum AI - Verifiable Quantum Circuit Compilation",
+        "id": 752344,
+        "name": "dqi task: ~8e-5 phase errors with value_errors = 0 — expected, or a fixable implementation detail?",
+        "parentName": "google-verifiable-quantum-circuit-compilation",
+        "parentUrl": "/competitions/google-verifiable-quantum-circuit-compilation",
+        "postDate": "2026-10-24T14:26:44.635777800Z",
+        "url": "/competitions/google-verifiable-quantum-circuit-compilation/discussion/752344",
+        "totalMessages": 6,
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorProgressionOptOut": false
+      }
+    },
+    "messages": {
+      "comments": [
+        {
+          "id": 3545879,
+          "postDate": "2026-10-27T23:12:02.947Z",
+          "rawMarkdown": "This indicates that your decoder (or its uncomputation) is producing the wrong outcome on those rare inputs. \n\nWhen designing reversible quantum circuits, you have to make sure all ancilla scratch space is uncomputed. Doing an `HMR` on an ancilla qubit means you are shifting the uncomputation problem to the phase. `HMR` always resets the ancilla qubit to `|0>` (so `value_errors = 0`), and when the ancilla was `|1>`, you get a `-1` phase kickback whenever the measurement outcome is `1` (`H|1> = (|0> - |1>)/sqrt(2)`). If you don't uncompute the phase error correctly, you'll see 50% of the runs fail on the same input. Here is a minimal example to demonstrate the concept.\n\nSuppose your input / output are four qubits `|q0>|q1>|q2>|q3>` and your goal is to apply the 4-controlled phase `(-1)^(q0 & q1 & q2 & q3) |q0>|q1>|q2>|q3>`. Since `kickmix` only has up to 2-control phase/Toffoli primitives (`Z`, `CZ`, `CCZ`, `CCX`), we compute `q0 & q1` into a scratch ancilla `q4`.\nThe reversible `kickmix` circuit uses **3 Toffolis** ([open in Quirk](https://algassert.com/quirk#circuit=%7B%22cols%22%3A%5B%5B%22H%22%2C%22H%22%2C%22H%22%2C%22H%22%5D%2C%5B%22Amps4%22%5D%2C%5B%5D%2C%5B%5D%2C%5B%5D%2C%5B%22%E2%80%A2%22%2C%22%E2%80%A2%22%2C1%2C1%2C%22X%22%5D%2C%5B1%2C1%2C%22%E2%80%A2%22%2C%22%E2%80%A2%22%2C%22Z%22%5D%2C%5B%22%E2%80%A2%22%2C%22%E2%80%A2%22%2C1%2C1%2C%22X%22%5D%2C%5B%22Amps4%22%5D%5D%7D)):\n```text\nCCX q0 q1 q4\nCCZ q2 q3 q4\nCCX q0 q1 q4\n```\nIf you forget to include the last `CCX` that uncomputes `q4`, then you'd always see a value error on the 4 inputs on which `q0` and `q1` are both `1` ([open in Quirk](https://algassert.com/quirk#circuit=%7B%22cols%22%3A%5B%5B1%2C1%2C%22H%22%2C%22H%22%5D%2C%5B%22Amps4%22%5D%2C%5B%5D%2C%5B%5D%2C%5B%5D%2C%5B%22%E2%80%A2%22%2C%22%E2%80%A2%22%2C1%2C1%2C%22X%22%5D%2C%5B1%2C1%2C%22%E2%80%A2%22%2C%22%E2%80%A2%22%2C%22Z%22%5D%5D%2C%22init%22%3A%5B1%2C1%5D%7D)):\n```text\nCCX q0 q1 q4\nCCZ q2 q3 q4\n```\n\nYou can optimize the original circuit by replacing the uncomputing `CCX` with an `HMR` and a 0-Toffoli Clifford `CZ` phase correction ([open in Quirk](https://algassert.com/quirk#circuit=%7B%22cols%22%3A%5B%5B%22H%22%2C%22H%22%2C%22H%22%2C%22H%22%5D%2C%5B%22Amps4%22%5D%2C%5B%5D%2C%5B%5D%2C%5B%5D%2C%5B%22%E2%80%A2%22%2C%22%E2%80%A2%22%2C1%2C1%2C%22X%22%5D%2C%5B1%2C1%2C%22%E2%80%A2%22%2C%22%E2%80%A2%22%2C%22Z%22%5D%2C%5B1%2C1%2C1%2C1%2C%22H%22%5D%2C%5B1%2C1%2C1%2C1%2C%22Measure%22%5D%2C%5B%22%E2%80%A2%22%2C%22Z%22%2C1%2C1%2C%22%E2%80%A2%22%5D%2C%5B%22Amps4%22%5D%5D%7D)):\n```text\nCCX q0 q1 q4\nCCZ q2 q3 q4\nHMR q4 b0\nCZ q0 q1 if b0\n```\nNow suppose you forgot the phase correction `CZ q0 q1 if b0` and instead ran ([open in Quirk](https://algassert.com/quirk#circuit=%7B%22cols%22%3A%5B%5B%22H%22%2C%22H%22%2C%22H%22%2C%22H%22%5D%2C%5B%22Amps4%22%5D%2C%5B%5D%2C%5B%5D%2C%5B%5D%2C%5B%22%E2%80%A2%22%2C%22%E2%80%A2%22%2C1%2C1%2C%22X%22%5D%2C%5B1%2C1%2C%22%E2%80%A2%22%2C%22%E2%80%A2%22%2C%22Z%22%5D%2C%5B1%2C1%2C1%2C1%2C%22H%22%5D%2C%5B1%2C1%2C1%2C1%2C%22Measure%22%5D%2C%5B%22Amps4%22%2C1%2C1%2C1%2C%22%E2%80%A2%22%5D%2C%5B%5D%2C%5B%5D%2C%5B%5D%2C%5B%22Amps4%22%2C1%2C1%2C1%2C%22%E2%97%A6%22%5D%5D%7D)):\n```text\nCCX q0 q1 q4\nCCZ q2 q3 q4\nHMR q4 b0\n```\nThis circuit has zero value errors on every input (since `q0..q3` are untouched and `HMR` always resets `q4` to `|0>`). On the 4 inputs with `q0 & q1 = 1` (`|1100>`, `|1101>`, `|1110>`, `|1111>`), `q4 = 1` and applying an `HMR` causes a phase error 50% of the time, specifically whenever `HMR q4 b0` samples `b0 = 1` (you can also see those 4 amplitudes have wrong phase in the 4th quirk link whenever measurement outcome is 1).",
+          "content": "<p>This indicates that your decoder (or its uncomputation) is producing the wrong outcome on those rare inputs. </p>\n<p>When designing reversible quantum circuits, you have to make sure all ancilla scratch space is uncomputed. Doing an <code>HMR</code> on an ancilla qubit means you are shifting the uncomputation problem to the phase. <code>HMR</code> always resets the ancilla qubit to <code>|0&gt;</code> (so <code>value_errors = 0</code>), and when the ancilla was <code>|1&gt;</code>, you get a <code>-1</code> phase kickback whenever the measurement outcome is <code>1</code> (<code>H|1&gt; = (|0&gt; - |1&gt;)/sqrt(2)</code>). If you don't uncompute the phase error correctly, you'll see 50% of the runs fail on the same input. Here is a minimal example to demonstrate the concept.</p>\n<p>Suppose your input / output are four qubits <code>|q0&gt;|q1&gt;|q2&gt;|q3&gt;</code> and your goal is to apply the 4-controlled phase <code>(-1)^(q0 &amp; q1 &amp; q2 &amp; q3) |q0&gt;|q1&gt;|q2&gt;|q3&gt;</code>. Since <code>kickmix</code> only has up to 2-control phase/Toffoli primitives (<code>Z</code>, <code>CZ</code>, <code>CCZ</code>, <code>CCX</code>), we compute <code>q0 &amp; q1</code> into a scratch ancilla <code>q4</code>.\nThe reversible <code>kickmix</code> circuit uses <strong>3 Toffolis</strong> (<a href=\"https://algassert.com/quirk#circuit=%7B%22cols%22%3A%5B%5B%22H%22%2C%22H%22%2C%22H%22%2C%22H%22%5D%2C%5B%22Amps4%22%5D%2C%5B%5D%2C%5B%5D%2C%5B%5D%2C%5B%22%E2%80%A2%22%2C%22%E2%80%A2%22%2C1%2C1%2C%22X%22%5D%2C%5B1%2C1%2C%22%E2%80%A2%22%2C%22%E2%80%A2%22%2C%22Z%22%5D%2C%5B%22%E2%80%A2%22%2C%22%E2%80%A2%22%2C1%2C1%2C%22X%22%5D%2C%5B%22Amps4%22%5D%5D%7D\" target=\"_blank\">open in Quirk</a>):</p>\n<pre><code>CCX q0 q1 q4\nCCZ q2 q3 q4\nCCX q0 q1 q4\n</code></pre>\n<p>If you forget to include the last <code>CCX</code> that uncomputes <code>q4</code>, then you'd always see a value error on the 4 inputs on which <code>q0</code> and <code>q1</code> are both <code>1</code> (<a href=\"https://algassert.com/quirk#circuit=%7B%22cols%22%3A%5B%5B1%2C1%2C%22H%22%2C%22H%22%5D%2C%5B%22Amps4%22%5D%2C%5B%5D%2C%5B%5D%2C%5B%5D%2C%5B%22%E2%80%A2%22%2C%22%E2%80%A2%22%2C1%2C1%2C%22X%22%5D%2C%5B1%2C1%2C%22%E2%80%A2%22%2C%22%E2%80%A2%22%2C%22Z%22%5D%5D%2C%22init%22%3A%5B1%2C1%5D%7D\" target=\"_blank\">open in Quirk</a>):</p>\n<pre><code>CCX q0 q1 q4\nCCZ q2 q3 q4\n</code></pre>\n<p>You can optimize the original circuit by replacing the uncomputing <code>CCX</code> with an <code>HMR</code> and a 0-Toffoli Clifford <code>CZ</code> phase correction (<a href=\"https://algassert.com/quirk#circuit=%7B%22cols%22%3A%5B%5B%22H%22%2C%22H%22%2C%22H%22%2C%22H%22%5D%2C%5B%22Amps4%22%5D%2C%5B%5D%2C%5B%5D%2C%5B%5D%2C%5B%22%E2%80%A2%22%2C%22%E2%80%A2%22%2C1%2C1%2C%22X%22%5D%2C%5B1%2C1%2C%22%E2%80%A2%22%2C%22%E2%80%A2%22%2C%22Z%22%5D%2C%5B1%2C1%2C1%2C1%2C%22H%22%5D%2C%5B1%2C1%2C1%2C1%2C%22Measure%22%5D%2C%5B%22%E2%80%A2%22%2C%22Z%22%2C1%2C1%2C%22%E2%80%A2%22%5D%2C%5B%22Amps4%22%5D%5D%7D\" target=\"_blank\">open in Quirk</a>):</p>\n<pre><code>CCX q0 q1 q4\nCCZ q2 q3 q4\nHMR q4 b0\nCZ q0 q1 if b0\n</code></pre>\n<p>Now suppose you forgot the phase correction <code>CZ q0 q1 if b0</code> and instead ran (<a href=\"https://algassert.com/quirk#circuit=%7B%22cols%22%3A%5B%5B%22H%22%2C%22H%22%2C%22H%22%2C%22H%22%5D%2C%5B%22Amps4%22%5D%2C%5B%5D%2C%5B%5D%2C%5B%5D%2C%5B%22%E2%80%A2%22%2C%22%E2%80%A2%22%2C1%2C1%2C%22X%22%5D%2C%5B1%2C1%2C%22%E2%80%A2%22%2C%22%E2%80%A2%22%2C%22Z%22%5D%2C%5B1%2C1%2C1%2C1%2C%22H%22%5D%2C%5B1%2C1%2C1%2C1%2C%22Measure%22%5D%2C%5B%22Amps4%22%2C1%2C1%2C1%2C%22%E2%80%A2%22%5D%2C%5B%5D%2C%5B%5D%2C%5B%5D%2C%5B%22Amps4%22%2C1%2C1%2C1%2C%22%E2%97%A6%22%5D%5D%7D\" target=\"_blank\">open in Quirk</a>):</p>\n<pre><code>CCX q0 q1 q4\nCCZ q2 q3 q4\nHMR q4 b0\n</code></pre>\n<p>This circuit has zero value errors on every input (since <code>q0..q3</code> are untouched and <code>HMR</code> always resets <code>q4</code> to <code>|0&gt;</code>). On the 4 inputs with <code>q0 &amp; q1 = 1</code> (<code>|1100&gt;</code>, <code>|1101&gt;</code>, <code>|1110&gt;</code>, <code>|1111&gt;</code>), <code>q4 = 1</code> and applying an <code>HMR</code> causes a phase error 50% of the time, specifically whenever <code>HMR q4 b0</code> samples <code>b0 = 1</code> (you can also see those 4 amplitudes have wrong phase in the 4th quirk link whenever measurement outcome is 1).</p>",
+          "parent": {},
+          "author": {
+            "displayName": "Tanuj Khattar",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/35621317-kg.jpg?t=2026-10-27-19-02-29",
+            "url": "/quantumbaba",
+            "tier": "CONTRIBUTOR",
+            "id": 35621317,
+            "progressionOptOut": false
+          },
+          "authorType": "HOST",
+          "votes": {
+            "totalVotes": 1,
+            "canUpvote": true,
+            "totalUpvotes": 1
+          },
+          "kernelVersion": 0,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "reactions": [
+            {
+              "emoji": "THANK_YOU",
+              "featuredUserNames": [
+                "brandonkh",
+                "xhsmsuper"
+              ],
+              "userCount": 2
+            },
+            {
+              "emoji": "LOVE",
+              "featuredUserNames": [
+                "brandonkh",
+                "xhsmsuper"
+              ],
+              "userCount": 2
+            }
+          ]
+        },
+        {
+          "id": 3543990,
+          "postDate": "2026-10-24T14:26:44.637Z",
+          "rawMarkdown": "I'm seeing a small but consistent residual on the `dqi` task and I'd like to know whether it's inherent to the protocol or a fixable detail in my construction.**Observation** (official local verifier, 102400 shots):- `value_errors = 0` — the syndrome check always passes- `phase_errors ≈ 8e-5` — a handful of shots get the wrong phase- This makes `R = eps_plus/eps ≈ 1.2` instead of 1.0**What I've ruled out**:1. It is not the unique-decoding radius. For every failing shot I ran a classical Berlekamp-Massey decode: it returns degree = k with roots matching the true error positions exactly, so the input is uniquely decodable.2. It is not correlated with the error count. Grouping by k (from 27 to 35), the per-k failure rate is flat at ~8e-5.3. It is not a positional or value pattern — no boundary positions, no special values.**The decisive observation**: if I take one failing input and re-run it many times (varying only the internal measurement outcomes), roughly **50%** of the runs fail. For normal inputs, 0% fail. So there exist \"special\" inputs (roughly 1.6e-4 of all inputs), and for those the circuit's correctness depends on the intermediate measurement outcomes.Since the DQI contract should depend only on the input (the decoded error and the MBUC mask), a phase that varies with intermediate measurements looks like an unhandled measurement branch rather than an algorithmic limit.**My question**: is this expected behaviour of the approximate/truncated decoder path, or is there a known construction detail (e.g. a condition that must be applied when the measured register is zero) that removes it? If it's a known limitation, is there a published bound for the residual epsilon that I should target instead of driving it to zero?Happy to share more details on the diagnostic method (classical BM cross-check + repeated-measurement runs) if useful.",
+          "content": "<p>I'm seeing a small but consistent residual on the <code>dqi</code> task and I'd like to know whether it's inherent to the protocol or a fixable detail in my construction.<strong>Observation</strong> (official local verifier, 102400 shots):- <code>value_errors = 0</code> — the syndrome check always passes- <code>phase_errors ≈ 8e-5</code> — a handful of shots get the wrong phase- This makes <code>R = eps_plus/eps ≈ 1.2</code> instead of 1.0<strong>What I've ruled out</strong>:1. It is not the unique-decoding radius. For every failing shot I ran a classical Berlekamp-Massey decode: it returns degree = k with roots matching the true error positions exactly, so the input is uniquely decodable.2. It is not correlated with the error count. Grouping by k (from 27 to 35), the per-k failure rate is flat at ~8e-5.3. It is not a positional or value pattern — no boundary positions, no special values.<strong>The decisive observation</strong>: if I take one failing input and re-run it many times (varying only the internal measurement outcomes), roughly <strong>50%</strong> of the runs fail. For normal inputs, 0% fail. So there exist \"special\" inputs (roughly 1.6e-4 of all inputs), and for those the circuit's correctness depends on the intermediate measurement outcomes.Since the DQI contract should depend only on the input (the decoded error and the MBUC mask), a phase that varies with intermediate measurements looks like an unhandled measurement branch rather than an algorithmic limit.<strong>My question</strong>: is this expected behaviour of the approximate/truncated decoder path, or is there a known construction detail (e.g. a condition that must be applied when the measured register is zero) that removes it? If it's a known limitation, is there a published bound for the residual epsilon that I should target instead of driving it to zero?Happy to share more details on the diagnostic method (classical BM cross-check + repeated-measurement runs) if useful.</p>",
+          "parent": {},
+          "author": {
+            "displayName": "xhsmsuper",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36657055-kg.jpg?t=2026-10-25-06-55-46",
+            "url": "/xhsmsuper",
+            "tier": "CONTRIBUTOR",
+            "id": 36657055,
+            "progressionOptOut": false
+          },
+          "authorType": "TOPIC",
+          "votes": {
+            "canUpvote": true,
+            "totalUpvotes": 1
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 504,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "teamUpInfo": {
+            "teamLeader": {
+              "displayName": "xhsmsuper",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36657055-kg.jpg?t=2026-10-25-06-55-46",
+              "url": "/xhsmsuper",
+              "userName": "xhsmsuper",
+              "tier": "CONTRIBUTOR",
+              "id": 36657055,
+              "profileUrl": "/xhsmsuper",
+              "performanceTier": "CONTRIBUTOR",
+              "userId": 36657055,
+              "progressionOptOut": false
+            },
+            "intro": ""
+          }
+        },
+        {
+          "id": 3545945,
+          "postDate": "2026-10-28T02:29:37.407Z",
+          "rawMarkdown": "Thank you - this is exactly the confirmation we were hoping for from the organisers, and the minimal Quirk example makes the mechanism unambiguous.\n\nThe equivalence you point at is the piece we had independently measured and can now name precisely. Running single- and double-HMR probes on |0> and |1> in kickmix, we found the phase kickback is\n\n    phase ^= b & q      (b = classical outcome bit, q = ancilla value before HMR)\n\ni.e. a Pauli-Z kicked back onto the control pattern exactly when the measured outcome is 1 - which is your `CZ q0 q1 if b0` line, generalised to whatever the ancilla was controlling. That rule reproduces both of your examples: with the correction the 4-input phase is exact; without it the four inputs with q0&q1=1 acquire a phase that depends on b0, hence the 50%-of-runs failure we observed for one special input (128/256 measurement streams wrong, 0/256 on inputs without the pattern).\n\nTwo things we would like your steer on, since they decide how much it is worth chasing to zero:\n\n1. **Is R(eps+) driven purely by the measured residual rate eps+, or does the verifier also reward pe = 0 beyond that?** Our reading of the metric is that R is a fixed function of eps+, so a construction with pe = 0 and one with pe = 3 out of 102,400 differ by ~1.5% in final cost and nothing more. If that is right, the practical question is whether the ~1.6e-4 rare-input set can be enumerated and covered by explicit conditional corrections (classically-controlled Cliffords, zero Toffoli cost) rather than removed structurally.\n\n2. **On the uncomputation accounting**: is a conditional CZ gated on an outcome bit billed at zero Toffoli, as our reading of the cost model says? If the full set of rare-branch corrections costs qubits/depth but no Toffoli, covering them seems almost free - and it would also answer whether the current frontier constructions (Q=889, T~474K, pe 0..4 across 20 salts) have room to both reach pe = 0 AND keep the tighter qubit budget, or whether those two goals trade off.\n\nFor context: our current dqi runs at Q=889 / T~474K with pe 0..4 depending on the salt, so the residual is already tiny in the eps+ sense; if the remaining gap is purely eps+-driven it is worth ~1% and we would rather spend the effort on peak qubits (which enter as Q^2). If instead there is a construction detail that makes pe exactly 0 at no cost, that is a different decision.\n\nHappy to share the probe scripts (HMR semantics sweep + repeated-measurement-stream harness) if useful to anyone else hitting this.",
+          "content": "<p>Thank you - this is exactly the confirmation we were hoping for from the organisers, and the minimal Quirk example makes the mechanism unambiguous.</p>\n<p>The equivalence you point at is the piece we had independently measured and can now name precisely. Running single- and double-HMR probes on |0&gt; and |1&gt; in kickmix, we found the phase kickback is</p>\n<pre><code>phase ^= b &amp; q      (b = classical outcome bit, q = ancilla value before HMR)\n</code></pre>\n<p>i.e. a Pauli-Z kicked back onto the control pattern exactly when the measured outcome is 1 - which is your <code>CZ q0 q1 if b0</code> line, generalised to whatever the ancilla was controlling. That rule reproduces both of your examples: with the correction the 4-input phase is exact; without it the four inputs with q0&amp;q1=1 acquire a phase that depends on b0, hence the 50%-of-runs failure we observed for one special input (128/256 measurement streams wrong, 0/256 on inputs without the pattern).</p>\n<p>Two things we would like your steer on, since they decide how much it is worth chasing to zero:</p>\n<ol>\n<li><p><strong>Is R(eps+) driven purely by the measured residual rate eps+, or does the verifier also reward pe = 0 beyond that?</strong> Our reading of the metric is that R is a fixed function of eps+, so a construction with pe = 0 and one with pe = 3 out of 102,400 differ by ~1.5% in final cost and nothing more. If that is right, the practical question is whether the ~1.6e-4 rare-input set can be enumerated and covered by explicit conditional corrections (classically-controlled Cliffords, zero Toffoli cost) rather than removed structurally.</p></li>\n<li><p><strong>On the uncomputation accounting</strong>: is a conditional CZ gated on an outcome bit billed at zero Toffoli, as our reading of the cost model says? If the full set of rare-branch corrections costs qubits/depth but no Toffoli, covering them seems almost free - and it would also answer whether the current frontier constructions (Q=889, T~474K, pe 0..4 across 20 salts) have room to both reach pe = 0 AND keep the tighter qubit budget, or whether those two goals trade off.</p></li>\n</ol>\n<p>For context: our current dqi runs at Q=889 / T~474K with pe 0..4 depending on the salt, so the residual is already tiny in the eps+ sense; if the remaining gap is purely eps+-driven it is worth ~1% and we would rather spend the effort on peak qubits (which enter as Q^2). If instead there is a construction detail that makes pe exactly 0 at no cost, that is a different decision.</p>\n<p>Happy to share the probe scripts (HMR semantics sweep + repeated-measurement-stream harness) if useful to anyone else hitting this.</p>",
+          "parent": {},
+          "author": {
+            "displayName": "xhsmsuper",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36657055-kg.jpg?t=2026-10-25-06-55-46",
+            "url": "/xhsmsuper",
+            "tier": "CONTRIBUTOR",
+            "id": 36657055,
+            "progressionOptOut": false
+          },
+          "authorType": "TOPIC",
+          "votes": {
+            "canUpvote": true
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 504,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "teamUpInfo": {
+            "teamLeader": {
+              "displayName": "xhsmsuper",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36657055-kg.jpg?t=2026-10-25-06-55-46",
+              "url": "/xhsmsuper",
+              "userName": "xhsmsuper",
+              "tier": "CONTRIBUTOR",
+              "id": 36657055,
+              "profileUrl": "/xhsmsuper",
+              "performanceTier": "CONTRIBUTOR",
+              "userId": 36657055,
+              "progressionOptOut": false
+            },
+            "intro": ""
+          }
+        },
+        {
+          "id": 3545369,
+          "postDate": "2026-10-27T06:38:24.990Z",
+          "rawMarkdown": "Nice - the fixed-point / gauge-drift framing over ~140 measurement rounds is a better model than my single-branch hypothesis, and it predicts exactly what we observe on that same lineage: our v3-class build (445,229 T, Q=1,789) sits at R ~ 1.21 with pe in {0..4} across 20 salts (mean 0.9). That reads as O(1/2^margin) boundary noise rather than a deterministic uncomputation miss, which matches your reading.\n\nOne quantitative note you may find useful when calibrating the margin sweep. On the newer 889-qubit Taylor / J-fraction generation the implied prefactor is not R(pe) alone. Measured with the official local verifier:\n\n  pe = 0  ->  cost / (Q^2 * T) = 1.1913\n  pe = 2  ->  cost / (Q^2 * T) = 1.2014   (delta = +0.85%)\n\nThe pe=0 value lands exactly on the paper's R floor for eps+ ~ 8.7e-4, i.e. R(eps+) ~ 1.19. So once a construction is phase-clean, the remaining ~19% multiplier looks like a property of the 102,400-shot test budget rather than of the circuit: driving residual phase errors below ~1e-5 buys at most another ~0.85%. On this reading your clean margin-1 split at 0/102,400 is already at the floor, and squeezing margin further only costs qubits.\n\nIf you are willing to share the verify log format (102,400 shots, batch 32, workers 1) we would like to cross-check our 20-salt harness against it. Ours derives a per-batch rng_seed from a SeedSequence and we have never confirmed that this matches the official batch schedule - if it does not, our pe in {0..4} band would need re-reading. Happy to share the salt runner and the BM cross-check script in return.",
+          "content": "<p>Nice - the fixed-point / gauge-drift framing over ~140 measurement rounds is a better model than my single-branch hypothesis, and it predicts exactly what we observe on that same lineage: our v3-class build (445,229 T, Q=1,789) sits at R ~ 1.21 with pe in {0..4} across 20 salts (mean 0.9). That reads as O(1/2^margin) boundary noise rather than a deterministic uncomputation miss, which matches your reading.</p>\n<p>One quantitative note you may find useful when calibrating the margin sweep. On the newer 889-qubit Taylor / J-fraction generation the implied prefactor is not R(pe) alone. Measured with the official local verifier:</p>\n<p>pe = 0  -&gt;  cost / (Q^2 * T) = 1.1913\n  pe = 2  -&gt;  cost / (Q^2 * T) = 1.2014   (delta = +0.85%)</p>\n<p>The pe=0 value lands exactly on the paper's R floor for eps+ ~ 8.7e-4, i.e. R(eps+) ~ 1.19. So once a construction is phase-clean, the remaining ~19% multiplier looks like a property of the 102,400-shot test budget rather than of the circuit: driving residual phase errors below ~1e-5 buys at most another ~0.85%. On this reading your clean margin-1 split at 0/102,400 is already at the floor, and squeezing margin further only costs qubits.</p>\n<p>If you are willing to share the verify log format (102,400 shots, batch 32, workers 1) we would like to cross-check our 20-salt harness against it. Ours derives a per-batch rng_seed from a SeedSequence and we have never confirmed that this matches the official batch schedule - if it does not, our pe in {0..4} band would need re-reading. Happy to share the salt runner and the BM cross-check script in return.</p>",
+          "parent": {},
+          "author": {
+            "displayName": "xhsmsuper",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36657055-kg.jpg?t=2026-10-25-06-55-46",
+            "url": "/xhsmsuper",
+            "tier": "CONTRIBUTOR",
+            "id": 36657055,
+            "progressionOptOut": false
+          },
+          "authorType": "TOPIC",
+          "votes": {
+            "canUpvote": true
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 504,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "teamUpInfo": {
+            "teamLeader": {
+              "displayName": "xhsmsuper",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36657055-kg.jpg?t=2026-10-25-06-55-46",
+              "url": "/xhsmsuper",
+              "userName": "xhsmsuper",
+              "tier": "CONTRIBUTOR",
+              "id": 36657055,
+              "profileUrl": "/xhsmsuper",
+              "performanceTier": "CONTRIBUTOR",
+              "userId": 36657055,
+              "progressionOptOut": false
+            },
+            "intro": ""
+          }
+        },
+        {
+          "id": 3545259,
+          "postDate": "2026-10-27T00:40:08.133Z",
+          "rawMarkdown": "Same residual signature on our local split. Two observations from the v3-444k-T build we ran (3-5 phase errors, value_errors=0):\n\n- The residual is flat across k (no k-specific structure) and depends on the intermediate measurement outcomes — consistent with a fixed-point / gauge drift accumulating over the ~140 measurement rounds rather than a bug in any single decoder round.\n- The margin-1 parameterization from the 6.17 release (same 456,568-T topology, different rounding of the fixed-point constants) runs clean on our split: 0 phase errors out of 102,400 shots. So the residual looks like an O(1/2^margin) boundary effect, not a systematic phase error in the decoder itself.\n\nHappy to share our verify log format if useful — 102,400 shots, batch-size 32, max-workers 1 (memory bound on the local validator).",
+          "content": "<p>Same residual signature on our local split. Two observations from the v3-444k-T build we ran (3-5 phase errors, value_errors=0):</p>\n<ul>\n<li>The residual is flat across k (no k-specific structure) and depends on the intermediate measurement outcomes — consistent with a fixed-point / gauge drift accumulating over the ~140 measurement rounds rather than a bug in any single decoder round.</li>\n<li>The margin-1 parameterization from the 6.17 release (same 456,568-T topology, different rounding of the fixed-point constants) runs clean on our split: 0 phase errors out of 102,400 shots. So the residual looks like an O(1/2^margin) boundary effect, not a systematic phase error in the decoder itself.</li>\n</ul>\n<p>Happy to share our verify log format if useful — 102,400 shots, batch-size 32, max-workers 1 (memory bound on the local validator).</p>",
+          "parent": {},
+          "author": {
+            "displayName": "shawncsx",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "url": "/shawncsx",
+            "tier": "CONTRIBUTOR",
+            "id": 31830760,
+            "progressionOptOut": false
+          },
+          "authorType": "COMMENT",
+          "votes": {
+            "canUpvote": true
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 611,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "teamUpInfo": {
+            "teamLeader": {
+              "displayName": "shawncsx",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "url": "/shawncsx",
+              "userName": "shawncsx",
+              "tier": "CONTRIBUTOR",
+              "id": 31830760,
+              "profileUrl": "/shawncsx",
+              "performanceTier": "CONTRIBUTOR",
+              "userId": 31830760,
+              "progressionOptOut": false
+            },
+            "intro": ""
+          }
+        },
+        {
+          "id": 3544797,
+          "postDate": "2026-10-26T09:51:56.467Z",
+          "rawMarkdown": "Thank you for the detailed confirmation - the margin-1 framing matches what we suspected (an unhandled rare branch folding into the typical path). We reproduced the same signature independently: classical BM always uniquely decodes the failing syndromes, per-k failure rate flat at ~8e-5, and one failing input re-run across 256 measurement streams fails ~50% of runs while normal inputs are 0/256. Your quantified expectation (special-input rate ~1.6e-4 = expected failure rate) closes the loop nicely.\n\nTwo notes from our side:\n\n1. On the cost tradeoff: with score = R * Q^2 * T, an extra measurement qubit costs ~0.11% (at Q~881) while dropping margin and losing R 1.00 -> 1.21 costs ~21%. So margin-1 is clearly correct at the current frontier - but the frontier itself has moved: the current best dqi constructions run at Q=881, T=964K with phase_errors=0 (dqi ratio 27.4x), i.e. both phase-clean AND half the qubits, which suggests that bank structure (J-fraction style) handles the rare branch without a dedicated margin bit. Would be interesting to compare construction notes.\n\n2. Our diagnostics (classical BM cross-check + repeated-measurement stream method) are described in the topic; happy to share script details if useful for your margin-1 validation.",
+          "content": "<p>Thank you for the detailed confirmation - the margin-1 framing matches what we suspected (an unhandled rare branch folding into the typical path). We reproduced the same signature independently: classical BM always uniquely decodes the failing syndromes, per-k failure rate flat at ~8e-5, and one failing input re-run across 256 measurement streams fails ~50% of runs while normal inputs are 0/256. Your quantified expectation (special-input rate ~1.6e-4 = expected failure rate) closes the loop nicely.</p>\n<p>Two notes from our side:</p>\n<ol>\n<li><p>On the cost tradeoff: with score = R * Q^2 * T, an extra measurement qubit costs ~0.11% (at Q~881) while dropping margin and losing R 1.00 -&gt; 1.21 costs ~21%. So margin-1 is clearly correct at the current frontier - but the frontier itself has moved: the current best dqi constructions run at Q=881, T=964K with phase_errors=0 (dqi ratio 27.4x), i.e. both phase-clean AND half the qubits, which suggests that bank structure (J-fraction style) handles the rare branch without a dedicated margin bit. Would be interesting to compare construction notes.</p></li>\n<li><p>Our diagnostics (classical BM cross-check + repeated-measurement stream method) are described in the topic; happy to share script details if useful for your margin-1 validation.</p></li>\n</ol>",
+          "parent": {},
+          "author": {
+            "displayName": "xhsmsuper",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36657055-kg.jpg?t=2026-10-25-06-55-46",
+            "url": "/xhsmsuper",
+            "tier": "CONTRIBUTOR",
+            "id": 36657055,
+            "progressionOptOut": false
+          },
+          "authorType": "TOPIC",
+          "votes": {
+            "canUpvote": true
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 504,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "teamUpInfo": {
+            "teamLeader": {
+              "displayName": "xhsmsuper",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/36657055-kg.jpg?t=2026-10-25-06-55-46",
+              "url": "/xhsmsuper",
+              "userName": "xhsmsuper",
+              "tier": "CONTRIBUTOR",
+              "id": 36657055,
+              "profileUrl": "/xhsmsuper",
+              "performanceTier": "CONTRIBUTOR",
+              "userId": 36657055,
+              "progressionOptOut": false
+            },
+            "intro": ""
+          }
+        },
+        {
+          "id": 3544661,
+          "postDate": "2026-10-26T01:55:27.993Z",
+          "rawMarkdown": "We hit the same residual while building our 6.17 margin-1 DQI decoder: value_errors = 0, a handful of phase errors out of 102,400 shots. Same signature as yours - flat across k, independent of the classical BM decode (which always uniquely decodes), and depends on the intermediate measurement outcomes for a ~1.6e-4 fraction of inputs. Your 50%-of-runs-fail observation on the special inputs is the decisive clue: it points at an uncomputation branch that only fires when a measured register lands in a rare pattern, so the phase the circuit leaves behind depends on which measurement outcome actually happened.\n\nPractical fix we verified locally: the margin-1 parameterization is exactly what pins this down - it reserves one extra measurement bit so the rare branch is always handled explicitly instead of being folded into the typical path. With margin-1 the residual is 0 phase errors on our split; the ~8e-5 you're seeing matches the expected 1/1.6e-4 rate of the unhandled rare inputs.\n\nIf you want a second data point: the lightning community build (444,030 T, 1,842 qubits) also shows 3-5 phase errors on its local verify, and adding and_implication_fast makes it worse (4 errors, repetition_factor 1.2095). The 6.17 margin-1 build (456,568 T, 1,856 qubits, 0 phase errors) is the only configuration we found that is phase-clean at the verifier's shot budget.",
+          "content": "<p>We hit the same residual while building our 6.17 margin-1 DQI decoder: value_errors = 0, a handful of phase errors out of 102,400 shots. Same signature as yours - flat across k, independent of the classical BM decode (which always uniquely decodes), and depends on the intermediate measurement outcomes for a ~1.6e-4 fraction of inputs. Your 50%-of-runs-fail observation on the special inputs is the decisive clue: it points at an uncomputation branch that only fires when a measured register lands in a rare pattern, so the phase the circuit leaves behind depends on which measurement outcome actually happened.</p>\n<p>Practical fix we verified locally: the margin-1 parameterization is exactly what pins this down - it reserves one extra measurement bit so the rare branch is always handled explicitly instead of being folded into the typical path. With margin-1 the residual is 0 phase errors on our split; the ~8e-5 you're seeing matches the expected 1/1.6e-4 rate of the unhandled rare inputs.</p>\n<p>If you want a second data point: the lightning community build (444,030 T, 1,842 qubits) also shows 3-5 phase errors on its local verify, and adding and_implication_fast makes it worse (4 errors, repetition_factor 1.2095). The 6.17 margin-1 build (456,568 T, 1,856 qubits, 0 phase errors) is the only configuration we found that is phase-clean at the verifier's shot budget.</p>",
+          "parent": {},
+          "author": {
+            "displayName": "shawncsx",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+            "url": "/shawncsx",
+            "tier": "CONTRIBUTOR",
+            "id": 31830760,
+            "progressionOptOut": false
+          },
+          "authorType": "COMMENT",
+          "votes": {
+            "canUpvote": true
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 611,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "teamUpInfo": {
+            "teamLeader": {
+              "displayName": "shawncsx",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/default-thumb.png",
+              "url": "/shawncsx",
+              "userName": "shawncsx",
+              "tier": "CONTRIBUTOR",
+              "id": 31830760,
+              "profileUrl": "/shawncsx",
+              "performanceTier": "CONTRIBUTOR",
+              "userId": 31830760,
+              "progressionOptOut": false
+            },
+            "intro": ""
+          }
+        }
+      ],
+      "commentSort": "COMMENT_LIST_SORT_BY_HOT"
+    }
+  },
+  "753403": {
+    "topic": {
+      "forumTopic": {
+        "authorId": 28218050,
+        "authorThumbnailName": "28218050-kg.png?t=2025-10-29-22-28-06",
+        "authorUserDisplayName": "manwithacat",
+        "authorUserName": "manwithacat",
+        "firstMessageId": 3545951,
+        "forumId": 12630171,
+        "forumName": "Google Quantum AI - Verifiable Quantum Circuit Compilation",
+        "id": 753403,
+        "name": "An interactive look inside the invsqrt circuit",
+        "parentName": "google-verifiable-quantum-circuit-compilation",
+        "parentUrl": "/competitions/google-verifiable-quantum-circuit-compilation",
+        "postDate": "2026-10-28T02:43:52.265633900Z",
+        "totalVotes": 2,
+        "url": "/competitions/google-verifiable-quantum-circuit-compilation/discussion/753403",
+        "totalMessages": 2,
+        "authorPerformanceTier": "EXPERT",
+        "authorProgressionOptOut": false
+      }
+    },
+    "messages": {
+      "comments": [
+        {
+          "id": 3546385,
+          "postDate": "2026-10-29T00:55:54.883Z",
+          "rawMarkdown": "this is not a visualisation tool. it is a data capturing too! collect the register traces as data, ask AI agent to look for correlation and suggest how tom compress that ciruit (e.g. share qubits of same trace pattern)\n",
+          "content": "<p>this is not a visualisation tool. it is a data capturing too! collect the register traces as data, ask AI agent to look for correlation and suggest how tom compress that ciruit (e.g. share qubits of same trace pattern)</p>",
+          "replies": [
+            {
+              "id": 3546390,
+              "postDate": "2026-10-29T01:16:03.177Z",
+              "rawMarkdown": "that is a really great idea and I am definitely not face palming that I didn't think of it",
+              "content": "<p>that is a really great idea and I am definitely not face palming that I didn't think of it</p>",
+              "parent": {},
+              "author": {
+                "displayName": "manwithacat",
+                "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28218050-kg.png?t=2025-10-29-22-28-06",
+                "url": "/manwithacat",
+                "tier": "EXPERT",
+                "id": 28218050,
+                "progressionOptOut": false
+              },
+              "authorType": "TOPIC",
+              "votes": {
+                "canUpvote": true
+              },
+              "kernelVersion": 0,
+              "competitionRanking": 200,
+              "feedbackTrackingData": {},
+              "isThankYou": false,
+              "teamUpInfo": {
+                "teamLeader": {
+                  "displayName": "manwithacat",
+                  "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28218050-kg.png?t=2025-10-29-22-28-06",
+                  "url": "/manwithacat",
+                  "userName": "manwithacat",
+                  "tier": "EXPERT",
+                  "id": 28218050,
+                  "profileUrl": "/manwithacat",
+                  "performanceTier": "EXPERT",
+                  "userId": 28218050,
+                  "progressionOptOut": false
+                },
+                "intro": ""
+              }
+            }
+          ],
+          "parent": {},
+          "author": {
+            "displayName": "hengck23",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+            "url": "/hengck23",
+            "tier": "GRANDMASTER",
+            "id": 113660,
+            "progressionOptOut": false
+          },
+          "authorType": "COMMENT",
+          "votes": {
+            "totalVotes": 1,
+            "canUpvote": true,
+            "totalUpvotes": 1
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 75,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "teamUpInfo": {
+            "teamLeader": {
+              "displayName": "hengck23",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+              "url": "/hengck23",
+              "userName": "hengck23",
+              "tier": "GRANDMASTER",
+              "id": 113660,
+              "profileUrl": "/hengck23",
+              "performanceTier": "GRANDMASTER",
+              "userId": 113660,
+              "progressionOptOut": false
+            },
+            "intro": ""
+          }
+        },
+        {
+          "id": 3545951,
+          "postDate": "2026-10-28T02:43:52.267Z",
+          "rawMarkdown": "We built a small viewer that runs mrmeows' 63-qubit invsqrt circuit (the 1,348-Toffoli build most of the frontier uses) in your browser, one input at a time: https://manwithacat.github.io/kickmix-macos/viewer/\n\nPick an x and watch its bits move through all 46,610 operations on 63 qubits: 17 stages from normalisation through the coefficient lookup, the arithmetic blocks, the 41 fine rotations and the long phase-repair tail. Lit bits are coloured by the phase so far, and a dial shows the phase closing in on 1/√x.\n\n- **Play** runs the circuit start to finish (once, on a loop, or back and forth); **Sweep x** scrubs the input across its whole range so you can see where the circuit's behaviour changes. **Re-roll measurements** changes every mid-circuit measurement outcome; the middle shifts, the final phase doesn't.\n- Tracks show Toffolis run, measurement-based clean-ups, branches skipped for this x, and which gates move the phase.\n- **Precision across every x**: error ÷ tolerance for all 3,133,452 inputs (computed with kickmix). The worst is x = 161 at −0.99932; only 184 inputs are above 0.9 of tolerance and the mean is 0.21.\n- **Qubits**: at most 35 of the 41 scratch qubits hold a 1 at any instant, yet all 41 are needed, because their lifetimes are staggered (shown as a background in the raster). Saving a qubit means re-packing lifetimes, not lowering a peak.\n- **Load your own .kmx** to view your circuit the same way. It stays in your browser. It's a viewer, not a verifier.\n\nThe in-browser tracer matches kickmix exactly (all qubits, classical bits and the phase, on 2,299 inputs). Stage names are marked documented (from mrmeows' README and proofs) or inferred (read from the op stream), and the middle arithmetic stages are the least understood. If you spot something odd, or know what a stage is doing, please say so; that's half the point.\n\nFor fun, there's also a price tag: at rough 2026 numbers, running this \"small\" circuit with error correction needs about 48,000 physical qubits, around $2 billion of hardware, and about three weeks to do the verifier's 200 million shots. kickmix does the same check on a laptop in about 75 seconds.\n\nThe viewer is also in our kickmix fork (tools/circuit-viewer, https://github.com/manwithacat/kickmix-macos) if you'd rather run it locally.\n\nCircuit by mrmeows (Apache-2.0), on the line of busyaprime, Phuc Thai, Dmitrii Gluzdov and marsyas. Built with AI assistance.",
+          "content": "<p>We built a small viewer that runs mrmeows' 63-qubit invsqrt circuit (the 1,348-Toffoli build most of the frontier uses) in your browser, one input at a time: <a href=\"https://manwithacat.github.io/kickmix-macos/viewer/\" target=\"_blank\">https://manwithacat.github.io/kickmix-macos/viewer/</a></p>\n<p>Pick an x and watch its bits move through all 46,610 operations on 63 qubits: 17 stages from normalisation through the coefficient lookup, the arithmetic blocks, the 41 fine rotations and the long phase-repair tail. Lit bits are coloured by the phase so far, and a dial shows the phase closing in on 1/√x.</p>\n<ul>\n<li><strong>Play</strong> runs the circuit start to finish (once, on a loop, or back and forth); <strong>Sweep x</strong> scrubs the input across its whole range so you can see where the circuit's behaviour changes. <strong>Re-roll measurements</strong> changes every mid-circuit measurement outcome; the middle shifts, the final phase doesn't.</li>\n<li>Tracks show Toffolis run, measurement-based clean-ups, branches skipped for this x, and which gates move the phase.</li>\n<li><strong>Precision across every x</strong>: error ÷ tolerance for all 3,133,452 inputs (computed with kickmix). The worst is x = 161 at −0.99932; only 184 inputs are above 0.9 of tolerance and the mean is 0.21.</li>\n<li><strong>Qubits</strong>: at most 35 of the 41 scratch qubits hold a 1 at any instant, yet all 41 are needed, because their lifetimes are staggered (shown as a background in the raster). Saving a qubit means re-packing lifetimes, not lowering a peak.</li>\n<li><strong>Load your own .kmx</strong> to view your circuit the same way. It stays in your browser. It's a viewer, not a verifier.</li>\n</ul>\n<p>The in-browser tracer matches kickmix exactly (all qubits, classical bits and the phase, on 2,299 inputs). Stage names are marked documented (from mrmeows' README and proofs) or inferred (read from the op stream), and the middle arithmetic stages are the least understood. If you spot something odd, or know what a stage is doing, please say so; that's half the point.</p>\n<p>For fun, there's also a price tag: at rough 2026 numbers, running this \"small\" circuit with error correction needs about 48,000 physical qubits, around $2 billion of hardware, and about three weeks to do the verifier's 200 million shots. kickmix does the same check on a laptop in about 75 seconds.</p>\n<p>The viewer is also in our kickmix fork (tools/circuit-viewer, <a href=\"https://github.com/manwithacat/kickmix-macos\" target=\"_blank\">https://github.com/manwithacat/kickmix-macos</a>) if you'd rather run it locally.</p>\n<p>Circuit by mrmeows (Apache-2.0), on the line of busyaprime, Phuc Thai, Dmitrii Gluzdov and marsyas. Built with AI assistance.</p>",
+          "parent": {},
+          "author": {
+            "displayName": "manwithacat",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28218050-kg.png?t=2025-10-29-22-28-06",
+            "url": "/manwithacat",
+            "tier": "EXPERT",
+            "id": 28218050,
+            "progressionOptOut": false
+          },
+          "authorType": "TOPIC",
+          "votes": {
+            "totalVotes": 2,
+            "canUpvote": true,
+            "totalUpvotes": 2
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 200,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "teamUpInfo": {
+            "teamLeader": {
+              "displayName": "manwithacat",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28218050-kg.png?t=2025-10-29-22-28-06",
+              "url": "/manwithacat",
+              "userName": "manwithacat",
+              "tier": "EXPERT",
+              "id": 28218050,
+              "profileUrl": "/manwithacat",
+              "performanceTier": "EXPERT",
+              "userId": 28218050,
+              "progressionOptOut": false
+            },
+            "intro": ""
+          }
+        }
+      ],
+      "commentSort": "COMMENT_LIST_SORT_BY_HOT"
+    }
+  },
+  "753424": {
+    "topic": {
+      "forumTopic": {
+        "authorId": 28218050,
+        "authorThumbnailName": "28218050-kg.png?t=2025-10-29-22-28-06",
+        "authorUserDisplayName": "manwithacat",
+        "authorUserName": "manwithacat",
+        "firstMessageId": 3545980,
+        "forumId": 12630171,
+        "forumName": "Google Quantum AI - Verifiable Quantum Circuit Compilation",
+        "id": 753424,
+        "name": "Reading DQI leaderboard scores: a small salt effect",
+        "parentName": "google-verifiable-quantum-circuit-compilation",
+        "parentUrl": "/competitions/google-verifiable-quantum-circuit-compilation",
+        "postDate": "2026-10-28T03:43:52.022089300Z",
+        "totalVotes": 1,
+        "url": "/competitions/google-verifiable-quantum-circuit-compilation/discussion/753424",
+        "totalMessages": 1,
+        "authorPerformanceTier": "EXPERT",
+        "authorProgressionOptOut": false
+      }
+    },
+    "messages": {
+      "comments": [
+        {
+          "id": 3545980,
+          "postDate": "2026-10-28T03:43:52.023Z",
+          "rawMarkdown": "The DQI decoders in the current public lineage (ours included) fail on a few inputs in every 100,000, by design. The rules allow this: the repetition factor R prices it, and it never fails a submission. But each DQI score is a random draw. The test inputs are seeded from the circuit's hash plus a salt, any change to the circuit re-rolls the public draw, and final scoring uses a private salt.\n\nWe measured the public DQI circuits under 9 salts each ([notebook](https://www.kaggle.com/code/manwithacat/dqi-salt-check-public-frontier)). The 877- and 889-qubit decoders fail on about 1 in 100,000 shots and draw zero failures only about a third of the time. The 883- and 897-qubit decoders fail on about 1 in 300,000, and a 1,893-qubit decoder never failed. The expected cost of a \"lucky\" zero-failure public draw is 0.05–0.16% of the overall score. Our own 22.00949 was such a draw; its expected score is about 21.998.\n\nThat's small, but if you're choosing final submissions between near-ties on public score, compare expected DQI cost rather than the observed one. The notebook runs weekly with the unchanged official verifier. Corrections welcome. (Done with AI assistance.)",
+          "content": "<p>The DQI decoders in the current public lineage (ours included) fail on a few inputs in every 100,000, by design. The rules allow this: the repetition factor R prices it, and it never fails a submission. But each DQI score is a random draw. The test inputs are seeded from the circuit's hash plus a salt, any change to the circuit re-rolls the public draw, and final scoring uses a private salt.</p>\n<p>We measured the public DQI circuits under 9 salts each (<a href=\"https://www.kaggle.com/code/manwithacat/dqi-salt-check-public-frontier\" target=\"_blank\">notebook</a>). The 877- and 889-qubit decoders fail on about 1 in 100,000 shots and draw zero failures only about a third of the time. The 883- and 897-qubit decoders fail on about 1 in 300,000, and a 1,893-qubit decoder never failed. The expected cost of a \"lucky\" zero-failure public draw is 0.05–0.16% of the overall score. Our own 22.00949 was such a draw; its expected score is about 21.998.</p>\n<p>That's small, but if you're choosing final submissions between near-ties on public score, compare expected DQI cost rather than the observed one. The notebook runs weekly with the unchanged official verifier. Corrections welcome. (Done with AI assistance.)</p>",
+          "parent": {},
+          "author": {
+            "displayName": "manwithacat",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28218050-kg.png?t=2025-10-29-22-28-06",
+            "url": "/manwithacat",
+            "tier": "EXPERT",
+            "id": 28218050,
+            "progressionOptOut": false
+          },
+          "authorType": "TOPIC",
+          "votes": {
+            "totalVotes": 1,
+            "canUpvote": true,
+            "totalUpvotes": 2
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 200,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "teamUpInfo": {
+            "teamLeader": {
+              "displayName": "manwithacat",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28218050-kg.png?t=2025-10-29-22-28-06",
+              "url": "/manwithacat",
+              "userName": "manwithacat",
+              "tier": "EXPERT",
+              "id": 28218050,
+              "profileUrl": "/manwithacat",
+              "performanceTier": "EXPERT",
+              "userId": 28218050,
+              "progressionOptOut": false
+            },
+            "intro": ""
+          }
+        },
+        {
+          "id": 3546012,
+          "postDate": "2026-10-28T05:26:16.483Z",
+          "rawMarkdown": "A follow-up on *what* these rare DQI failures are, since we now have enough of them to look at.\n\nWe logged 47 failing shots across four public decoders (the 877-, 883-, 889- and 897-qubit circuits; 22 of them from 10.24M shots of the 897Q). All 47 behave the same way:\n\n- They're deterministic in the input: replaying a failing input with fresh simulator seeds fails every time, and passing inputs never do. So they're properties of particular error patterns, not measurement luck.\n- They're all phase errors. The syndrome and ancillas come back clean.\n- Probing the circuit with single-bit masks shows which error word it \"believed\" it decoded. In every case that word has the right syndrome but shares none of the true error positions; it fills positions 0..69 exactly, occasionally plus a few extras.\n\nPositions 0..69 are exactly the span of the classical-mask projection these decoders share (the 70-position Vandermonde term that subtracts the masks' known linear phase). Its contribution equals the phase of the unique word on positions 0..69 with that syndrome. So the simplest reading is that, on these rare inputs, the decoder finds no error positions (presumably an internal degenerate step, like a zero pivot), and what's left in the phase is just the projection's term.\n\nThat's a black-box reading; we haven't looked inside any decoder. If you're building or modifying one with the projection, flagging the \"found nothing\" case explicitly would at least make these failures visible and countable. The trigger rates differ between designs (roughly 1 in 100,000 to 1 in 500,000 shots), so it's worth measuring yours under several salts. Logs and probe scripts are on request. (Done with AI assistance.)",
+          "content": "<p>A follow-up on <em>what</em> these rare DQI failures are, since we now have enough of them to look at.</p>\n<p>We logged 47 failing shots across four public decoders (the 877-, 883-, 889- and 897-qubit circuits; 22 of them from 10.24M shots of the 897Q). All 47 behave the same way:</p>\n<ul>\n<li>They're deterministic in the input: replaying a failing input with fresh simulator seeds fails every time, and passing inputs never do. So they're properties of particular error patterns, not measurement luck.</li>\n<li>They're all phase errors. The syndrome and ancillas come back clean.</li>\n<li>Probing the circuit with single-bit masks shows which error word it \"believed\" it decoded. In every case that word has the right syndrome but shares none of the true error positions; it fills positions 0..69 exactly, occasionally plus a few extras.</li>\n</ul>\n<p>Positions 0..69 are exactly the span of the classical-mask projection these decoders share (the 70-position Vandermonde term that subtracts the masks' known linear phase). Its contribution equals the phase of the unique word on positions 0..69 with that syndrome. So the simplest reading is that, on these rare inputs, the decoder finds no error positions (presumably an internal degenerate step, like a zero pivot), and what's left in the phase is just the projection's term.</p>\n<p>That's a black-box reading; we haven't looked inside any decoder. If you're building or modifying one with the projection, flagging the \"found nothing\" case explicitly would at least make these failures visible and countable. The trigger rates differ between designs (roughly 1 in 100,000 to 1 in 500,000 shots), so it's worth measuring yours under several salts. Logs and probe scripts are on request. (Done with AI assistance.)</p>",
+          "parent": {},
+          "author": {
+            "displayName": "manwithacat",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28218050-kg.png?t=2025-10-29-22-28-06",
+            "url": "/manwithacat",
+            "tier": "EXPERT",
+            "id": 28218050,
+            "progressionOptOut": false
+          },
+          "authorType": "TOPIC",
+          "votes": {
+            "canUpvote": true
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 200,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "teamUpInfo": {
+            "teamLeader": {
+              "displayName": "manwithacat",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/28218050-kg.png?t=2025-10-29-22-28-06",
+              "url": "/manwithacat",
+              "userName": "manwithacat",
+              "tier": "EXPERT",
+              "id": 28218050,
+              "profileUrl": "/manwithacat",
+              "performanceTier": "EXPERT",
+              "userId": 28218050,
+              "progressionOptOut": false
+            },
+            "intro": ""
+          }
+        }
+      ],
+      "commentSort": "COMMENT_LIST_SORT_BY_HOT"
+    }
+  },
+  "752757": {
+    "topic": {
+      "forumTopic": {
+        "authorId": 25895166,
+        "authorThumbnailName": "25895166-kg.jpg?t=2025-03-26-22-51-05",
+        "authorUserDisplayName": "mrmeows",
+        "authorUserName": "mrmeows",
+        "firstMessageId": 3544740,
+        "forumId": 12630171,
+        "forumName": "Google Quantum AI - Verifiable Quantum Circuit Compilation",
+        "id": 752757,
+        "name": "20.39 circuits, let's all reach the plateau!",
+        "parentName": "google-verifiable-quantum-circuit-compilation",
+        "parentUrl": "/competitions/google-verifiable-quantum-circuit-compilation",
+        "postDate": "2026-10-26T07:28:15.778542800Z",
+        "totalVotes": 18,
+        "url": "/competitions/google-verifiable-quantum-circuit-compilation/discussion/752757",
+        "totalMessages": 11,
+        "authorPerformanceTier": "CONTRIBUTOR",
+        "authorProgressionOptOut": false
+      }
+    },
+    "messages": {
+      "comments": [
+        {
+          "id": 3544740,
+          "postDate": "2026-10-26T07:28:15.780Z",
+          "rawMarkdown": "I've published my current best submission, together with the methods and the dead ends that led to it.\n\nNotebook (reproduces the 14.49721 submission): https://www.kaggle.com/code/mrmeows/qcc-14-50-everything-i-learned-open-circuits\n\nDataset (circuits, generators, audits; Apache-2.0): https://www.kaggle.com/datasets/mrmeows/qcc-1375-open-circuits\n\n  ***Why.*** There are three months left. I think this competition is most interesting if it's decided by new circuit architectures rather than by assembling public components. Releasing a strong, fully verified baseline early removes the easy gains for everyone, including me. I'd like the remaining progress to come from genuinely new ideas.\n\nWhat's included.\n\ninvsqrt, 68 qubits, 17.27×. Storage and uncomputation changes on the public 78-qubit lineage. The polynomial and rotation angles are unchanged, and every identity is checked on all 3,133,452 inputs.\n\ndfthcsos, 6.435×. 8-bit angle words take the state-preparation workspace from 607 to about 300 qubits (total Q 742, 448), with accuracy recovered through discrete refits and a larger dictionary.\n\ndqi. Dmitrii Gluzdov's round12 decoder, unchanged and credited.\n\nThe methods, including a bound showing that refits can't improve λ_eff by more than 0.3% on a fixed factorization, decoder width lower bounds for BM and extended-Euclid, and two Bézoutian identities.\n\nNegative results with measurements: 7- and 9-bit words, paired rounding, Newton and cubic invsqrt variants, and more, so nobody has to repeat them.\n\nPractical notes on the verifiers: Windows runs them serially, kickmix allocates hidden ancillas, and short dqi runs inflate R.\n\nAll component costs come from the unmodified official verifiers at full shot counts, and the hashes are pinned. Credits to busyaprime, Phuc Thai (DePie), Dmitrii Gluzdov, marsyas, Agniv Banerjee (SomeJoint), ViberTeam, manwithacat, Ahmed Berat Özer, marculera and Michael Rustad, whose public work this builds on.\n\nIf you find something better, I hope you'll publish it too. Questions and corrections are welcome.\n\nEDIT: 20.39 circuits now up! https://www.kaggle.com/code/mrmeows/20-39-circuits-let-s-all-reach-the-plateau/notebook\n\nEDIT: 15.75 circuits now up\n\nEDIT: 15.05 circuits now up!\n\n",
+          "content": "<p>I've published my current best submission, together with the methods and the dead ends that led to it.</p>\n<p>Notebook (reproduces the 14.49721 submission): <a href=\"https://www.kaggle.com/code/mrmeows/qcc-14-50-everything-i-learned-open-circuits\" target=\"_blank\">https://www.kaggle.com/code/mrmeows/qcc-14-50-everything-i-learned-open-circuits</a></p>\n<p>Dataset (circuits, generators, audits; Apache-2.0): <a href=\"https://www.kaggle.com/datasets/mrmeows/qcc-1375-open-circuits\" target=\"_blank\">https://www.kaggle.com/datasets/mrmeows/qcc-1375-open-circuits</a></p>\n<p><strong><em>Why.</em></strong> There are three months left. I think this competition is most interesting if it's decided by new circuit architectures rather than by assembling public components. Releasing a strong, fully verified baseline early removes the easy gains for everyone, including me. I'd like the remaining progress to come from genuinely new ideas.</p>\n<p>What's included.</p>\n<p>invsqrt, 68 qubits, 17.27×. Storage and uncomputation changes on the public 78-qubit lineage. The polynomial and rotation angles are unchanged, and every identity is checked on all 3,133,452 inputs.</p>\n<p>dfthcsos, 6.435×. 8-bit angle words take the state-preparation workspace from 607 to about 300 qubits (total Q 742,&nbsp;448), with accuracy recovered through discrete refits and a larger dictionary.</p>\n<p>dqi. Dmitrii Gluzdov's round12 decoder, unchanged and credited.</p>\n<p>The methods, including a bound showing that refits can't improve λ_eff by more than 0.3% on a fixed factorization, decoder width lower bounds for BM and extended-Euclid, and two Bézoutian identities.</p>\n<p>Negative results with measurements: 7- and 9-bit words, paired rounding, Newton and cubic invsqrt variants, and more, so nobody has to repeat them.</p>\n<p>Practical notes on the verifiers: Windows runs them serially, kickmix allocates hidden ancillas, and short dqi runs inflate R.</p>\n<p>All component costs come from the unmodified official verifiers at full shot counts, and the hashes are pinned. Credits to busyaprime, Phuc Thai (DePie), Dmitrii Gluzdov, marsyas, Agniv Banerjee (SomeJoint), ViberTeam, manwithacat, Ahmed Berat Özer, marculera and Michael Rustad, whose public work this builds on.</p>\n<p>If you find something better, I hope you'll publish it too. Questions and corrections are welcome.</p>\n<p>EDIT: 20.39 circuits now up! <a href=\"https://www.kaggle.com/code/mrmeows/20-39-circuits-let-s-all-reach-the-plateau/notebook\" target=\"_blank\">https://www.kaggle.com/code/mrmeows/20-39-circuits-let-s-all-reach-the-plateau/notebook</a></p>\n<p>EDIT: 15.75 circuits now up</p>\n<p>EDIT: 15.05 circuits now up!</p>",
+          "parent": {},
+          "author": {
+            "displayName": "mrmeows",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25895166-kg.jpg?t=2025-03-26-22-51-05",
+            "url": "/mrmeows",
+            "tier": "CONTRIBUTOR",
+            "id": 25895166,
+            "progressionOptOut": false
+          },
+          "authorType": "TOPIC",
+          "votes": {
+            "totalVotes": 18,
+            "canUpvote": true,
+            "totalUpvotes": 18
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 783,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "reactions": [
+            {
+              "emoji": "LOVE",
+              "featuredUserNames": [
+                "mcpontiveros",
+                "subhanjan33",
+                "lingyu07"
+              ],
+              "userCount": 3
+            },
+            {
+              "emoji": "YAY",
+              "featuredUserNames": [
+                "rajukrishnamoorthy",
+                "alexchilton"
+              ],
+              "userCount": 2
+            },
+            {
+              "emoji": "SURPRISE",
+              "featuredUserNames": [
+                "manwithacat"
+              ],
+              "userCount": 1
+            }
+          ],
+          "teamUpInfo": {
+            "enabled": true,
+            "teamLeader": {
+              "displayName": "mrmeows",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25895166-kg.jpg?t=2025-03-26-22-51-05",
+              "url": "/mrmeows",
+              "userName": "mrmeows",
+              "tier": "CONTRIBUTOR",
+              "id": 25895166,
+              "profileUrl": "/mrmeows",
+              "performanceTier": "CONTRIBUTOR",
+              "userId": 25895166,
+              "progressionOptOut": false
+            },
+            "intro": "stop sign? what stop sign?"
+          }
+        },
+        {
+          "id": 3545293,
+          "postDate": "2026-10-27T02:33:07.503Z",
+          "rawMarkdown": "Added 21\n\nTaking a break,\n\nWill continue in few days. Hope I helped someone 😮‍💨\n\nok goodnight ",
+          "content": "<p>Added 21</p>\n<p>Taking a break,</p>\n<p>Will continue in few days. Hope I helped someone 😮‍💨</p>\n<p>ok goodnight </p>",
+          "replies": [
+            {
+              "id": 3545300,
+              "postDate": "2026-10-27T02:45:23.790Z",
+              "rawMarkdown": "thanks. Will take a look and make a tutorial on how to start and progress from 1 -> 5 -> 10 -> 20 based on your work.\nOnce it is saturated, the real fun begins, where only ai agent can further improve",
+              "content": "<p>thanks. Will take a look and make a tutorial on how to start and progress from 1 -&gt; 5 -&gt; 10 -&gt; 20 based on your work.\nOnce it is saturated, the real fun begins, where only ai agent can further improve</p>",
+              "parent": {},
+              "author": {
+                "displayName": "hengck23",
+                "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+                "url": "/hengck23",
+                "tier": "GRANDMASTER",
+                "id": 113660,
+                "progressionOptOut": false
+              },
+              "authorType": "COMMENT",
+              "votes": {
+                "totalVotes": 3,
+                "canUpvote": true,
+                "totalUpvotes": 3
+              },
+              "kernelVersion": 0,
+              "competitionRanking": 75,
+              "feedbackTrackingData": {},
+              "isThankYou": false,
+              "reactions": [
+                {
+                  "emoji": "LOVE",
+                  "featuredUserNames": [
+                    "mrmeows"
+                  ],
+                  "userCount": 1
+                }
+              ],
+              "teamUpInfo": {
+                "teamLeader": {
+                  "displayName": "hengck23",
+                  "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+                  "url": "/hengck23",
+                  "userName": "hengck23",
+                  "tier": "GRANDMASTER",
+                  "id": 113660,
+                  "profileUrl": "/hengck23",
+                  "performanceTier": "GRANDMASTER",
+                  "userId": 113660,
+                  "progressionOptOut": false
+                },
+                "intro": ""
+              }
+            }
+          ],
+          "parent": {},
+          "author": {
+            "displayName": "mrmeows",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25895166-kg.jpg?t=2025-03-26-22-51-05",
+            "url": "/mrmeows",
+            "tier": "CONTRIBUTOR",
+            "id": 25895166,
+            "progressionOptOut": false
+          },
+          "authorType": "TOPIC",
+          "votes": {
+            "totalVotes": 2,
+            "canUpvote": true,
+            "totalUpvotes": 2
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 783,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "teamUpInfo": {
+            "enabled": true,
+            "teamLeader": {
+              "displayName": "mrmeows",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25895166-kg.jpg?t=2025-03-26-22-51-05",
+              "url": "/mrmeows",
+              "userName": "mrmeows",
+              "tier": "CONTRIBUTOR",
+              "id": 25895166,
+              "profileUrl": "/mrmeows",
+              "performanceTier": "CONTRIBUTOR",
+              "userId": 25895166,
+              "progressionOptOut": false
+            },
+            "intro": "stop sign? what stop sign?"
+          }
+        },
+        {
+          "id": 3544773,
+          "postDate": "2026-10-26T08:56:30.883Z",
+          "rawMarkdown": "Just shared my 15.05 circuits! https://www.kaggle.com/code/mrmeows/15-05-circuits-let-s-all-reach-the-plateau",
+          "content": "<p>Just shared my 15.05 circuits! <a href=\"https://www.kaggle.com/code/mrmeows/15-05-circuits-let-s-all-reach-the-plateau\" target=\"_blank\">https://www.kaggle.com/code/mrmeows/15-05-circuits-let-s-all-reach-the-plateau</a></p>",
+          "parent": {},
+          "author": {
+            "displayName": "mrmeows",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25895166-kg.jpg?t=2025-03-26-22-51-05",
+            "url": "/mrmeows",
+            "tier": "CONTRIBUTOR",
+            "id": 25895166,
+            "progressionOptOut": false
+          },
+          "authorType": "TOPIC",
+          "votes": {
+            "totalVotes": 3,
+            "canUpvote": true,
+            "totalUpvotes": 3
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 783,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "teamUpInfo": {
+            "enabled": true,
+            "teamLeader": {
+              "displayName": "mrmeows",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25895166-kg.jpg?t=2025-03-26-22-51-05",
+              "url": "/mrmeows",
+              "userName": "mrmeows",
+              "tier": "CONTRIBUTOR",
+              "id": 25895166,
+              "profileUrl": "/mrmeows",
+              "performanceTier": "CONTRIBUTOR",
+              "userId": 25895166,
+              "progressionOptOut": false
+            },
+            "intro": "stop sign? what stop sign?"
+          }
+        },
+        {
+          "id": 3544754,
+          "postDate": "2026-10-26T08:01:01.043Z",
+          "rawMarkdown": "Thanks for sharing! \n\nI’ve been diving into some books on quantum computing recently, and I get the feeling that the current theories in this space aren't fully set in stone yet. It seems like we just don't have enough experimental data or solid evidence to back up a single, unified theory. \n\nRight now, most textbooks still rely on classical, Turing-machine-based models to explain everything. But every time I read them, I find myself questioning if building quantum gates this way is even the right approach. It honestly feels like the current theories are a bit outdated, and it makes me wonder if we need to rethink the whole foundation from scratch. \n\nInstead of trying to control every single internal state using classical logic, what if we treated it like a machine learning system? A sort of black-box model where we don't necessarily manage the exact internal mechanics, but focus on training the system to deliver the right outputs based on the inputs. What are your thoughts on this? 😆",
+          "content": "<p>Thanks for sharing!&nbsp;</p>\n<p>I’ve been diving into some books on quantum computing recently, and I get the feeling that the current theories in this space aren't fully set in stone yet. It seems like we just don't have enough experimental data or solid evidence to back up a single, unified theory.&nbsp;</p>\n<p>Right now, most textbooks still rely on classical, Turing-machine-based models to explain everything. But every time I read them, I find myself questioning if building quantum gates this way is even the right approach. It honestly feels like the current theories are a bit outdated, and it makes me wonder if we need to rethink the whole foundation from scratch.&nbsp;</p>\n<p>Instead of trying to control every single internal state using classical logic, what if we treated it like a machine learning system? A sort of black-box model where we don't necessarily manage the exact internal mechanics, but focus on training the system to deliver the right outputs based on the inputs. What are your thoughts on this? 😆</p>",
+          "replies": [
+            {
+              "id": 3544759,
+              "postDate": "2026-10-26T08:16:36Z",
+              "rawMarkdown": "Thanks, glad it helped! I'd push back a bit on the premise though. The physics itself is really well tested. What's still hard is the engineering of building big reliable machines. The gate model also isn't a classical idea at heart. It's just one of several equivalent ways to describe quantum computation, and people use it because it's the easiest to reason about.\n\nYour black box idea is actually pretty close to things people already do. Variational algorithms like VQE and QAOA train circuit parameters with a classical optimizer, and on real hardware the control pulses are often learned rather than designed by hand.\n\nThe problem in this competition is that the verifier checks every single legal input and wants the exact phase, so something trained to be right most of the time would just fail. Where learning and search do help is in finding the circuits. A lot of my gains came from automated search over small subcircuits, and then I proved the result exact before using it. Search to find, proof to check. That combo feels like the most promising direction to me 😄\n",
+              "content": "<p>Thanks, glad it helped! I'd push back a bit on the premise though. The physics itself is really well tested. What's still hard is the engineering of building big reliable machines. The gate model also isn't a classical idea at heart. It's just one of several equivalent ways to describe quantum computation, and people use it because it's the easiest to reason about.</p>\n<p>Your black box idea is actually pretty close to things people already do. Variational algorithms like VQE and QAOA train circuit parameters with a classical optimizer, and on real hardware the control pulses are often learned rather than designed by hand.</p>\n<p>The problem in this competition is that the verifier checks every single legal input and wants the exact phase, so something trained to be right most of the time would just fail. Where learning and search do help is in finding the circuits. A lot of my gains came from automated search over small subcircuits, and then I proved the result exact before using it. Search to find, proof to check. That combo feels like the most promising direction to me 😄</p>",
+              "parent": {},
+              "author": {
+                "displayName": "mrmeows",
+                "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25895166-kg.jpg?t=2025-03-26-22-51-05",
+                "url": "/mrmeows",
+                "tier": "CONTRIBUTOR",
+                "id": 25895166,
+                "progressionOptOut": false
+              },
+              "authorType": "TOPIC",
+              "votes": {
+                "totalVotes": 3,
+                "canUpvote": true,
+                "totalUpvotes": 3
+              },
+              "kernelVersion": 0,
+              "competitionRanking": 783,
+              "feedbackTrackingData": {},
+              "isThankYou": false,
+              "teamUpInfo": {
+                "enabled": true,
+                "teamLeader": {
+                  "displayName": "mrmeows",
+                  "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25895166-kg.jpg?t=2025-03-26-22-51-05",
+                  "url": "/mrmeows",
+                  "userName": "mrmeows",
+                  "tier": "CONTRIBUTOR",
+                  "id": 25895166,
+                  "profileUrl": "/mrmeows",
+                  "performanceTier": "CONTRIBUTOR",
+                  "userId": 25895166,
+                  "progressionOptOut": false
+                },
+                "intro": "stop sign? what stop sign?"
+              }
+            },
+            {
+              "id": 3544843,
+              "postDate": "2026-10-26T11:38:19.207Z",
+              "rawMarkdown": "Optimization requires experience. I think some will experience in c code, asm code or bit hacking. But very few have experience in quantum circuits.  The inv sqrt is something i did in the past but the solution in the public notebook are so unfamiliar to me.",
+              "content": "<p>Optimization requires experience. I think some will experience in c code, asm code or bit hacking. But very few have experience in quantum circuits.  The inv sqrt is something i did in the past but the solution in the public notebook are so unfamiliar to me.</p>",
+              "parent": {},
+              "author": {
+                "displayName": "hengck23",
+                "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+                "url": "/hengck23",
+                "tier": "GRANDMASTER",
+                "id": 113660,
+                "progressionOptOut": false
+              },
+              "authorType": "COMMENT",
+              "votes": {
+                "totalVotes": 2,
+                "canUpvote": true,
+                "totalUpvotes": 2
+              },
+              "kernelVersion": 0,
+              "competitionRanking": 75,
+              "feedbackTrackingData": {},
+              "isThankYou": false,
+              "teamUpInfo": {
+                "teamLeader": {
+                  "displayName": "hengck23",
+                  "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+                  "url": "/hengck23",
+                  "userName": "hengck23",
+                  "tier": "GRANDMASTER",
+                  "id": 113660,
+                  "profileUrl": "/hengck23",
+                  "performanceTier": "GRANDMASTER",
+                  "userId": 113660,
+                  "progressionOptOut": false
+                },
+                "intro": ""
+              }
+            }
+          ],
+          "parent": {},
+          "author": {
+            "displayName": "WOOSUNG YOON",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4808143-kg.png?t=2026-06-16-13-03-45",
+            "url": "/woosungyoon",
+            "tier": "EXPERT",
+            "id": 4808143,
+            "progressionOptOut": false
+          },
+          "authorType": "COMMENT",
+          "votes": {
+            "totalVotes": 3,
+            "canUpvote": true,
+            "totalUpvotes": 3
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 1471,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "teamUpInfo": {
+            "teamLeader": {
+              "displayName": "WOOSUNG YOON",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/4808143-kg.png?t=2026-06-16-13-03-45",
+              "url": "/woosungyoon",
+              "userName": "woosungyoon",
+              "tier": "EXPERT",
+              "id": 4808143,
+              "profileUrl": "/woosungyoon",
+              "performanceTier": "EXPERT",
+              "userId": 4808143,
+              "progressionOptOut": false
+            },
+            "intro": ""
+          }
+        },
+        {
+          "id": 3544841,
+          "postDate": "2026-10-26T11:31:41.730Z",
+          "rawMarkdown": "That is king. I have a feeling that it will be top10 against the rest\n\nThe top10 will have some secret source and the rest will be mixing components from each other ",
+          "content": "<p>That is king. I have a feeling that it will be top10 against the rest</p>\n<p>The top10 will have some secret source and the rest will be mixing components from each other </p>",
+          "replies": [
+            {
+              "id": 3544882,
+              "postDate": "2026-10-26T13:03:43.953Z",
+              "rawMarkdown": "For competition like this, maybe lots of people hiding their score in local. Another game burns tokens and time.........",
+              "content": "<p>For competition like this, maybe lots of people hiding their score in local. Another game burns tokens and time………</p>",
+              "parent": {},
+              "author": {
+                "displayName": "shanzhong8",
+                "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22146004-kg.jpeg?t=2025-05-25-15-58-10",
+                "url": "/shanzhong8",
+                "tier": "MASTER",
+                "id": 22146004,
+                "progressionOptOut": false
+              },
+              "authorType": "COMMENT",
+              "votes": {
+                "totalVotes": 1,
+                "canUpvote": true,
+                "totalUpvotes": 1
+              },
+              "kernelVersion": 0,
+              "competitionRanking": 6,
+              "feedbackTrackingData": {},
+              "isThankYou": false,
+              "teamUpInfo": {
+                "teamLeader": {
+                  "displayName": "shanzhong8",
+                  "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/22146004-kg.jpeg?t=2025-05-25-15-58-10",
+                  "url": "/shanzhong8",
+                  "userName": "shanzhong8",
+                  "tier": "MASTER",
+                  "id": 22146004,
+                  "profileUrl": "/shanzhong8",
+                  "performanceTier": "MASTER",
+                  "userId": 22146004,
+                  "progressionOptOut": false
+                },
+                "intro": " burning tokens"
+              }
+            },
+            {
+              "id": 3545242,
+              "postDate": "2026-10-26T23:37:46.517Z",
+              "rawMarkdown": "Do you have any clue of how the private scoring would work? Wouldn't that possibly cause a shakeup?\n",
+              "content": "<p>Do you have any clue of how the private scoring would work? Wouldn't that possibly cause a shakeup?</p>",
+              "parent": {},
+              "author": {
+                "displayName": "Kim Jinseo",
+                "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18554226-kg.jpg?t=2026-07-15-05-49-13",
+                "url": "/kimjinseo1",
+                "tier": "CONTRIBUTOR",
+                "id": 18554226,
+                "progressionOptOut": false
+              },
+              "authorType": "COMMENT",
+              "votes": {
+                "canUpvote": true
+              },
+              "kernelVersion": 0,
+              "competitionRanking": 1038,
+              "feedbackTrackingData": {},
+              "isThankYou": false,
+              "teamUpInfo": {
+                "teamLeader": {
+                  "displayName": "Kim Jinseo",
+                  "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/18554226-kg.jpg?t=2026-07-15-05-49-13",
+                  "url": "/kimjinseo1",
+                  "userName": "kimjinseo1",
+                  "tier": "CONTRIBUTOR",
+                  "id": 18554226,
+                  "profileUrl": "/kimjinseo1",
+                  "performanceTier": "CONTRIBUTOR",
+                  "userId": 18554226,
+                  "progressionOptOut": false
+                },
+                "intro": ""
+              }
+            },
+            {
+              "id": 3545464,
+              "postDate": "2026-10-27T10:14:05.057Z",
+              "rawMarkdown": "top10 against the rest aka Horde vs the Alliance.\n\n\n![](https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F5819143%2Fbb4907320ef6fc2506f5ad3d72bdf2ce%2F86ebe57b-4359-448e-93dc-1069dd4f5c85.png?generation=1793096041248153&alt=media)\n",
+              "content": "<p>top10 against the rest aka Horde vs the Alliance.</p>\n<p><img src=\"https://www.googleapis.com/download/storage/v1/b/kaggle-forum-message-attachments/o/inbox%2F5819143%2Fbb4907320ef6fc2506f5ad3d72bdf2ce%2F86ebe57b-4359-448e-93dc-1069dd4f5c85.png?generation=1793096041248153&amp;alt=media\" alt=\"\"></p>",
+              "parent": {},
+              "author": {
+                "displayName": "D Chakraborty",
+                "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5819143-kg.png?t=2026-10-26-04-49-04",
+                "url": "/spoutop",
+                "tier": "EXPERT",
+                "id": 5819143,
+                "progressionOptOut": false
+              },
+              "authorType": "COMMENT",
+              "votes": {
+                "canUpvote": true,
+                "totalUpvotes": 1
+              },
+              "kernelVersion": 0,
+              "competitionRanking": 30,
+              "feedbackTrackingData": {},
+              "isThankYou": false,
+              "reactions": [
+                {
+                  "emoji": "YAY",
+                  "featuredUserNames": [
+                    "alexchilton"
+                  ],
+                  "userCount": 1
+                }
+              ],
+              "teamUpInfo": {
+                "teamLeader": {
+                  "displayName": "D Chakraborty",
+                  "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/5819143-kg.png?t=2026-10-26-04-49-04",
+                  "url": "/spoutop",
+                  "userName": "spoutop",
+                  "tier": "EXPERT",
+                  "id": 5819143,
+                  "profileUrl": "/spoutop",
+                  "performanceTier": "EXPERT",
+                  "userId": 5819143,
+                  "progressionOptOut": false
+                },
+                "intro": ""
+              }
+            }
+          ],
+          "parent": {},
+          "author": {
+            "displayName": "hengck23",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+            "url": "/hengck23",
+            "tier": "GRANDMASTER",
+            "id": 113660,
+            "progressionOptOut": false
+          },
+          "authorType": "COMMENT",
+          "votes": {
+            "totalVotes": 2,
+            "canUpvote": true,
+            "totalUpvotes": 2
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 75,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "teamUpInfo": {
+            "teamLeader": {
+              "displayName": "hengck23",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/113660-fb.jpg",
+              "url": "/hengck23",
+              "userName": "hengck23",
+              "tier": "GRANDMASTER",
+              "id": 113660,
+              "profileUrl": "/hengck23",
+              "performanceTier": "GRANDMASTER",
+              "userId": 113660,
+              "progressionOptOut": false
+            },
+            "intro": ""
+          }
+        },
+        {
+          "id": 3545904,
+          "postDate": "2026-10-28T00:21:01.173Z",
+          "rawMarkdown": "Hello world! \n\nHave to do some IRL stuff right now but I am still here!\n\nWhen I come back I will release up to a 25x solution for general public, this will most likely be last of my public dumps unless I realize that there is much more headroom.\n\nI am more than willing to team up with anyone who is serious and has compute (i have compute as well, not a one ended relationship) \n\nthanks\n",
+          "content": "<p>Hello world! </p>\n<p>Have to do some IRL stuff right now but I am still here!</p>\n<p>When I come back I will release up to a 25x solution for general public, this will most likely be last of my public dumps unless I realize that there is much more headroom.</p>\n<p>I am more than willing to team up with anyone who is serious and has compute (i have compute as well, not a one ended relationship) </p>\n<p>thanks</p>",
+          "parent": {},
+          "author": {
+            "displayName": "mrmeows",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25895166-kg.jpg?t=2025-03-26-22-51-05",
+            "url": "/mrmeows",
+            "tier": "CONTRIBUTOR",
+            "id": 25895166,
+            "progressionOptOut": false
+          },
+          "authorType": "TOPIC",
+          "votes": {
+            "canUpvote": true
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 783,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "reactions": [
+            {
+              "emoji": "THANK_YOU",
+              "featuredUserNames": [
+                "mcpontiveros"
+              ],
+              "userCount": 1
+            },
+            {
+              "emoji": "YAY",
+              "featuredUserNames": [
+                "mcpontiveros"
+              ],
+              "userCount": 1
+            }
+          ],
+          "teamUpInfo": {
+            "enabled": true,
+            "teamLeader": {
+              "displayName": "mrmeows",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/25895166-kg.jpg?t=2025-03-26-22-51-05",
+              "url": "/mrmeows",
+              "userName": "mrmeows",
+              "tier": "CONTRIBUTOR",
+              "id": 25895166,
+              "profileUrl": "/mrmeows",
+              "performanceTier": "CONTRIBUTOR",
+              "userId": 25895166,
+              "progressionOptOut": false
+            },
+            "intro": "stop sign? what stop sign?"
+          }
+        }
+      ],
+      "commentSort": "COMMENT_LIST_SORT_BY_HOT"
+    }
+  },
+  "753527": {
+    "topic": {
+      "forumTopic": {
+        "authorId": 26025170,
+        "authorThumbnailName": "26025170-kg.jpeg?t=2026-07-19-17-05-41",
+        "authorUserDisplayName": "Harshit Kumar",
+        "authorUserName": "harshitsama",
+        "firstMessageId": 3546147,
+        "forumId": 12630171,
+        "forumName": "Google Quantum AI - Verifiable Quantum Circuit Compilation",
+        "id": 753527,
+        "name": "What is one qubit worth? Marginal value per task (invsqrt 1.6%, DQI 0.23%, chem 0.23%)",
+        "parentName": "google-verifiable-quantum-circuit-compilation",
+        "parentUrl": "/competitions/google-verifiable-quantum-circuit-compilation",
+        "postDate": "2026-10-28T12:50:30.129738500Z",
+        "totalVotes": 1,
+        "url": "/competitions/google-verifiable-quantum-circuit-compilation/discussion/753527",
+        "authorPerformanceTier": "EXPERT",
+        "authorProgressionOptOut": false
+      }
+    },
+    "messages": {
+      "comments": [
+        {
+          "id": 3546147,
+          "postDate": "2026-10-28T12:50:30.130Z",
+          "rawMarkdown": "The score is a geometric mean, so 1% off any task's cost gives +0.336% on the score. But qubits are priced very differently:\n- invsqrt (cost = Q x C, Q=63): one qubit = 1.61% of cost -> +0.54% score\n- DQI (cost = R x Q^2 x T, Q=889): one qubit = 0.23% of cost -> +0.08% score\n- chemistry (cost = lambda x T x Q, Q=430): one qubit = 0.23% -> +0.08% score\nCost-neutral trade rates from the public 22.63 table: about 26 Toffoli-equivalents per qubit in invsqrt, about 990 Toffolis per qubit in DQI.\n\nNotebook (arithmetic on published numbers, no circuits redistributed; credits to the public authors): https://www.kaggle.com/code/harshitsama/quantum-circuits-marginal-value-calculator\n\nLeaderboard shape (1,403 teams, 2026-10-28): 689 teams >= 20, 451 >= 22, 272 >= 22.5, only 20 >= 23. The plateau is where public circuits meet. With ratios of about 20x, 59x and 10x, the chemistry ratio is the lowest, so a new chemistry shape has the most room; DQI qubits are cheap to ignore, invsqrt qubits are worth 7x more.\n\nTell me if any of my formulas are off.",
+          "content": "<p>The score is a geometric mean, so 1% off any task's cost gives +0.336% on the score. But qubits are priced very differently:</p>\n<ul>\n<li>invsqrt (cost = Q x C, Q=63): one qubit = 1.61% of cost -&gt; +0.54% score</li>\n<li>DQI (cost = R x Q^2 x T, Q=889): one qubit = 0.23% of cost -&gt; +0.08% score</li>\n<li>chemistry (cost = lambda x T x Q, Q=430): one qubit = 0.23% -&gt; +0.08% score\nCost-neutral trade rates from the public 22.63 table: about 26 Toffoli-equivalents per qubit in invsqrt, about 990 Toffolis per qubit in DQI.</li>\n</ul>\n<p>Notebook (arithmetic on published numbers, no circuits redistributed; credits to the public authors): <a href=\"https://www.kaggle.com/code/harshitsama/quantum-circuits-marginal-value-calculator\" target=\"_blank\">https://www.kaggle.com/code/harshitsama/quantum-circuits-marginal-value-calculator</a></p>\n<p>Leaderboard shape (1,403 teams, 2026-10-28): 689 teams &gt;= 20, 451 &gt;= 22, 272 &gt;= 22.5, only 20 &gt;= 23. The plateau is where public circuits meet. With ratios of about 20x, 59x and 10x, the chemistry ratio is the lowest, so a new chemistry shape has the most room; DQI qubits are cheap to ignore, invsqrt qubits are worth 7x more.</p>\n<p>Tell me if any of my formulas are off.</p>",
+          "parent": {},
+          "author": {
+            "displayName": "Harshit Kumar",
+            "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26025170-kg.jpeg?t=2026-07-19-17-05-41",
+            "url": "/harshitsama",
+            "tier": "EXPERT",
+            "id": 26025170,
+            "progressionOptOut": false
+          },
+          "authorType": "TOPIC",
+          "votes": {
+            "totalVotes": 1,
+            "canUpvote": true,
+            "totalUpvotes": 1
+          },
+          "kernelVersion": 0,
+          "competitionRanking": 451,
+          "feedbackTrackingData": {},
+          "isThankYou": false,
+          "teamUpInfo": {
+            "teamLeader": {
+              "displayName": "Harshit Kumar",
+              "thumbnailUrl": "https://storage.googleapis.com/kaggle-avatars/thumbnails/26025170-kg.jpeg?t=2026-07-19-17-05-41",
+              "url": "/harshitsama",
+              "userName": "harshitsama",
+              "tier": "EXPERT",
+              "id": 26025170,
+              "profileUrl": "/harshitsama",
+              "performanceTier": "EXPERT",
+              "userId": 26025170,
+              "progressionOptOut": false
+            },
+            "intro": ""
+          }
+        }
+      ],
+      "commentSort": "COMMENT_LIST_SORT_BY_HOT"
+    }
+  }
+}

@@ -1,0 +1,602 @@
+[
+  {
+    "config": {
+      "address_bits": 8,
+      "fraction_bits": 29,
+      "slope_bits": 23,
+      "curvature_bits": 13
+    },
+    "coefficient_register_widths": [
+      30,
+      21,
+      10
+    ],
+    "num_qubits": 145,
+    "static_toffoli_like": 2534,
+    "polynomial_toffoli_like": 2339,
+    "num_ops": 37364,
+    "cost_lower_bound": 339155,
+    "assembly_sha256": "c9bcd60206b8760aaddbde33548ba5b3efa764d82f45d54db0026e8db2843a1e",
+    "normalization_source_sha256": "1d0e6d52eb79b8be4216bb276c22988c514f61e8dd06b3fb3edf8d9439ac4828",
+    "formal_verification": false,
+    "numerical_screen": {
+      "status": "MODEL_PASS",
+      "inputs": 3133452,
+      "worst_error_over_tolerance": 0.45088583001510985,
+      "worst_x": 232434,
+      "min_margin_turns": 2.233127258186294e-11,
+      "formal_verification": false,
+      "scope": "Float64 numerical screen of an exact integer pipeline; no HMR or synthesis verification."
+    },
+    "native_samples": [
+      {
+        "seed": 0,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2521.70703125,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      },
+      {
+        "seed": 1,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2522.296875,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      },
+      {
+        "seed": 17,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2521.98046875,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      }
+    ],
+    "coefficient_table_sha256": "0e5e09eae0d5776122732930f9b1c550dca573e5be32356140b64ecf8506d71b",
+    "coefficient_table_file": "runs\\invsqrt_reconstruction_v1\\search\\8_29_23_13.npy",
+    "status": "REJECTED_COST_LOWER_BOUND",
+    "final_source_native_recheck": {
+      "seed": 23,
+      "shots": 256,
+      "x_restored": true,
+      "scratch_clean": true,
+      "max_model_difference_turns": 0.0,
+      "mean_toffoli_like": 2521.80078125,
+      "formal_verification": false,
+      "scope": "Local native sample check, not the full official verifier."
+    }
+  },
+  {
+    "config": {
+      "address_bits": 8,
+      "fraction_bits": 28,
+      "slope_bits": 23,
+      "curvature_bits": 13
+    },
+    "coefficient_register_widths": [
+      29,
+      21,
+      10
+    ],
+    "num_qubits": 142,
+    "static_toffoli_like": 2476,
+    "polynomial_toffoli_like": 2281,
+    "num_ops": 36645,
+    "cost_lower_bound": 323902,
+    "assembly_sha256": "68d61cba2bd1a61c0a2b041f2f0d5d35df6783c1a423492a8654b11a66cb3403",
+    "normalization_source_sha256": "1d0e6d52eb79b8be4216bb276c22988c514f61e8dd06b3fb3edf8d9439ac4828",
+    "formal_verification": false,
+    "numerical_screen": {
+      "status": "MODEL_PASS",
+      "inputs": 3133452,
+      "worst_error_over_tolerance": 0.9599253129360793,
+      "worst_x": 254970,
+      "min_margin_turns": 2.3652426747600547e-12,
+      "formal_verification": false,
+      "scope": "Float64 numerical screen of an exact integer pipeline; no HMR or synthesis verification."
+    },
+    "native_samples": [
+      {
+        "seed": 0,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2463.2890625,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      },
+      {
+        "seed": 1,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2463.9921875,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      },
+      {
+        "seed": 17,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2464.41796875,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      }
+    ],
+    "coefficient_table_sha256": "59a08da2f1781802e54ea9d9d71e9e2ef25621d565dac92bb52bdea1ae997250",
+    "coefficient_table_file": "runs\\invsqrt_reconstruction_v1\\search\\8_28_23_13.npy",
+    "status": "REJECTED_COST_LOWER_BOUND",
+    "final_source_native_recheck": {
+      "seed": 23,
+      "shots": 256,
+      "x_restored": true,
+      "scratch_clean": true,
+      "max_model_difference_turns": 0.0,
+      "mean_toffoli_like": 2464.2890625,
+      "formal_verification": false,
+      "scope": "Local native sample check, not the full official verifier."
+    }
+  },
+  {
+    "config": {
+      "address_bits": 8,
+      "fraction_bits": 28,
+      "slope_bits": 22,
+      "curvature_bits": 12
+    },
+    "coefficient_register_widths": [
+      29,
+      20,
+      9
+    ],
+    "num_qubits": 140,
+    "static_toffoli_like": 2386,
+    "polynomial_toffoli_like": 2191,
+    "num_ops": 35349,
+    "cost_lower_bound": 306740,
+    "assembly_sha256": "c7c87e2f23380920c0a6fc7c3192a878e49753754957b9687c44b12bf73a279a",
+    "normalization_source_sha256": "1d0e6d52eb79b8be4216bb276c22988c514f61e8dd06b3fb3edf8d9439ac4828",
+    "formal_verification": false,
+    "numerical_screen": {
+      "status": "MODEL_PASS",
+      "inputs": 3133452,
+      "worst_error_over_tolerance": 0.9141402474931908,
+      "worst_x": 827322,
+      "min_margin_turns": 5.626423907134877e-12,
+      "formal_verification": false,
+      "scope": "Float64 numerical screen of an exact integer pipeline; no HMR or synthesis verification."
+    },
+    "native_samples": [
+      {
+        "seed": 0,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2373.98046875,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      },
+      {
+        "seed": 1,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2373.8046875,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      },
+      {
+        "seed": 17,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2373.74609375,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      }
+    ],
+    "coefficient_table_sha256": "0cc633c89ebf94d7a4bcde1b76f96a9a864d2ac50150fbcc22a9a960d7e2f315",
+    "coefficient_table_file": "runs\\invsqrt_reconstruction_v1\\search\\8_28_22_12.npy",
+    "status": "REJECTED_COST_LOWER_BOUND",
+    "final_source_native_recheck": {
+      "seed": 23,
+      "shots": 256,
+      "x_restored": true,
+      "scratch_clean": true,
+      "max_model_difference_turns": 0.0,
+      "mean_toffoli_like": 2373.41796875,
+      "formal_verification": false,
+      "scope": "Local native sample check, not the full official verifier."
+    }
+  },
+  {
+    "config": {
+      "address_bits": 8,
+      "fraction_bits": 29,
+      "slope_bits": 22,
+      "curvature_bits": 12
+    },
+    "coefficient_register_widths": [
+      30,
+      20,
+      9
+    ],
+    "num_qubits": 143,
+    "static_toffoli_like": 2444,
+    "polynomial_toffoli_like": 2249,
+    "num_ops": 36070,
+    "cost_lower_bound": 321607,
+    "assembly_sha256": "fdd0c876831c8ec462ab89ab573bd68ca55f424f556552a51798c015d8525c81",
+    "normalization_source_sha256": "1d0e6d52eb79b8be4216bb276c22988c514f61e8dd06b3fb3edf8d9439ac4828",
+    "formal_verification": false,
+    "numerical_screen": {
+      "status": "MODEL_PASS",
+      "inputs": 3133452,
+      "worst_error_over_tolerance": 0.5059772369636064,
+      "worst_x": 2899779,
+      "min_margin_turns": 1.729197560570113e-11,
+      "formal_verification": false,
+      "scope": "Float64 numerical screen of an exact integer pipeline; no HMR or synthesis verification."
+    },
+    "native_samples": [
+      {
+        "seed": 0,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2431.81640625,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      },
+      {
+        "seed": 1,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2432.25390625,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      },
+      {
+        "seed": 17,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2432.11328125,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      }
+    ],
+    "coefficient_table_sha256": "0c93b41895be1627b45d3597f92f80073be05c3c35c26f165ce92c1b60c3f90c",
+    "coefficient_table_file": "runs\\invsqrt_reconstruction_v1\\search\\8_29_22_12.npy",
+    "status": "REJECTED_COST_LOWER_BOUND",
+    "final_source_native_recheck": {
+      "seed": 23,
+      "shots": 256,
+      "x_restored": true,
+      "scratch_clean": true,
+      "max_model_difference_turns": 0.0,
+      "mean_toffoli_like": 2431.66015625,
+      "formal_verification": false,
+      "scope": "Local native sample check, not the full official verifier."
+    }
+  },
+  {
+    "config": {
+      "address_bits": 7,
+      "fraction_bits": 30,
+      "slope_bits": 24,
+      "curvature_bits": 14
+    },
+    "coefficient_register_widths": [
+      31,
+      22,
+      11
+    ],
+    "num_qubits": 150,
+    "static_toffoli_like": 2719,
+    "polynomial_toffoli_like": 2524,
+    "num_ops": 31226,
+    "cost_lower_bound": 378600,
+    "assembly_sha256": "abe29c08c4577eb2232e00b0ec550a2a14b75238096b19a4447e24ec5cd275f4",
+    "normalization_source_sha256": "1d0e6d52eb79b8be4216bb276c22988c514f61e8dd06b3fb3edf8d9439ac4828",
+    "formal_verification": false,
+    "numerical_screen": {
+      "status": "MODEL_PASS",
+      "inputs": 3133452,
+      "worst_error_over_tolerance": 0.7600972020822686,
+      "worst_x": 1052654,
+      "min_margin_turns": 1.0495706103892533e-11,
+      "formal_verification": false,
+      "scope": "Float64 numerical screen of an exact integer pipeline; no HMR or synthesis verification."
+    },
+    "native_samples": [
+      {
+        "seed": 0,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2706.87109375,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      },
+      {
+        "seed": 1,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2706.94921875,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      },
+      {
+        "seed": 17,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2706.77734375,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      }
+    ],
+    "coefficient_table_sha256": "031379d08cf8149f35b06330437db7e5270b98bef05989f6e1f5ce1bda2bb8da",
+    "coefficient_table_file": "runs\\invsqrt_reconstruction_v1\\search\\7_30_24_14.npy",
+    "status": "REJECTED_COST_LOWER_BOUND",
+    "final_source_native_recheck": {
+      "seed": 23,
+      "shots": 256,
+      "x_restored": true,
+      "scratch_clean": true,
+      "max_model_difference_turns": 0.0,
+      "mean_toffoli_like": 2707.2265625,
+      "formal_verification": false,
+      "scope": "Local native sample check, not the full official verifier."
+    }
+  },
+  {
+    "config": {
+      "address_bits": 9,
+      "fraction_bits": 28,
+      "slope_bits": 21,
+      "curvature_bits": 11
+    },
+    "coefficient_register_widths": [
+      29,
+      19,
+      8
+    ],
+    "num_qubits": 138,
+    "static_toffoli_like": 2434,
+    "polynomial_toffoli_like": 2239,
+    "num_ops": 50159,
+    "cost_lower_bound": 308982,
+    "assembly_sha256": "c0cea04eadc9f81a17372905abafdfe1bf01da4cf83a6710f18bcbb2c87cfefa",
+    "normalization_source_sha256": "1d0e6d52eb79b8be4216bb276c22988c514f61e8dd06b3fb3edf8d9439ac4828",
+    "formal_verification": false,
+    "numerical_screen": {
+      "status": "MODEL_PASS",
+      "inputs": 3133452,
+      "worst_error_over_tolerance": 0.9579691212964737,
+      "worst_x": 252403,
+      "min_margin_turns": 2.493281540531805e-12,
+      "formal_verification": false,
+      "scope": "Float64 numerical screen of an exact integer pipeline; no HMR or synthesis verification."
+    },
+    "native_samples": [
+      {
+        "seed": 0,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2421.8671875,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      },
+      {
+        "seed": 1,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2422.03515625,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      },
+      {
+        "seed": 17,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2421.74609375,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      }
+    ],
+    "coefficient_table_sha256": "7ca3853a58bfbbac7b50570310fd6daa7cef1106737ec24fd4887a1c8787aa72",
+    "coefficient_table_file": "runs\\invsqrt_reconstruction_v1\\search\\9_28_21_11.npy",
+    "status": "REJECTED_COST_LOWER_BOUND",
+    "final_source_native_recheck": {
+      "seed": 23,
+      "shots": 256,
+      "x_restored": true,
+      "scratch_clean": true,
+      "max_model_difference_turns": 0.0,
+      "mean_toffoli_like": 2421.74609375,
+      "formal_verification": false,
+      "scope": "Local native sample check, not the full official verifier."
+    }
+  },
+  {
+    "config": {
+      "address_bits": 9,
+      "fraction_bits": 28,
+      "slope_bits": 22,
+      "curvature_bits": 12
+    },
+    "coefficient_register_widths": [
+      29,
+      20,
+      9
+    ],
+    "num_qubits": 140,
+    "static_toffoli_like": 2514,
+    "polynomial_toffoli_like": 2319,
+    "num_ops": 51995,
+    "cost_lower_bound": 324660,
+    "assembly_sha256": "e90f80c697d86eada1327e05bdb9190d49904e64edee65e8b6540f87ff62975f",
+    "normalization_source_sha256": "1d0e6d52eb79b8be4216bb276c22988c514f61e8dd06b3fb3edf8d9439ac4828",
+    "formal_verification": false,
+    "numerical_screen": {
+      "status": "MODEL_PASS",
+      "inputs": 3133452,
+      "worst_error_over_tolerance": 0.9323380130609357,
+      "worst_x": 63350,
+      "min_margin_turns": 4.005821102907684e-12,
+      "formal_verification": false,
+      "scope": "Float64 numerical screen of an exact integer pipeline; no HMR or synthesis verification."
+    },
+    "native_samples": [
+      {
+        "seed": 0,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2502.16015625,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      },
+      {
+        "seed": 1,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2502.16796875,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      },
+      {
+        "seed": 17,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2501.953125,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      }
+    ],
+    "coefficient_table_sha256": "a58e68e9920ec1562de4c704c561df5bc3507c50ab322c446e66ee8a7efae1ec",
+    "coefficient_table_file": "runs\\invsqrt_reconstruction_v1\\search\\9_28_22_12.npy",
+    "status": "REJECTED_COST_LOWER_BOUND",
+    "final_source_native_recheck": {
+      "seed": 23,
+      "shots": 256,
+      "x_restored": true,
+      "scratch_clean": true,
+      "max_model_difference_turns": 0.0,
+      "mean_toffoli_like": 2501.98046875,
+      "formal_verification": false,
+      "scope": "Local native sample check, not the full official verifier."
+    }
+  },
+  {
+    "config": {
+      "address_bits": 8,
+      "fraction_bits": 30,
+      "slope_bits": 24,
+      "curvature_bits": 14
+    },
+    "coefficient_register_widths": [
+      31,
+      22,
+      11
+    ],
+    "num_qubits": 150,
+    "static_toffoli_like": 2694,
+    "polynomial_toffoli_like": 2499,
+    "num_ops": 39495,
+    "cost_lower_bound": 374850,
+    "assembly_sha256": "e57bb798669dfa6c009cd5f38f6a2b9876754ed407bccaa311d6008661cc4732",
+    "normalization_source_sha256": "1d0e6d52eb79b8be4216bb276c22988c514f61e8dd06b3fb3edf8d9439ac4828",
+    "formal_verification": false,
+    "numerical_screen": {
+      "status": "MODEL_PASS",
+      "inputs": 3133452,
+      "worst_error_over_tolerance": 0.2262220434073345,
+      "worst_x": 2160063,
+      "min_margin_turns": 2.8263076135709345e-11,
+      "formal_verification": false,
+      "scope": "Float64 numerical screen of an exact integer pipeline; no HMR or synthesis verification."
+    },
+    "native_samples": [
+      {
+        "seed": 0,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2681.33203125,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      },
+      {
+        "seed": 1,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2682.0078125,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      },
+      {
+        "seed": 17,
+        "shots": 256,
+        "x_restored": true,
+        "scratch_clean": true,
+        "max_model_difference_turns": 0.0,
+        "mean_toffoli_like": 2682.00390625,
+        "formal_verification": false,
+        "scope": "Local native sample check, not the full official verifier."
+      }
+    ],
+    "coefficient_table_sha256": "10cc3f720c18188f93ed4d84844ef003990cac55285b7b5989ac0c2d9f85bce7",
+    "coefficient_table_file": "runs\\invsqrt_reconstruction_v1\\search\\8_30_24_14.npy",
+    "status": "REJECTED_COST_LOWER_BOUND",
+    "final_source_native_recheck": {
+      "seed": 23,
+      "shots": 256,
+      "x_restored": true,
+      "scratch_clean": true,
+      "max_model_difference_turns": 0.0,
+      "mean_toffoli_like": 2682.28125,
+      "formal_verification": false,
+      "scope": "Local native sample check, not the full official verifier."
+    }
+  }
+]
