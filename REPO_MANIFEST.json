@@ -153,10 +153,10 @@
       "local_score": null
     }
   ],
-  "remote": null,
+  "remote": "https://github.com/Geng1128/quantum-competition-handoff-Geng",
   "notes": [
-    "No remote Git hosting URL was provided; this commit is local and can be connected later with git remote add.",
     "Public-source code is retained with its original license files; provenance and credits are recorded in HANDOFF.md.",
-    "global_beam.py is experimental and has no verified candidate output."
+    "global_beam.py is experimental and has no verified candidate output.",
+    "Remote repository: https://github.com/Geng1128/quantum-competition-handoff-Geng"
   ]
 }

@@ -1,6 +1,6 @@
 # Quantum 比赛交接
 
-更新：2026-10-29。工作目录 `D:\耿世荣\Documents\Quantum`，Windows + PowerShell。旧版交接备份在 `runs/handoff_before_20261028.md`（含 10-27 的公开复验、invsqrt 负结果、环境细节，仍可查）。本次将初始化本地 Git repository；大体积电路包、缓存和凭据由 `.gitignore` 排除，保留可复现实验代码、关键 JSON 结果和源码快照。
+更新：2026-10-29。工作目录 `D:\耿世荣\Documents\Quantum`，Windows + PowerShell。旧版交接备份在 `runs/handoff_before_20261028.md`（含 10-27 的公开复验、invsqrt 负结果、环境细节，仍可查）。本地 Git repository 已初始化并推送到公开远程 `https://github.com/Geng1128/quantum-competition-handoff-Geng`；大体积电路包、缓存和凭据由 `.gitignore` 排除，保留可复现实验代码、关键 JSON 结果和源码快照。
 
 ## 1. 现状
 
@@ -303,3 +303,4 @@ Get-Content REPO_MANIFEST.json
 ```
 
 仓库只保存小型源码、实验脚本、关键 JSON、DQI source snapshot 和少量可复核样本；原始 competition 数据、`*.kmb`、submission zip、缓存和 Python 环境按 `REPO_MANIFEST.json` 记录但不入 Git。提交前先检查 `git status --short`，不要把 `kaggle.json`、`.aws` 或任何 token 加入仓库。
+
